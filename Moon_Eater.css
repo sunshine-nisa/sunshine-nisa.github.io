@@ -83,13 +83,13 @@ a:hover {
 
 span[data-target="#deleteconfirmmodal"] {
     text-decoration: none!important;
-    color: #8391b3!important;  
+    color: #4471a3!important;  
     transition: .3s;
 } 
 
 span[data-target="#deleteconfirmmodal"]:hover {
     text-decoration: none!important;
-    color:#8391b3!important;
+    color:#4471a3!important;
     text-shadow: 0 0 3px #728dd1;
     transition: .3s;
 }
@@ -175,7 +175,7 @@ span.post-title-date+span {
 
 .post-title  {
     font-size: 170%;
-    color: #8391b3;
+    color: #4471a3;
     /*font-weight: bold;*/
     transition: .3s;
 }
@@ -230,7 +230,7 @@ h2 {
 }
 
 .post-content i.fas, .comment-box i.fas {
-    color: #8391b3;
+    color: #4471a3;
     font-size: 11px;
 }
 
@@ -240,12 +240,12 @@ h2 {
 }
 
 .post-avatar img {
-    filter: drop-shadow(0px 0px 0px #8391b3);
+    filter: drop-shadow(0px 0px 0px #4471a3);
     transition: 0.5s;
 }
 
 .post-avatar img:hover {
-    filter: drop-shadow(0px 0px 3px #8391b3);
+    filter: drop-shadow(0px 0px 3px #4471a3);
     transition: 0.5s;
 }
 
@@ -312,12 +312,6 @@ a.post-subscribe:before {
 
 /*-меню-*/
 
-div.blog__gifts,
-div.blog__iread,
-div.blog__last-comments {
-    display: none;
-}
-
 .left-menu {
     width: 28%;
     padding: 0px 0% 2% 1%!important;
@@ -371,7 +365,7 @@ h3.left-menu-text {
 
 .blog__tags a {
     color: #4471a3;
-    /*border-bottom: 2px solid #4471a359;*/
+    border-bottom: 2px solid #4471a359;
     /*font-weight: bold;*/
 }
 
@@ -528,7 +522,7 @@ ul ul {
     outline-offset: -6px;
     outline: 1px solid #4471a359;
     padding: 5px!important;
-    color: #8391b3;
+    color: #4471a3;
     font-size: 13px;
     text-transform: uppercase;
     text-align: center;
@@ -555,7 +549,7 @@ ul ul {
     outline-offset: -6px;
     outline: 1px solid #4471a359;
     padding: 5px;
-    color: #8391b3;
+    color: #4471a3
     font-size: 13px;
     text-transform: uppercase;
     text-align: center;
@@ -755,24 +749,24 @@ font-size:0px!important;
 #fnplayer-slider-inner {
     height: 10px;
     width: 2%;
-    background-color: #8391b3!important;
+    background-color: #4471a3!important;
 }
 
 #fnplayer-volume-inner {
     width: 100%;
-    background-color: #8391b3!important;
+    background-color: #4471a3!important;
     border-radius: 10px;
 }
 
 #fnplayer-stop {
     border: 0;
-    background: #8391b3!important;
+    background: #4471a3!important;
     border-radius: 10px;
     margin-bottom: 1px;
 }
 
 #fnplayer-play {
-    border-color: transparent transparent transparent #8391b3!important;
+    border-color: transparent transparent transparent #4471a3!important;
     margin-bottom: 1px;
 }
 
@@ -787,7 +781,7 @@ border-radius:10px;
  
 #fnplayer-volume-inner {
 width: 100%;
-background-color: #8391b3!important;
+background-color: #4471a3!important;
 border-radius:10px;
 }
 
