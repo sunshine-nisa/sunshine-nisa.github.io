@@ -147,6 +147,10 @@ span.post-title-date+span {
     padding: 10px;
 }
 
+div.post-content.p-1 {
+    padding: 10px!important;
+}
+
 .post-content {
     background: #e6f5fe;
     margin: 10px 0px 10px!important;
@@ -733,8 +737,8 @@ form.messageform p {
    
 div#beon-fnplayer { 
     padding: 10px;
-    background: linear-gradient(270deg, #adcde6 0%, white 25%, #adcde6); 
-    border: 2px solid #adcde6;
+    background: #4471a350; 
+    border: 1px solid #4471a3;
 }
 
  #fnplayer-slider > span { 
