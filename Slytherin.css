@@ -496,10 +496,16 @@ input:hover,
 .left-menu-text input[type="text"]:hover,
 .left-menu-text input[type="submit"]:hover, 
 button.btn.btn-secondary:hover, 
-button.btn.btn-primary:hover {
-    background: #ffffff;
-    color: #095540;
+button.btn.btn-primary,
+button.btn.btn-primary:hover,
+button.btn.btn-secondary,
+button.btn.btn-secondary:hover, 
+button#upload-confirm-button.btn.btn-primary,
+button#upload-confirm-button.btn.btn-primary:hover{
+    background: #ffffff!important;
+    color: #095540!important;
     transition: 0.4s;
+    border: 1px solid #095540!important;
     border-radius: 0px;
     text-shadow: 0 0 3px #095540;
 }
