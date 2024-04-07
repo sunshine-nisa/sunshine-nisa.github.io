@@ -712,6 +712,32 @@ div.crumbs {
     width: 100%!important;
 }
 
+div.left-menu__user-notification.left-menu__friends {
+    display: none;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+    color: #000000!important;
+    font-size: 17px;
+    background-size: cover!important;
+}
+
+a.navbar-brand {
+    width: 35px;
+    height: 35px;
+}
+
+ul.menu__box {
+    background-color: #ffffff!important;
+    color: #095540!important;
+    border: 1px solid #095540!important;
+}
+
+.menu__item {
+    font-family: "Arsenal", sans-serif!important;
+    color: #095540!important;
+}
+
 div.post-content, div.comment-content {
     margin-left: 6px!important;
     margin-right: 6px!important;
@@ -722,36 +748,21 @@ div.post-content, div.comment-content {
     background-size: cover!important;
 }
 
-.left-menu > div.mobile_open_menu > h3 {
-    color: #000000!important;
-    font-size: 17px;
-    background-size: cover!important;
-}
-
 .post-title-user {
     margin-left: 0px!important;
 } 
 
-.menu__box {
-    background-color: #ffffff;
-    color: #095540;
-    border: 1px solid #095540;
-}
-
-.menu__item {
-    font-family: "Arsenal", sans-serif;
-}
 
 [href="#footer"]:before {
     position: absolute;
-    right: 25%!important;
-    top: 0%!important;
-    color: #000!important;
+    right: 20%!important;
+    top: -4%!important;
+    color: #095540!important;
 }
 
 [onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { 
     position: absolute;
-    color: #000!important;
+    color: #ffffff!important;
     bottom:auto!important;
     left: 90%;
 }
