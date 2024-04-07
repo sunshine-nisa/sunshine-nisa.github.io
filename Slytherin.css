@@ -490,6 +490,12 @@ input {
     border: 1px solid #0b694f;
 }
 
+select {
+    color: #095540!important;
+    border: 1px solid #095540!important;
+    border-radius: 0px;
+}
+
 select:hover,
 input:hover,
 .textareabg input[type="submit"]:hover,
