@@ -551,7 +551,7 @@ button#upload-confirm-button.btn.btn-primary:hover{
     font-size: 30px;
     position: fixed;
     color: #ffffff;
-    right: 1%;
+    right: 17%;
     bottom: 45%;
     transition: 0.3s;
 }
@@ -571,7 +571,7 @@ button#upload-confirm-button.btn.btn-primary:hover{
     font-size: 30px;
     position: fixed;
     color: #ffffff;
-    right: 1%;
+    right: 17%;
     bottom: 55%;
     transition: 0.3s;
 }
