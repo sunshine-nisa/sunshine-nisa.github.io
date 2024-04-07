@@ -81,6 +81,10 @@ span.post-title-date+span {
     font-size:11px;
 }
 
+span.post-title-date.pl-0 {
+    color: #095540!important;
+}
+
 ::selection {
     background: #0b694f;
     color: #ffffff; 
