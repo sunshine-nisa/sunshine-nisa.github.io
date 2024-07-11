@@ -263,10 +263,14 @@ div#preview-area .post-content > div:nth-child(2) {
 margin-left:110px;
 }
 
-.post-avatar img, img.imagefsme  {
+.post-avatar img  {
     /*filter: brightness(0.9) grayscale(1);*/
     transition: 0.3s;
     border: 1px solid #ffffff;
+}
+
+img.imagefsme {
+    transition: 0.3s;
 }
 
 .post-avatar img:hover, img.imagefsme:hover  {
