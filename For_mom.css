@@ -129,6 +129,10 @@ a:hover, span[data-target="#deleteconfirmmodal"]:hover {
 span.post-title-date+span {
     font-size:0px;
 }
+ 
+span.post-title-date.pl-0 {
+    color: #31b7ff;
+}
 
 
 [src="//beon.fun/i/offline.png"],
@@ -398,7 +402,7 @@ h3.left-menu-text {
 
 .left-menu__user-notification.left-menu__unread-message img+p {
     font-size: 13px;
-    color: #fff;
+    color: #31b7ff;
     overflow: auto;
     line-height: normal;
     max-height: 50px;
@@ -839,7 +843,7 @@ div#beon-fnplayer {
     margin: auto !important;
     right: 0;
     border-color: transparent transparent transparent #31b7ff!important;
-    border-style:ridge;
+    border-style: ridge;
     border-width: 10px 1px 10px 16px;
     z-index: 1;
 }
@@ -852,6 +856,8 @@ div#beon-fnplayer {
     right: 0;
     margin: auto!important;
     background: #ffffff;
+    border-color: transparent transparent transparent #31b7ff!important;
+    border-style: ridge;
     height: 8px;
     width: 8px;
     z-index: 0;
@@ -971,6 +977,7 @@ ul.menu__box {
     font-weight: 100;
     margin-bottom: 0.5rem!important;
     font-size: 18px!important;
+   color: #ffffff;
 }
 
 .post-avatar {
@@ -984,7 +991,7 @@ ul.menu__box {
 .post-title {
     margin-left: 0!important;
     display: block!important;
-margin-bottom: 12px!important;
+    margin-bottom: 12px!important;
 }
 
 .comment-content > div:first-child  {
@@ -993,15 +1000,47 @@ margin-bottom: 12px!important;
 
 div.left-menu {
     line-height: normal;
-    color: #31b7ff!important;
+    color: #ffffff!important;
     padding: calc(16px - 3px) 16px;
-    background: #ffffff9e;
+    background-size: contain;
     backdrop-filter: blur(3px);
-    border: 1px solid #ffffff;
+    border: 1px solid #ffffff!;
     border-radius: 6px;
     box-sizing: border-box;
     box-shadow: inset 0px 0px 10px rgba(49,183,255,69%);
-    /*background: #31b7ff!important;*/
+    background: #31b7ff!important;
+}
+
+div.left-menu a,
+div.left-menu div,
+div.left-menu span.readertime {
+    color: #ffffff!important;
+}
+
+.left-menu__user-notification.left-menu__unread-message img+p {
+    font-size: 13px;
+    color: #ffffff;
+    overflow: auto;
+    line-height: normal;
+    max-height: 50px;
+    margin-top: -10px;
+}
+
+span.post-title-date.pl-0 {
+    color: #ffffff;
+}
+
+div.left-menu input,
+div.left-menu input[type="submit"] {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+h3.left-menu-text {
+    background: transparent !important;
+    font-size: 0;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom:10px;
 }
 
 .text-right .load_ignored_comments {
@@ -1011,7 +1050,8 @@ div.left-menu {
 
  body.bodybg {
     margin: 0;
-    background: url() no-repeat left fixed, #31b7ff;
+    background: url() no-repeat center fixed, #31b7ff;
+    background-size: cover;
 }
 
 .emj-dropdown-content {
@@ -1019,5 +1059,83 @@ div.left-menu {
     border: 1px solid #ffffff;
     width: 250px!important;
     height: 200px!important;
+}
+
+/*плеер*/
+
+div#beon-fnplayer {
+    position: relative;
+    margin: 7px auto;
+    margin-top: 30px;
+    padding: 3px;
+    background: transparent;
+}
+
+#fnplayer-slider > span { 
+    font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 4px;
+    background-color: #ffffff !important;
+}
+
+#fnplayer-slider-inner {
+    height: 4px;
+    width: 0%;
+    background-color: #000000;
+}
+
+#fnplayer-volume {
+    height:4px;
+    background-color: #000000;
+}
+
+
+#fnplayer-volume-inner {
+    height:4px;
+    width: 100%;
+    background-color: #ffffff !important;
+    border: none;
+}
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-play {
+    position: absolute;
+    top: -22px;
+    border-radius: 50px;
+    background: #ffffff;
+    left: 0;
+    margin: auto !important;
+    right: 0;
+    border-color: transparent transparent transparent #ffffff!important;
+    border-style:ridge;
+    border-width: 10px 1px 10px 16px;
+    z-index: 1;
+}
+
+
+#fnplayer-stop {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    margin: auto!important;
+    background: #000000;
+    border-color: transparent transparent transparent #ffffff!important;
+    border-style:ridge;
+    height: 8px;
+    width: 8px;
+    z-index: 0;
+}
+
+#fnplayer-play.paused {
+    border-style: inset;
+    border-width: 10px 1px 10px 16px;
+    background: #ffffff;
+    z-index: -1;
 }
 }
