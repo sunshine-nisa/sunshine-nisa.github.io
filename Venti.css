@@ -404,6 +404,10 @@ input[type="reset"] {
     box-shadow: none!important;
 }
 
+.navbar-collapse {
+    margin-right: 50px!important;
+}
+
 .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: #3f4027;
     /*text-transform: lowercase;*/
