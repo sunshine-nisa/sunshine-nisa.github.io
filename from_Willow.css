@@ -1,0 +1,860 @@
+/*основа*/
+
+div.post-content.blog_total_counter,
+#footer,
+div.footer__infolinks.p-1,
+div#page__rendertime.p-1,
+.user:before,
+.blog:before,
+div#page__admincontact.text-center {
+    display: none;
+}
+
+span.pagination-goto {
+    font-size: 0;
+}
+
+a {
+    color: #000000;
+    transition: 0.7s;
+}
+
+div {
+    transition: 0.7s;
+}
+
+a:hover {
+    text-decoration: none!important;
+    color:#fac278!important;
+    text-shadow: 0 0 3px #fac278;
+}
+
+input, button {
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: #000000!important;
+}
+
+input:hover, 
+button:hover {
+    background: #ffffff;
+    border: 1px solid #fac278;
+    color: #fac278!important;
+}
+
+/*кнопки*/
+
+button.btn.btn-secondary { /*отмена в загрузке изображений*/
+    background: #ffffff!important;
+    border: 1px solid #000000!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+.btn-outline-primary { /*остальные кнопки с синим контуром*/
+    background: #ffffff!important;
+    border: 1px solid #000000!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+button#upload-confirm-button.btn.btn-primary { /*ок в загрузке изображений*/
+    background: #000000!important;
+    border: 1px solid #000000!important;
+    color: #fac278!important;
+    border-radius: 0;
+}
+
+button#upload-confirm-button.btn.btn-primary:hover {
+    background: #ffffff!important;
+    border: 1px solid #fac278!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+.btn-primary { /*отмена в остальных окнах*/
+    background: #000000!important;
+    border: 1px solid #000000!important;
+    color: #fac278!important;
+    border-radius: 0;
+}
+
+.btn-primary:hover { /*отмена в остальных окнах*/
+    background: #ffffff!important;
+    border: 1px solid #000000!important;
+    color: #f000000!important!;
+    border-radius: 0;
+}
+
+/*кнопки редактирования и т.п*/
+
+.row.w-100 [href*="/repost/post/"], .row.w-100 span[data-target="#deleteconfirmmodal"], [href^="//beon.fun/repost/post/"], [href^="//beon.fun/repost/comment/"], .post-opt [href$="/edit"], .comment-row span[data-target="#deleteconfirmmodal"], .post-opt span[data-target="#deleteconfirmmodal"], [onclick="deleteComment(this)"] {
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.post-opt.col-12.col-md-6 [href$="/edit"]:before, .post-opt [href$="/edit"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f044";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/post/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+.post-opt.col-12.col-md-6 [data-target="#deleteconfirmmodal"]:before, .post-opt span[data-target="#deleteconfirmmodal"]:before, .comment-row span[data-target="#deleteconfirmmodal"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/comment/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+[onclick="deleteComment(this)"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+/*-------*/
+
+body.bodybg {
+    background: url(https://i1.beon.fun/19/64/6419/31/1421331/fon2.png) no-repeat center fixed;
+}
+
+main.py-4 {
+    width: 70%;
+    margin: auto;
+}
+
+.py-4 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*посты*/
+
+.comment-content {
+    background: #ffffff;
+    box-shadow: .5px 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 0 10px 10px 15px;
+}
+
+.post-content { /*рамка у записей*/
+    background: #ffffff;
+    border-image-slice: 97 95 97 90;
+    border-image-width: 20px 20px 20px 20px; /*толщина вот тута*/
+    border-image-outset: 5px 5px 5px 5px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("https://i1.beon.fun/19/64/6419/1/1422401/output-onlinepngtools-5.png");
+    border-style: solid;
+    padding: 2%;
+}
+
+.post-title {
+    text-decoration: unset;
+}
+
+div.content:before {
+    content:'';
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 867px;
+    width: 107px;
+    height: 106px;
+    background:url(https://i1.beon.fun/19/64/6419/43/1421843/12s312.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+.post-content > div:first-child {
+    background: #ffffff;
+    color: #000000!important;
+    padding: 3px 0px !important;
+}
+
+span.post-title-date+span {
+    font-size:10px;
+}
+
+.post-title-user {
+    font-size: 0.9rem;
+}
+
+.post-text {
+    padding-left: 7px;
+}
+
+.post-text a,
+.comment-text a {
+    color:#fac278!important;
+}
+
+.post-text a:hover,
+.comment-text a:hover {
+    text-decoration: none!important;
+    color:#fac278!important;
+    text-shadow: 0 0 3px #fac278;
+}
+
+div.post-opt.col-12.col-md-6 a,
+span[data-target="#deleteconfirmmodal"] {
+    color: #000000!important;
+}
+
+div.post-opt.col-12.col-md-6 a:hover,
+span[data-target="#deleteconfirmmodal"]:hover {
+    text-decoration: none!important;
+    text-shadow: 0 0 3px #000000;
+}
+
+.row.w-100,
+.comment-text+div {
+    position: sticky;
+    top: 100%;
+}
+
+span.comments_count span {
+    font-size: 0;
+}
+
+span.comments_count span:before {
+    content: '\f075';
+    font-size: 14px;
+    font-family: 'Font Awesome 5 Free';
+    padding-left: 3px;
+}
+
+div.post-opt {
+    padding-left: 7px;
+}
+
+.post-opt,
+div.post__tags-list {
+    color: #000000!important;
+}
+
+.row {
+    margin-left: 0;
+    align-items: flex-end;
+}
+
+.tag:before {
+    content: '#';
+    font-size: 12px;
+    color: #000000;
+}
+
+div.comment-header,
+div.post-header {
+    padding-bottom: 5px;
+}
+
+div.post-header {
+    margin-right: 5px;
+}
+
+/*цитата*/
+
+.quotation {
+    border-left: 3px solid #fac278;
+    background: linear-gradient(91deg, #fac27833 20%, transparent 62%);
+}
+
+/*лайки*/
+
+.fa-heart:before {
+    color: #000000!;
+}
+
+.liked .fas, .reposted .fas, .bookmarked .fas {
+    color: #fac278!important;
+}
+
+/*аватары*/
+
+.post-avatar img {
+    border: 5px solid #ffffff;
+    transform: rotate(354deg);
+    filter: grayscale(0) drop-shadow(0px -1px 2px #00000040)
+}
+
+.sign {
+    font-size: 10px;
+    text-align: center;
+    color: #fac278;
+    padding: 5px 0;
+}
+
+.avatar-select-label {
+    width: 90px;
+    border: 2px solid #000000;
+    margin-top: 3px;
+    margin-right: 3px;
+    /*filter:grayscale(1) ;*/
+    transition: 0.2s;
+}
+
+.avatar-select-label-selected {
+    width: 100px;
+    border: 2px solid #fac278;
+    /*filter:grayscale(0) ;*/
+    transition: 0.2s;
+}
+
+/*кнопка аватаров*/
+
+.avatars-fullscreen-link-wrapper {
+    background: #ffffff;
+    width: 80%!important;
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #000000;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    height: 700px;
+    width: 50%!important;
+    margin: auto;
+    background: #ffffff!important;
+}
+
+/*алерт*/
+
+.alert {
+    background: #ffffff00;
+    color: #000000;
+    border: 1px solid #ffffff00;
+}
+
+/*форма*/
+
+.textareabg {
+    background: #ffffff;
+    box-shadow: .5px 2px 8px rgba(0, 0, 0, 0.07);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.emj-dropdown-content {
+    background: #ffffff;
+    width: 30%;
+    height: 30%;
+    max-height: 200px;
+}
+
+
+/*меню*/
+
+div.left-menu__user-notification.left-menu__unread-message,
+div.notifications__comments.left-menu__user-notification,
+div.left-menu__user-notification.left-menu__unread-notifications {
+    background: #ffffff;
+    box-shadow: .5px 2px 8px rgba(0, 0, 0, 0.07);
+    margin-bottom: 10px;
+}
+
+div.left-menu__friends.left-menu__friends_offline {
+    display: none;
+}
+
+span.post-title-date.pl-0,
+span.post-title-date {
+    color: #000000;
+}
+
+.blog__about [href="/design/disable"] {
+    color: #fac278!important;
+}
+
+div.left-menu {
+    width: 30%;
+    margin-left: 10px;
+    border: solid 1px #ffffff00;
+}
+
+h3.left-menu-text {
+    background: #000000!important;
+    color: #fac278!important;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.blog__about:before {
+    content:'';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: -280px;
+    margin-left: 30px;
+    background:url(https://i1.beon.fun/19/64/6419/47/1421447/menyu.png) center no-repeat, transparent;
+    background-size: contain;
+}
+
+.blog__about:after {
+    content:'';
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 210px;
+    width: 43px;
+    height: 37px;
+    background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+.blog__gifts:before {
+    content:'';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: -280px;
+    margin-left: 30px;
+    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background-size: contain;
+}
+
+.blog__gifts:after {
+    content:'';
+    position: absolute;
+    margin-top: -440px;
+    margin-left: 210px;
+    width: 43px;
+    height: 37px;
+    background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+div.blog__gifts {
+    margin-top: 300px;
+}
+
+.blog__tags:before {
+    content:'';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-top: -280px;
+    margin-left: 30px;
+    background:url(https://i1.beon.fun/19/64/6419/71/1421471/tegi.png) center no-repeat, transparent;
+    background-size: contain;
+}
+
+.blog__tags:after {
+    content:'';
+    position: absolute;
+    margin-top: -335px;
+    margin-left: 210px;
+    width: 43px;
+    height: 37px;
+    background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+div.blog__tags {
+    margin-top: 300px;
+}
+
+.blog__read-me,
+.blog__iread,
+.blog__last-comments {
+    display: none;
+}
+
+.blog__about {
+    margin-top: 290px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow: .5px 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.blog__gifts,
+.blog__tags {
+    margin-top: 270px;
+    margin-bottom: 30px;
+    background: #ffffff;
+    box-shadow: .5px 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+
+/*верх*/
+
+.bg-white {
+    background-color: #000000;
+    box-shadow: none!important;
+}
+
+.ml-auto {
+    margin-left: unset!important;
+    margin-right: auto;
+}
+
+.navbar-brand,
+.m2,
+.navbar-expand-md .navbar-collapse a {
+    color: #fac278!important;
+}
+
+.navbar-expand-md .navbar-collapse {
+    color: #f2f2f2!important;
+}
+
+[style="color: red; font-weight: bold;"] {
+    color: #f2f2f2!important;
+}
+
+/*кнопки вверх/вниз*/
+
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]{font-size:0px;} 
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]:before { /*вверх*/
+    content: '\2BAC';
+    font-size: 30px;
+    /*background: #ffffff;*/
+    background-size: 69%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*border: 1px solid #dddddd;*/
+    padding: 23px;
+    position: fixed;
+    line-height: 0.1;
+    height: 45px;
+    width: 45px;
+    right: 2.5%;
+    top: 92.3%;
+    filter: grayscale(1);
+}
+
+[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]{font-size:0px;}
+[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]:before { /*вниз*/
+    content: '\2BAF';
+    font-size: 30px;
+    /*background: #ffffff;*/
+    background-size: 69%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*border: 1px solid #dddddd;*/
+    color: #000000;
+    padding: 23px;
+    position: fixed;
+    line-height: 0.3;
+    height: 45px;
+    width: 45px;
+    right: 5%;
+    top: 92%;
+    filter: grayscale(1);
+    /*transform: rotate(-90deg);*/
+}
+
+/* скролл */
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid #ffffff;
+    background-color: #fac278;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+::-webkit-scrollbar-track {
+    border: 8px solid #ffffff;
+    background-color: #000000;
+}
+
+/*мобка*/
+
+@media (max-width: 700px) {
+
+div.content:before {
+    content:'';
+    position: absolute;
+    margin-top: -38px;
+    margin-left: 300px;
+    width: 107px;
+    height: 106px;
+    background:url(https://i1.beon.fun/19/64/6419/43/1421843/12s312.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+
+main.py-4 {
+    width: 100%!important;
+    margin: auto;
+}
+
+.py-4 {
+    flex-direction: column!important;
+}
+
+div.left-menu {
+    width: 100%!important;
+    margin-left: 10px;
+}
+
+h3.left-menu-text {
+    background: #000000!important;
+    color: #fac278!important;
+    text-align: center;
+    padding-right: 5px;
+}
+
+div.blog__about {
+    margin-top: 110px;
+}
+
+.blog__about:before {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -90px;
+    margin-left: 150px;
+    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background-size: contain;
+}
+
+.blog__about:after {
+    content:'';
+    position: absolute;
+    margin-top: -420px;
+    margin-left: 210px;
+    width: 43px;
+    height: 37px;
+    background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+div.blog__gifts {
+    margin-top: 110px;
+}
+
+.blog__gifts:before {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -90px;
+    margin-left: 150px;
+    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background-size: contain;
+}
+
+.blog__gifts:after {
+    content:'';
+    position: absolute;
+    margin-top: -265px;
+    margin-left: 210px;
+    width: 43px;
+    height: 37px;
+    background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+div.blog__tags {
+    margin-top: 110px;
+}
+
+.blog__tags:before {
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: -90px;
+    margin-left: 150px;
+    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background-size: contain;
+}
+
+.blog__tags:after {
+    content:'';
+    position: absolute;
+    margin-top: -160px;
+    margin-left: 210px;
+    width: 43px;
+    height: 37px;
+    background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
+    background-size: contain;
+}
+
+.blog__read-me,
+.blog__tags {
+    background: #ffffff;
+    max-height: 38px;
+    overflow: hidden;
+    transition: 0.1s;
+    transition-delay: 5s; 
+}
+
+.blog__read-me:active,
+.blog__tags {
+    max-height: 400px;
+    transition-delay: 1s; 
+    transition: 0.1s;
+}
+
+.blog__last-comments,
+.blog__iread {
+    display: none!important;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background: #fac278;
+}
+
+.menu__box {
+    background: #ffffff
+}
+
+.emj-dropdown-content {
+    width:90%!important;
+}
+
+div.tag_bar span,
+.fa-align-justify:before,
+.fa-align-center:before,
+.fa-align-right:before,
+.fa-image:before,
+.fa-cloud-upload-alt:before,
+.fa-clipboard:before,
+.fa-music:before,
+.fa-video:before,
+.fa-user:before,
+.fa-book:before,
+.fa-link:before,
+.fa-remove-format:before,
+.fa-trash-alt:before {
+    font-size: 15px;
+}
+
+.tag_bar > span {
+    margin-right: 10px;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    height: 700px;
+    width: 100%!important;
+    margin: auto;
+    background: #ffffff!important;
+}
+
+#avatars-fullscreen-modal .modal-body img {
+    max-width: unset;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    position: absolute;
+    left: 75%!important;
+    top: 7%!important;
+    color: #fac278!important;
+}
+
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]:before { /*вверх*/
+    content: '\25B2';
+    position: sticky;
+    color: #000000!important;
+    /*bottom:auto!important;*/
+    /*left: 80%;*/
+    font-size: 30px;
+}
+
+.fa-heart:before {
+    font-size: 12px;
+}
+
+/*кнопки редактировать и прочее*/
+
+.row.w-100 [href*="/repost/post/"], .row.w-100 span[data-target="#deleteconfirmmodal"], [href^="//beon.fun/repost/post/"], [href^="//beon.fun/repost/comment/"], .post-opt [href$="/edit"], .comment-row span[data-target="#deleteconfirmmodal"], .post-opt span[data-target="#deleteconfirmmodal"], [onclick="deleteComment(this)"] {
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.post-opt.col-12.col-md-6 [href$="/edit"]:before, .post-opt [href$="/edit"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f044";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/post/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+.post-opt.col-12.col-md-6 [data-target="#deleteconfirmmodal"]:before, .post-opt span[data-target="#deleteconfirmmodal"]:before, .comment-row span[data-target="#deleteconfirmmodal"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+/*------*/
+
+.post-opt.col-12.col-md-6 [href$="/edit"]:before, .post-opt [href$="/edit"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f044";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/post/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+.post-opt.col-12.col-md-6 [data-target="#deleteconfirmmodal"]:before, .post-opt span[data-target="#deleteconfirmmodal"]:before, .comment-row span[data-target="#deleteconfirmmodal"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/comment/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+[onclick="deleteComment(this)"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+}
+
+@media (max-width: 540px) {
+span.comments_count a {
+    font-size: 0.9rem;
+}
+}
