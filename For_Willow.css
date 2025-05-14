@@ -410,7 +410,7 @@ h3.left-menu-text {
 .blog__about:after {
     content:'';
     position: absolute;
-    margin-top: -590px;
+    margin-top: -680px;
     margin-left: 210px;
     width: 43px;
     height: 37px;
@@ -449,7 +449,7 @@ div.blog__gifts {
     position: absolute;
     width: 300px;
     height: 300px;
-    margin-top: -280px;
+    margin-top: -662px;
     margin-left: 30px;
     background:url(https://i1.beon.fun/19/64/6419/71/1421471/tegi.png) center no-repeat, transparent;
     background-size: contain;
