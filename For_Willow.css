@@ -676,7 +676,10 @@ div.tag_bar span,
 .fa-book:before,
 .fa-link:before,
 .fa-remove-format:before,
-.fa-trash-alt:before {
+.fa-trash-alt:before,
+.fa-retweet:before, 
+.fa-bookmark:before,
+.fa-exclamation-triangle:before {
     font-size: 15px;
 }
 
