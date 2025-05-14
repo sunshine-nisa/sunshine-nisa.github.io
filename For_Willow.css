@@ -679,7 +679,8 @@ div.tag_bar span,
 .fa-trash-alt:before,
 .fa-retweet:before, 
 .fa-bookmark:before,
-.fa-exclamation-triangle:before {
+.fa-exclamation-triangle:before,
+.fa-quote-left:before {
     font-size: 15px;
 }
 
