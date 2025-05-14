@@ -370,7 +370,8 @@ div.left-menu__user-notification.left-menu__unread-notifications {
     margin-bottom: 10px;
 }
 
-div.left-menu__friends.left-menu__friends_offline {
+div.left-menu__friends.left-menu__friends_offline,
+.left-menu__user-notification.left-menu__friends {
     display: none;
 }
 
@@ -403,11 +404,11 @@ h3.left-menu-text {
     height: 300px;
     margin-top: -280px;
     margin-left: 30px;
-    background:url(https://i1.beon.fun/19/64/6419/47/1421447/menyu.png) center no-repeat, transparent;
+    background:url(https://i1.beon.fun/19/64/6419/43/1422543/menyu3.png) center no-repeat, transparent;
     background-size: contain;
 }
 
-.blog__about:after {
+/*.blog__about:after {
     content:'';
     position: absolute;
     margin-top: -665px;
@@ -416,7 +417,7 @@ h3.left-menu-text {
     height: 37px;
     background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
     background-size: contain;
-}
+}*/
 
 .blog__gifts:before {
     content:'';
@@ -425,11 +426,11 @@ h3.left-menu-text {
     height: 300px;
     margin-top: -280px;
     margin-left: 30px;
-    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background:url(https://i1.beon.fun/19/64/6419/44/1422544/podarki2.png) center no-repeat, transparent;
     background-size: contain;
 }
 
-.blog__gifts:after {
+/*.blog__gifts:after {
     content:'';
     position: absolute;
     margin-top: -440px;
@@ -438,7 +439,7 @@ h3.left-menu-text {
     height: 37px;
     background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
     background-size: contain;
-}
+}*/
 
 div.blog__gifts {
     margin-top: 300px;
@@ -451,11 +452,11 @@ div.blog__gifts {
     height: 300px;
     margin-top: -280px;
     margin-left: 30px;
-    background:url(https://i1.beon.fun/19/64/6419/71/1421471/tegi.png) center no-repeat, transparent;
+    background:url(https://i1.beon.fun/19/64/6419/45/1422545/tegi3.png) center no-repeat, transparent;
     background-size: contain;
 }
 
-.blog__tags:after {
+/*.blog__tags:after {
     content:'';
     position: absolute;
     margin-top: -335px;
@@ -464,7 +465,7 @@ div.blog__gifts {
     height: 37px;
     background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
     background-size: contain;
-}
+}*/
 
 div.blog__tags {
     margin-top: 300px;
@@ -477,7 +478,7 @@ div.blog__tags {
 }
 
 .blog__about {
-    margin-top: 290px;
+    margin-top: 270px;
     margin-bottom: 30px;
     background: #ffffff;
     box-shadow: .5px 2px 8px rgba(0, 0, 0, 0.07);
@@ -628,11 +629,11 @@ div.blog__about {
     height: 100px;
     margin-top: -90px;
     margin-left: 150px;
-    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background:url(https://i1.beon.fun/19/64/6419/43/1422543/menyu3.png) center no-repeat, transparent;
     background-size: contain;
 }
 
-.blog__about:after {
+/*.blog__about:after {
     content:'';
     position: absolute;
     margin-top: -420px;
@@ -641,7 +642,7 @@ div.blog__about {
     height: 37px;
     background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
     background-size: contain;
-}
+}*/
 
 div.blog__gifts {
     margin-top: 110px;
@@ -654,11 +655,11 @@ div.blog__gifts {
     height: 100px;
     margin-top: -90px;
     margin-left: 150px;
-    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background:url(https://i1.beon.fun/19/64/6419/44/1422544/podarki2.png) center no-repeat, transparent;
     background-size: contain;
 }
 
-.blog__gifts:after {
+/*.blog__gifts:after {
     content:'';
     position: absolute;
     margin-top: -265px;
@@ -667,7 +668,7 @@ div.blog__gifts {
     height: 37px;
     background:url(https://i1.beon.fun/19/64/6419/42/1421342/879.png) no-repeat center, transparent;
     background-size: contain;
-}
+}*/
 
 div.blog__tags {
     margin-top: 110px;
@@ -680,7 +681,7 @@ div.blog__tags {
     height: 100px;
     margin-top: -90px;
     margin-left: 150px;
-    background:url(https://i1.beon.fun/19/64/6419/70/1421470/podarki.png) center no-repeat, transparent;
+    background:url(https://i1.beon.fun/19/64/6419/45/1422545/tegi3.png) center no-repeat, transparent;
     background-size: contain;
 }
 
