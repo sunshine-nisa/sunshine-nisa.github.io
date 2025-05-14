@@ -277,6 +277,14 @@ div.post-header {
     font-size: 13px;
 }
 
+.fa-heart:hover,
+.fa-retweet:hover, 
+.fa-bookmark:hover,
+.fa-exclamation-triangle:hover,
+.fa-quote-left:hover {
+    color: #fac278;
+}
+
 /*цитата*/
 
 .quotation {
