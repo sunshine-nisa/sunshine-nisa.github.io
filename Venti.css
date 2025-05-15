@@ -18,7 +18,7 @@ main.py-4 {
 
 .emj-dropdown-content {
     width: 50%!important;
-    height: 2%!important;
+    height: 200px!important;
     background: #d5ddb7;
     border: 3px solid #474b32;
 }
@@ -38,7 +38,7 @@ main.py-4 {
     display:none;
 }
 
-/* основа */
+/* РѕСЃРЅРѕРІР° */
 
 div#app {
     padding: 0px;
@@ -153,19 +153,11 @@ span.post-title-date+span {
     display:none;
 }
 
-div#footer:before {
-    content: 'Вопросы/помощь c дизайном - solarinoo.beon.fun/';
-    display: block;
-    font-size: 10px;
-    text-align: center;
-    margin-top: 15px;
-    color: #8f9417;
-}
 
 /*-------------------*/
  
 
-/* меню */
+/* РјРµРЅСЋ */
 
 
 .py-4 {
@@ -391,7 +383,7 @@ input[type="reset"] {
 
 /*---------------*/
 
-/* вверх */
+/* РІРІРµСЂС… */
 
 
 .bg-white {
@@ -402,10 +394,6 @@ input[type="reset"] {
     z-index: 1;
     border: 2px solid #474b32;
     box-shadow: none!important;
-}
-
-.navbar-collapse {
-    margin-right: 50px!important;
 }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
@@ -420,7 +408,7 @@ input[type="reset"] {
 
 /* --------- */
  
-/* посты */ 
+/* РїРѕСЃС‚С‹ */ 
 
 .content h1 {
     margin-top: 10px;
@@ -451,7 +439,7 @@ input[type="reset"] {
     display: block;
     background: url(https://i.ibb.co/PZ6zsbb/02.png) no-repeat center, #8f9417;
     font-size:0;
-    background-size: coмук;
+    background-size: coРјСѓРє;
 }
 
 .post-title, h1 {
@@ -749,7 +737,7 @@ form.messageform p {
     -moz-transition: all .3s linear; 
 }
 
-/*плеер*/
+/*РїР»РµРµСЂ*/
 
 div#beon-fnplayer {
     padding: 15px;
