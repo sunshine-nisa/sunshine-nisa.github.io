@@ -653,7 +653,6 @@ div.tag_bar span,
 .fa-book:before,
 .fa-link:before,
 .fa-remove-format:before,
-.fa-trash-alt:before,
 .fa-retweet:before, 
 .fa-bookmark:before,
 .fa-exclamation-triangle:before,
@@ -701,7 +700,7 @@ div.tag_bar span,
 
 /*кнопки редактировать и прочее*/
 
-.row.w-100 [href*="/repost/post/"], .row.w-100 span[data-target="#deleteconfirmmodal"], [href^="//beon.fun/repost/post/"], [href^="//beon.fun/repost/comment/"], .post-opt [href$="/edit"], .comment-row span[data-target="#deleteconfirmmodal"], .post-opt span[data-target="#deleteconfirmmodal"], [onclick="deleteComment(this)"] {
+.row.w-100 [href*="/repost/post/"], .row.w-100 span[data-target="#deleteconfirmmodal"], [href^="//beon.fun/repost/post/"], [href^="//beon.fun/repost/comment/"], .post-opt [href$="/edit"], .comment-row span[data-target="#deleteconfirmmodal"], .post-opt span[data-target="#deleteconfirmmodal"], [onclick="deleteComment(this)"], .fa-trash-alt:before {
     text-align: center;
     overflow: hidden;
     font-size: 0;
