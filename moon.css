@@ -515,7 +515,7 @@ div.left-menu__user-notification.left-menu__unread-notifications > div {
 }
 
 div.container-fluid.post-content.p-3 {
-    padding-right: 30px!important;
+    padding: 80px 95px 80px 80px!important;
     margin: 10px!important;
     max-width: 99%;
 }
