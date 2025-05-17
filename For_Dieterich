@@ -1,0 +1,794 @@
+/*основа*/
+
+/*div [data-target="#deleteconfirmmodal"]*/
+div [style="display: flex; justify-content: space-between;"] {
+    font-size: 13px;
+}
+
+.small-text {
+    color: #000000;
+    font-size: 9px;
+}
+
+div.post-content.blog_total_counter,
+#footer,
+div.footer__infolinks.p-1,
+div#page__rendertime.p-1,
+.user:before,
+.blog:before,
+div#page__admincontact.text-center {
+    display: none;
+}
+
+
+div.m2 {
+    color: #3c5a23!important;
+}
+
+span.pagination-goto {
+    font-size: 0;
+}
+
+a {
+    color: #657e35;
+    transition: 0.7s;
+}
+
+div {
+    transition: 0.7s;
+}
+
+a:hover {
+    text-decoration: none!important;
+    color:#3c5a23!important;
+    text-shadow: 0 0 3px #3c5a23;
+}
+
+input {
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: #000000!important;
+    margin-bottom: 15px;
+}
+
+ button {
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: #000000!important;
+}
+
+input:hover, 
+button:hover {
+    background: #ffffff;
+    border: 1px solid #ebd178;
+    color: #ebd178!important;
+}
+
+/*кнопки*/
+
+button.btn.btn-secondary { /*отмена в загрузке изображений*/
+    background: #ffffff!important;
+    border: 1px solid #000000!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+.btn-outline-primary { /*остальные кнопки с синим контуром*/
+    background: #ffffff!important;
+    border: 1px solid #000000!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+button#upload-confirm-button.btn.btn-primary { /*ок в загрузке изображений*/
+    background: #fcf7cc!important;
+    border: 1px solid #000000!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+button#upload-confirm-button.btn.btn-primary:hover {
+    background: #ffffff!important;
+    border: 1px solid #ebd178!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+.btn-primary { /*отмена в остальных окнах*/
+    background: #fcf7cc!important;
+    border: 1px solid #000000!important;
+    color: #000000!important;
+    border-radius: 0;
+}
+
+.btn-primary:hover { /*отмена в остальных окнах*/
+    background: #ffffff!important;
+    border: 1px solid #000000!important;
+    color: #f000000!important!;
+    border-radius: 0;
+}
+
+/*кнопки редактирования и т.п*/
+
+.row.w-100 [href*="/repost/post/"], .row.w-100 span[data-target="#deleteconfirmmodal"], [href^="//beon.fun/repost/post/"], [href^="//beon.fun/repost/comment/"], .post-opt [href$="/edit"], .comment-row span[data-target="#deleteconfirmmodal"], .post-opt span[data-target="#deleteconfirmmodal"], [onclick="deleteComment(this)"] {
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.post-opt.col-12.col-md-6 [href$="/edit"]:before, .post-opt [href$="/edit"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f044";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/post/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+.post-opt.col-12.col-md-6 [data-target="#deleteconfirmmodal"]:before, .post-opt span[data-target="#deleteconfirmmodal"]:before, .comment-row span[data-target="#deleteconfirmmodal"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/comment/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+[onclick="deleteComment(this)"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+/*-------*/
+
+body.bodybg {
+    background: url(https://i1.beon.fun/19/64/6419/62/1424862/fon.png) no-repeat center fixed;
+}
+
+div#app {
+    padding: 0;
+}
+
+div#app:before {
+    content: '';
+    height: 300px;
+    /*max-height: 400px;*/
+    display: block;
+    background: url(https://i1.beon.fun/19/64/6419/43/1424943/verh.png) no-repeat  top center fixed;
+}
+
+main.py-4 {
+    width: 70%;
+    margin: auto;
+}
+
+.py-4 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*посты*/
+
+div.comment-box,
+div.comment-box h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.comment-content {
+    background: #ffffff;
+    border: 1px dashed #ebd178;
+    padding: 13px
+}
+
+.comment-content > div {
+    background: #fff;
+    background-image: linear-gradient(to bottom, #f9f9f9 1px, #ffffff 1px);
+    background-size: 1px 22px;
+}
+
+.post-content {
+    background: linear-gradient(-90deg, #6c872a50, #f5f1ee80);
+
+}
+
+div.post-content.post-page {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.post-title {
+    text-decoration: unset;
+    margin-left: 5px;
+}
+
+/*.post-content > div:first-child {
+    background: #ffffff;
+    color: #000000!important;
+    padding: 3px 0px !important;
+}*/
+
+.datebg {
+    background: linear-gradient(90deg, #6c872a30, transparent);
+}
+
+span.post-title-date+span {
+    font-size:10px;
+}
+
+.post-title-user {
+    font-size: 0.9rem;
+}
+
+.post-text {
+    padding-left: 7px;
+}
+
+/*.post-text a,
+.comment-text a {
+    color:#ebd178!important;
+}
+
+.post-text a:hover,
+.comment-text a:hover {
+    text-decoration: none!important;
+    color:#ebd178!important;
+    text-shadow: 0 0 3px #ebd178;
+}*/
+
+div.post-opt.col-12.col-md-6 a,
+span[data-target="#deleteconfirmmodal"] {
+    color: #000000!important;
+}
+
+div.post-opt.col-12.col-md-6 a:hover,
+span[data-target="#deleteconfirmmodal"]:hover {
+    text-decoration: none!important;
+    text-shadow: 0 0 3px #000000;
+}
+
+.row.w-100,
+.comment-text+div {
+    position: sticky;
+    top: 100%;
+}
+
+span.comments_count span {
+    font-size: 0;
+}
+
+span.comments_count span:before {
+    content: '\f075';
+    font-size: 14px;
+    font-family: 'Font Awesome 5 Free';
+    padding-left: 3px;
+}
+
+div.post-opt {
+    padding-left: 7px;
+}
+
+.post-opt {
+    color: #000000!important;
+}
+
+div.post__tags-list {
+    color: #000000!important;
+    font-size: 10px;
+}
+
+.row {
+    margin-left: 0;
+    align-items: flex-end;
+}
+
+.tag:before {
+    content: '#';
+    font-size: 12px;
+    color: #000000;
+}
+
+
+div.post-header {
+    margin-left: 0!important;
+    margin-right: 0;
+}
+
+.fa-heart:before,
+.fa-retweet:before, 
+.fa-bookmark:before,
+.fa-exclamation-triangle:before,
+.fa-quote-left:before,
+.fa-step-backward:before,
+.fa-step-forward:before {
+    font-size: 13px;
+}
+
+.fa-lock-open:before {
+    font-size: 9px;
+}
+
+.fa-heart:hover,
+.fa-retweet:hover, 
+.fa-bookmark:hover,
+.fa-exclamation-triangle:hover,
+.fa-quote-left:hover {
+    color: #ebd178;
+}
+
+/*цитата*/
+
+.quotation {
+    border-left: 3px solid #ebd178;
+    background: linear-gradient(91deg, #fcec9533 20%, transparent 62%);
+}
+
+/*лайки*/
+
+.fa-heart:before {
+    color: #000000!;
+}
+
+.liked .fas, .reposted .fas, .bookmarked .fas {
+    color: #ebd178!important;
+}
+
+/*аватары*/
+
+.post-avatar img {
+    /*border: 3px solid #ffffff;
+    width: 90px;*/
+}
+
+.sign {
+    font-size: 10px;
+    text-align: center;
+    color: #000000;
+    padding: 5px 0;
+    /*border: 3px solid #ffffff;*/
+}
+
+.avatar-select-label {
+    width: 90px;
+    border: 2px solid #000000;
+    margin-top: 3px;
+    margin-right: 3px;
+    /*filter:grayscale(1) ;*/
+    transition: 0.2s;
+}
+
+.avatar-select-label-selected {
+    width: 100px;
+    border: 2px solid #ebd178;
+    transition: 0.2s;
+}
+
+/*кнопка аватаров*/
+
+.avatars-fullscreen-link-wrapper {
+    background: #ffffff;
+    width: 80%!important;
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #000000;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    height: 700px;
+    width: 50%!important;
+    margin: auto;
+    background: #ffffff!important;
+}
+
+/*алерт*/
+
+.alert {
+    background: #ffffff!important;
+    color: #000000;
+    border: 1px solid #ffffff00;
+    border-radius: 0px;
+}
+
+/*форма*/
+
+.textareabg {
+    background: #ffffff;
+}
+
+.emj-dropdown-content {
+    background: #ffffff;
+    width: 30%;
+    height: 30%;
+    max-height: 200px;
+    border: 1px solid #ebd178;
+}
+
+
+/*меню*/
+
+
+div.left-menu__friends.left-menu__friends_offline,
+.left-menu__user-notification.left-menu__friends,
+.blog__iread,
+.blog__last-comments,
+.blog__gifts {
+    display: none;
+}
+
+/*.blog__about,
+.blog__tags,
+.blog__read-me,
+div.left-menu__user-notification.left-menu__unread-message,
+div.notifications__comments.left-menu__user-notification,
+div.left-menu__user-notification.left-menu__unread-notifications {
+    background: #fff;
+
+}*/
+
+
+span.post-title-date.pl-0,
+span.post-title-date {
+    color: #000000;
+}
+
+.blog__about [href="/design/disable"] {
+    color: #3c5a23!important;
+}
+
+div.left-menu {
+    width: 30%;
+    margin-left: 10px;
+    margin-top: 4px;
+    border: solid 1px #ffffff00;
+    background: linear-gradient(180deg, #6c872a50, #f5f1ee80);
+}
+
+h3.left-menu-text {
+    background: #ffffff00!important;
+    color: #000!important;
+    text-align: center;
+    padding-right: 5px;
+}
+
+/*.blog__about > div,
+.blog__tags > div,
+div.left-menu__user-notification.left-menu__unread-message > div,
+div.notifications__comments.left-menu__user-notification > div,
+div.left-menu__user-notification.left-menu__unread-notifications > div {
+    background: #fff;
+    background-image: linear-gradient(to bottom, #fcf7cc75 1px, #ffffff 1px);
+    background-size: 1px 22px;
+}*/
+
+
+/*верх*/
+
+
+.container-fluid {
+    width: 97%;
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+div.container-fluid.post-content.p-3 {
+    padding: 80px 95px 80px 80px!important;
+    margin: 10px!important;
+    max-width: 99%;
+}
+
+div.crumbs {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: linear-gradient(180deg, #6c872a30, transparent);
+    max-width: 69%;
+    margin: 20px auto 10px;
+}
+
+/*.crumbs {
+    background: linear-gradient(180deg, #6c872a30, transparent);
+}*/
+
+.bg-white {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
+    max-width: 69%;
+    /*margin: auto;*/
+    background: linear-gradient(0deg, #6c872a30, transparent);
+    margin-top: -210px!important;
+    padding: 10px;
+}
+
+[style="color: red; font-weight: bold;"] {
+    color:#ebd178!important;
+}
+
+/*кнопки вверх/вниз*/
+
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]{font-size:0px;} 
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]:before { /*вверх*/
+    content: '\227B';
+    font-size: 30px;
+    background-size: 69%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 23px;
+    position: fixed;
+    line-height: 0.1;
+    height: 45px;
+    width: 45px;
+    right: 1.5%;
+    top: 85%;
+    transform: rotate(-90deg);
+}
+
+[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]{font-size:0px;}
+[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]:before { /*вниз*/
+    content: '\227B';
+    font-size: 30px;
+    /*background: #ffffff;*/
+    background-size: 69%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*border: 1px solid #dddddd;*/
+    color: #000000;
+    padding: 23px;
+    position: fixed;
+    line-height: 0.3;
+    height: 45px;
+    width: 45px;
+    right: 1%;
+    top: 90%;
+    transform: rotate(90deg);
+}
+
+/* скролл */
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid #ffffff;
+    background-color: #ebd178;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+::-webkit-scrollbar-track {
+    border: 8px solid #ffffff;
+    background-color: #000000;
+}
+
+/*мобка*/
+
+@media (max-width: 700px) {
+
+main.py-4 {
+    width: 100%!important;
+    margin: auto;
+}
+
+.py-4 {
+    flex-direction: column!important;
+}
+
+div.left-menu {
+    width: 100%!important;
+    margin-left: 0;
+}
+
+h3.left-menu-text {
+    background: #ffffff00!important;
+    color: #000000!important;
+    text-align: center;
+    padding-right: 5px;
+}
+
+
+.blog__last-comments,
+.blog__iread {
+    display: none!important;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background: #ebd178;
+}
+
+.menu__box {
+    background: #ffffff
+}
+
+.emj-dropdown-content {
+    width:85%!important;
+}
+
+div.tag_bar span,
+.fa-align-justify:before,
+.fa-align-center:before,
+.fa-align-right:before,
+.fa-image:before,
+.fa-cloud-upload-alt:before,
+.fa-clipboard:before,
+.fa-music:before,
+.fa-video:before,
+.fa-user:before,
+.fa-book:before,
+.fa-link:before,
+.fa-remove-format:before,
+.fa-retweet:before, 
+.fa-bookmark:before,
+.fa-exclamation-triangle:before,
+.fa-quote-left:before {
+    font-size: 15px;
+}
+
+.tag_bar > span {
+    margin-right: 10px;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    height: 700px;
+    width: 100%!important;
+    margin: auto;
+    background: #ffffff!important;
+}
+
+#avatars-fullscreen-modal .modal-body img {
+    max-width: unset;
+}
+
+.avatars-fullscreen-link-wrapper {
+    width: 90%!important;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BD';
+    position: absolute;
+    left: 73%!important;
+    top: 13px!important;
+    color: #000000!important;
+    transform: rotate(0deg);
+}
+
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]:before { /*вверх*/
+    content: '\25B3';
+    position: sticky;
+    color: #000000!important;
+    font-size: 30px;
+}
+
+.fa-heart:before {
+    font-size: 12px;
+}
+
+/*кнопки редактировать и прочее*/
+
+.row.w-100 [href*="/repost/post/"], .row.w-100 span[data-target="#deleteconfirmmodal"], [href^="//beon.fun/repost/post/"], [href^="//beon.fun/repost/comment/"], .post-opt [href$="/edit"], .comment-row span[data-target="#deleteconfirmmodal"], .post-opt span[data-target="#deleteconfirmmodal"], [onclick="deleteComment(this)"], .fa-trash-alt:before {
+    text-align: center;
+    overflow: hidden;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.post-opt.col-12.col-md-6 [href$="/edit"]:before, .post-opt [href$="/edit"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f044";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/post/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+.post-opt.col-12.col-md-6 [data-target="#deleteconfirmmodal"]:before, .post-opt span[data-target="#deleteconfirmmodal"]:before, .comment-row span[data-target="#deleteconfirmmodal"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+/*------*/
+
+.post-opt.col-12.col-md-6 [href$="/edit"]:before, .post-opt [href$="/edit"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f044";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/post/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+.post-opt.col-12.col-md-6 [data-target="#deleteconfirmmodal"]:before, .post-opt span[data-target="#deleteconfirmmodal"]:before, .comment-row span[data-target="#deleteconfirmmodal"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+[href^="//beon.fun/repost/comment/"]:before {
+    font-weight: bold;
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f079";
+    color: #000000;
+}
+
+[onclick="deleteComment(this)"]:before {
+    font-size: 13px!important;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f2ed";
+    color: #000000;
+}
+
+
+.post-content {
+    padding: 5px!important;
+    width: 97%;
+    margin: 5px!important;
+    border: 5px solid #fcf7cc!important;
+    background: #ffffff!important;
+}
+
+.bg-white {
+    max-width: 97%;
+    margin: 5px!important;
+    padding: 17px;
+}
+
+.crumbs {
+    max-width: 97%!important;
+    margin: 15px 0 5px 5px!important;
+}
+
+div.left-menu__friends.left-menu__friends_offline,
+.left-menu__user-notification.left-menu__friends,
+.blog__read-me,
+.blog__iread,
+.blog__last-comments,
+.blog__gifts {
+    background: #ffffff;
+}
+
+div.post-content.post-page {
+    margin-right: 10px;
+}
+
+.textareabg {
+    padding: 4%!important;
+}
+}
+
+@media (max-width: 540px) {
+span.comments_count a {
+    font-size: 0.9rem;
+}
+}
