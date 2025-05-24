@@ -53,14 +53,14 @@ a:hover {
 }
 
 input {
-    background: #ffffff;
+    background: #ffffff00;
     border: 1px solid #3c5a23;
     color: #3c5a23!important;
     margin-bottom: 15px;
 }
 
- button {
-    background: #ffffff;
+button {
+    background: #ffffff00;
     border: 1px solid #3c5a23;
     color: #3c5a23!important;
 }
@@ -68,8 +68,8 @@ input {
 input:hover, 
 button:hover {
     background: #ffffff;
-    border: 1px solid #f4dbb6;
-    color: #f4dbb6!important;
+    border: 1px solid #3c5a23;
+    color: #3c5a23!important;
 }
 
 /*кнопки*/
@@ -453,16 +453,6 @@ div.left-menu__friends.left-menu__friends_offline,
     display: none;
 }
 
-/*.blog__about,
-.blog__tags,
-.blog__read-me,
-div.left-menu__user-notification.left-menu__unread-message,
-div.notifications__comments.left-menu__user-notification,
-div.left-menu__user-notification.left-menu__unread-notifications {
-    background: #fff;
-
-}*/
-
 
 span.post-title-date.pl-0,
 span.post-title-date {
@@ -493,6 +483,14 @@ div.left-menu-text {
     color: #3c5a23;
 }
 
+
+div.left-menu__user-notification.left-menu__unread-message img {
+    width: 80px;
+}
+
+div.left-menu__user-notification.left-menu__unread-message img.flag {
+    display: none;
+}
 
 /*верх*/
 
