@@ -493,16 +493,16 @@ span.emj-dropdown {
 .left-menu {
     position: fixed;
     width: 26%;
-    left: 1.5%;
+    right: 0%;
     bottom: 5%;
     height: 40%;
     overflow: auto;
 }
 
 div.left-menu {
-    width: 19.9%;
+    width: 20%;
     height: 30%;
-    margin-left: 1493px;
+    margin-right: 0;
     line-height: normal;
     color: #f2f2ff;
     padding: calc(16px - 3px) 16px;
