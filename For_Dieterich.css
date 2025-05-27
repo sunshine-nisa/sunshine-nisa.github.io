@@ -607,6 +607,7 @@ div#navbarSupportedContent.navbar-collapse {
 
 body.bodybg {
     background: url(https://i1.beon.fun/19/64/6419/62/1424862/fon.png) no-repeat left fixed;
+    background-size: cover;
 }
 
 main.py-4 {
