@@ -457,8 +457,8 @@ div.left-menu__friends.left-menu__friends_offline,
 
 .blog__about,
 .blog__tags,
-.community__members,
-.community__moders,
+div.community__members,
+div.community__moders,
 div.left-menu__user-notification.left-menu__unread-message,
 div.notifications__comments.left-menu__user-notification,
 div.left-menu__user-notification.left-menu__unread-notifications {
