@@ -15,13 +15,23 @@ div#app {
 
 input {
     background: #000;
-    color: #36353a;
-    border: 1px solid #36353a;
+    color: #fff;
+    border: 1px solid #fff;
 }
 
 input:hover {
     background: #000;
-    color: #636364;
+    color: #20426f;
+    border: 1px solid #20426f;
+}
+
+::selection {
+    color: #000;
+    background: #fff;
+}
+
+div.post-content {
+    padding: 5px;
 }
 
 .post-content.blog_total_counter,
@@ -35,16 +45,40 @@ div#footer, .footer__infolinks.p-1, div#app+div+[style="text-align: center"], di
     font-size:0;
 }
 
+.sign {
+    color: #fff;
+}
+
 a, div {
     color: #20426f;
 }
 
 a:hover {
-    color: #183254;
+    color: #636364;
     text-decoration: none!important;
 }
 
+.datebg {
+    background: #0a1025;
+    color: #fff;
+    font-size: 14px;
+    border: 3px double #fff;
+    text-align: center;
+}
+
 /*меню*/
+
+[href="/design/disable"] {
+    color: #fff!important;
+}
+
+[href="/design/disable"]:hover {
+    color: #636364!important;
+}
+
+[src="//beon.fun/i/design-off.png"] {
+    display: none;
+}
 
 div.left-menu {
     border: none!important;
@@ -63,18 +97,20 @@ div.left-menu {
 
 .left-menu h3 {
     background-color: #000!important;
-    color: #36353a!important;
+    color: #fff!important;
+    border: 3px double #fff;
 }
 
 .blog__about:before {
     content:'';
     display:block;
     width:100%;
-    height:400px;
-    background:url(https://psv4.userapi.com/s/v1/d2/znlaC8qDDLe9wbj8xKzSFmmN_0ldGZ-yPXdvpOsvWJoPEYoVYof3AtSc4Ie29-athKY5hXMPMBeaHiZbhWk71jKgrQNxdCO70Mw_rPj9R6HgUrjYT5lsBHQAm8vO-IpzaSpb85DVtP0O/07929460914a836363dab8ba7a9fff5b.jpg)center no-repeat,#000;
+    height:330px;
+    background:url(https://i1.beon.fun/19/64/6419/87/1503787/07929460914a836363dab8ba7a9fff5b.jpg)center no-repeat,#000;
     padding:8px;
     background-size: 100%;
     margin-bottom: 7px;
+    border: 3px double #fff;
 }
 
 .blog__gifts,
@@ -90,6 +126,23 @@ div.left-menu__friends.left-menu__friends_offline,
 
 /*посты*/
 
+.post-content {
+    border: 3px double #fff;
+    margin-top: 0!important;
+}
+
+.post-content.post-page {
+    padding: 10px;
+    margin: 10px;
+}
+
+.comment-content {
+    margin: 10px;
+    padding: 10px;
+    border: 3px double #fff;
+    margin-top: 0!important;
+}
+
 [onclick="deleteComment(this)"],
 [data-target="#deleteconfirmmodal"] {
     color: #20426f!important;
@@ -102,30 +155,54 @@ div.left-menu__friends.left-menu__friends_offline,
     text-decoration: none!important;
 }
 
-div.post-text {
-    color: #36353a;
+div.post-text,
+.comment-text {
+    color: #fff;
 }
 
 span.post-title-date+span {
     font-size:10px;
-    color: #36353a!important;
+    color: #fff!important;
 }
 
 span.post-title-date,
 .post__tags-list,
 .left-menu__user-notification.left-menu__unread-message {
-    color: #36353a!important;
+    color: #fff!important;
 }
 
 .post-title, h1 {
     text-decoration: none!important;
 }
 
+.quotation {
+    border-left: 3px solid #fff!important;
+}
+
+.liked .fas, .reposted .fas, .bookmarked .fas {
+    color: #fff!important;
+}
+
+.fa-heart:before,
+.fa-retweet:before,
+.fa-bookmark:before,
+.fa-exclamation-triangle:before,
+.fa-quote-left:before {
+    font-size: 14px!important;
+}
+
 /*-----*/
 
 .crumbs {
     background-color: #0a1025!important;
-    color: #36353a!important;
+    color: #fff!important;
+}
+
+.alert {
+    background: #000;
+    border: 1px solid #0000;
+    color: #fff;
+    text-align: center;
 }
 
 /*верх*/
@@ -138,12 +215,25 @@ span.post-title-date,
 .navbar-brand,
 .m2,
 .pc-menu a {
-    color: #36353a!important;
+    color: #fff!important;
 }
 
 .navbar-brand:hover,
 .pc-menu a:hover {
     color: #636364!important;
+}
+
+a.navbar-brand {
+    font-size: 0;
+}
+
+.navbar-brand::before {
+    content: "‎— BEON";
+    font-size: 22px;
+}
+
+[style="color: red; font-weight: bold;"] {
+    color:#fff!important;
 }
 
 /*кнопки*/
@@ -152,10 +242,13 @@ span.post-title-date,
 
 .avatars-fullscreen-link-wrapper {
     background: #000; /*цвет фона*/
+    border: 1px solid #fff;
+    left: 8%;
+    width: 70%;
 }
 
 .avatars-fullscreen-link-wrapper a {
-    color: #36353a; /*цвет текста*/
+    color: #fff; /*цвет текста*/
 }
 
 #avatars-fullscreen-modal .modal-content {
@@ -165,32 +258,57 @@ span.post-title-date,
     background: #000!important;
 }
 
+.avatar-select-label {
+    width: 95px!important;
+    margin-bottom: 5px;
+    border: 3px solid #fff;
+}
+
+.avatar-select-label-selected {
+    width: 100px!important;
+    border: 3px solid #20426f;
+}
+
 /*----*/
 
 button.btn.btn-secondary { /*отмена в загрузке изображений*/
     background: #000!important;
-    border: 1px solid #36353a!important;
-    color: #36353a!important;
+    border: 1px solid #fff!important;
+    color: #fff!important;
+    border-radius: 0;
+}
+
+button.btn.btn-secondary:hover {
+    background: #000!important;
+    border: 1px solid #20426f!important;
+    color: #20426f!important;
     border-radius: 0;
 }
 
 .btn-outline-primary { /*остальные кнопки с синим контуром*/
     background: #000!important;
     border: 1px solid #000000!important;
-    color: #36353a!important;
+    color: #fff!important;
+    border-radius: 0;
+}
+
+.btn-outline-primary:hover { 
+    background: #000!important;
+    border: 1px solid #000000!important;
+    color: #20426f!important;
     border-radius: 0;
 }
 
 button#upload-confirm-button.btn.btn-primary { /*ок в загрузке изображений*/
     background: #20426f!important;
     border: 1px solid #000000!important;
-    color: #36353a!important;
+    color: #fff!important;
     border-radius: 0;
 }
 
 button#upload-confirm-button.btn.btn-primary:hover {
     background: #000!important;
-    border: 1px solid #36353a!important;
+    border: 1px solid #fff!important;
     color: #636364!important;
     border-radius: 0;
 }
@@ -198,24 +316,237 @@ button#upload-confirm-button.btn.btn-primary:hover {
 .btn-primary { /*отмена в остальных окнах*/
     background: #20426f!important;
     border: 1px solid #000000!important;
-    color: #36353a!important;
+    color: #fff!important;
     border-radius: 0;
 }
 
 .btn-primary:hover { /*отмена в остальных окнах*/
     background: #000!important;
-    border: 1px solid #36353a!important;
+    border: 1px solid #fff!important;
     color: #636364!important!;
     border-radius: 0;
 }
 
+/*вверх-вниз*/
+
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]{font-size:0px;} 
+[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]:before { /*вверх*/
+    content: '\25B2';
+    font-size: 25px;
+    color: #fff;
+}
+
+[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]{font-size:0px;}
+[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 25px;
+    color: #fff;
+}
+
 /*форма*/
+
+div.textareabg {
+    margin: 10px;
+}
 
 .textareabg {
     background: #000;
+    border: 3px double #fff;
+    padding: 7px!important;
+}
+
+.textarea-wrapper > textarea {
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .modal-content {
     background: #000;
+}
 
+.emj-dropdown-content {
+    width: 30%;
+    height: 30%;
+    max-height: 200px;
+    background: #000;
+    border: 3px double #fff;
+}
+
+span.post-likes-count {
+    color: #fff!important;
+}
+
+[class="w-100 input-mood"],
+[class="w-100 input-music"],
+[class="w-100 input-want"],
+[class="w-100 input-tags"],
+select.w-100 {
+    background: #000!important;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/*плеер*/
+
+div#beon-fnplayer {
+    padding: 5px;
+    background: transparent;
+}
+
+#fnplayer-slider > span { 
+    font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 4px;
+    background-color: #fff !important;
+}
+
+#fnplayer-slider-inner {
+    height: 4px;
+    width: 0%;
+    background-color: #00000080;
+}
+
+#fnplayer-volume {
+    height: 4px;
+    background-color: #00000080;
+}
+
+#fnplayer-volume-inner {
+    height: 4px;
+    width: 100%;
+    background-color: #fff !important;
+   border: none;
+}
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-stop {
+    display:none;
+}
+
+#fnplayer-play {
+    border-color: transparent transparent transparent #fff !important;
+    margin-right: -6px;
+}
+
+/*скролл*/
+
+::-webkit-scrollbar {
+    background-color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+}
+::-webkit-scrollbar-thumb {
+    border: 7px solid #000;
+    background-color: #ffff;
+    min-height: 24px;
+    min-width: 24px;
+}
+::-webkit-scrollbar-track {
+    border: 7px solid #000;
+    background-color: #000;
+}
+
+/*----*/
+
+.pagination-goto {
+    color: #fff!important;
+}
+
+div.pagination#text {
+    color: #fff!important;
+}
+
+.pagination a {
+    color: #fff!important;
+}
+
+/*мобка*/
+
+@media (max-width: 768px) {
+
+.left-menu {
+    width: 94.5%!important;
+    margin: auto auto 5px auto!important;
+}
+
+.menu__btn > span::before,
+.menu__btn > span,
+.menu__btn > span::after {
+    background: #fff;
+}
+
+ul.menu__box {
+    background: #000;
+    border: 3px double #fff;
+}
+
+.menu__item {
+    color: #fff;
+}
+
+.post-title, h1 {
+    font-size: 16px!important;
+}
+
+a.user,
+.fa-chevron-down:before {
+    font-size: 12px!important;
+}
+
+.fa-heart:before,
+span.comments_count span::before,
+span.comments_count a,
+.tag_bar > span,
+.fas, .far, .tag_bar > *,
+.fa-heart:before,
+.fa-retweet:before,
+.fa-bookmark:before,
+.fa-exclamation-triangle:before,
+.fa-quote-left:before {
+    font-size: 14px!important;
+}
+
+.emj-dropdown-content {
+    width: 70%!important;
+    height: 30%;
+    max-height: 200px;
+    background: #000;
+}
+
+
+/*вниз*/
+
+[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    left: 73%!important;
+    top: 7px!important;
+}
+
+/*----*/
+
+.avatars-fullscreen-link-wrapper {
+    background: #000; /*цвет фона*/
+    border: 1px solid #fff;
+    left: 0!important;
+    width: 100%!important;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    height: 700px;
+    width: 100%!important;
+    margin: auto;
+    background: #000!important;
+}
 }
