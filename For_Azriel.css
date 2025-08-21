@@ -175,6 +175,14 @@ span.post-title-date,
     text-decoration: none!important;
 }
 
+[href="//mrrmay.beon.fun/0-dlya-proverki-read"] {
+    font-size: 30px!important;
+}
+
+span.comments_count span {
+    font-size: 12px!important;
+}
+
 .quotation {
     border-left: 3px solid #fff!important;
 }
@@ -548,5 +556,13 @@ span.comments_count a,
     width: 100%!important;
     margin: auto;
     background: #000!important;
+}
+
+[href="//mrrmay.beon.fun/0-dlya-proverki-read"] {
+    font-size: 30px!important;
+}
+
+span.comments_count span {
+    font-size: 12px!important;
 }
 }
