@@ -175,11 +175,16 @@ span.post-title-date,
     text-decoration: none!important;
 }
 
+div.post-text a {
+    font-size: 14.4px!important;
+}
+
 [href="//helled.beon.fun/0--read"] {
     font-size: 30px!important;
 }
 
-span.comments_count span {
+span.comments_count span,
+span.comments_count a {
     font-size: 12px!important;
 }
 
@@ -558,11 +563,16 @@ span.comments_count a,
     background: #000!important;
 }
 
+div.post-text a {
+    font-size: 14.4px!important;
+}
+
 [href="//helled.beon.fun/0--read"] {
     font-size: 30px!important;
 }
 
-span.comments_count span {
+span.comments_count span,
+span.comments_count a {
     font-size: 12px!important;
 }
 }
