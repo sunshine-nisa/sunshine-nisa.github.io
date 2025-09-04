@@ -198,7 +198,7 @@ div#footer:before {
     height: 200px;
     padding: 12px;
     box-shadow: inset 0px 0px 6px 0px #ffffff00;
-    /*border: 2px solid #dfb045;*/
+    border: 2px solid #ece3cd;
 } 
 
  .blog__about {
