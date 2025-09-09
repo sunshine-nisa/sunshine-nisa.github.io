@@ -991,4 +991,16 @@ width: 98%;
     margin-bottom: 20px!important;
     width: 98%;
 }
+
+.post-content.blog_total_counter {
+    border-image-slice: 100 100 100 100;
+    border-image-width: 90px 90px 90px 90px; /*толщина вот тута*/
+    border-image-outset: 39px 12px 6px 11px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("https://i1.beon.fun/19/64/6419/25/1522825/ramka2.png");
+    border-style: solid;
+    padding: 2%;
+    width: 99%;
+    margin: 23px auto auto auto!important;
+}
 }
