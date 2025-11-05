@@ -1,0 +1,333 @@
+div.post-content.blog_total_counter { /*убирает отображение количества записей*/
+    display: none;
+}
+
+/*div.content { /*ширина записей*/
+    width: 65%;
+}*/
+
+div.content {
+    width: 80%;
+}
+
+div#app {
+    max-width: 1500px;
+    margin: auto;
+}
+
+h2 { /*"всего ответов: "*/
+    margin-left: 10px;
+    color: #0d8cd4!important;
+}
+
+a { /*ссылки*/
+    color: #0d8cd4!important;
+}
+
+a:hover { /*ссылки при наведении*/
+    color: #1d2087!important;
+}
+
+input { /*кнопки и поля в форме*/
+    background-color: #061733!important;
+    color: #0d8cd4!important;
+    border: 1px solid #132e5a!important;
+}
+
+input:hover { /*кнопки и поля в форме при наведении*/
+    background-color: #061733!important;
+    color: #1d2087!important;
+    border: 1px solid #1d2087!important;
+}
+
+[onclick="deleteComment(this)"] { /*кнопка "удалить" в коммах*/
+    color: #0d8cd4!important;
+}
+
+[onclick="deleteComment(this)"]:hover { /*кнопка "удалить" в коммах при наведении*/
+    color: #1d2087!important;
+}
+
+[data-target="#deleteconfirmmodal"] { /*кнопка "удалить" в постах*/
+    color: #0d8cd4!important;
+}
+
+[data-target="#deleteconfirmmodal"]:hover { /*кнопка "удалить" в постах при наведении*/
+    color: #1d2087!important;
+}
+
+
+span { 
+    color: #0d8cd4!important;
+}
+
+span:hover {
+    color: #1d2087!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/19/64/6419/43/1573443/fon.png) no-repeat fixed;
+}
+
+div.m2 { /*приветствие под "беон.фан"*/
+    color: #0d8cd4;
+}
+
+div.left-menu { /*левое меню целиком*/
+    color: #0d8cd4;
+    width: 375px;
+    background: url(https://i1.beon.fun/19/64/6419/42/1573442/menyu.png) no-repeat #080e1a;
+    border: 1px solid #132e5a;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.blog__about mb-3 { /*блок друзья оффлайн/блок "о себе"*/
+    color: #0d8cd4!important;
+}
+
+span.crumb-item { /*название днева*/
+    color: #0d8cd4!important;
+}
+
+.crumbs {
+    color: #0d8cd4!important;
+    background: #061733e8;
+    border: 1px solid #132e5a;
+}
+
+.datebg {
+    color: #0d8cd4!important;
+    background: #061733e8;
+    border: 1px solid #132e5a;
+    margin: 0 0 10px 10px!important;
+}
+
+.shadow-sm { /*тень под шапкой*/
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
+}
+
+.left-menu > div > h3 { /*заголовки левого меню*/
+    background-color: #061733!important;
+    color: #0d8cd4;
+}
+
+
+.blog__about.mb-3 { 
+    margin-bottom: 0!important;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 100px;
+}
+
+.pc-menu {
+    color: #0d8cd4;
+}
+
+.pc-menu a:hover { /*текст при наведении в шапке*/
+    color: #1d2087!important;
+}
+
+.bg-white { /*шапка для рамки*/
+    border: 1px solid #132e5a;
+    background: #061733e8!important;
+}
+
+.post-content { /*посты*/
+    color: #0d8cd4!important;
+    margin: 0 0 10px 10px!important;
+    background: #061733e8;
+    border: 1px solid #132e5a;
+}
+
+
+.comment-content { /*коммы*/
+    color: #0d8cd4!important;
+    margin: 0 10px 20px!important;
+    background: #061733e8;
+    border: 1px solid #132e5a;
+}
+
+
+.post-content.post-page { /*открытый пост*/
+    padding-left: 0;
+}
+
+.comment-content { /*коммы*/
+    padding: 0 5px;
+    margin: 10px;
+}
+
+span.comments_count span:hover { /*кнопка "n комментариев" при наведении*/
+    color: #1d2087!important;
+}
+
+.textareabg { /*форма*/
+    color: #0d8cd4!important;
+    padding: 0 5px;
+    margin: 10px;
+    border: 1px solid #132e5a;
+    background: #061733e8!important;
+    
+}
+
+span.post-title-date,
+div.small-text,
+div.sign { /*дата/мелкий текст (точно тот, что внутри показывающий для кого пост, может что-то ещё, не помню)*/
+    color: #0d8cd4;
+}
+
+.emj-dropdown-content { /*раскрытое окошко смайлов*/
+    width: 600px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #061733;
+    border: 1px solid #132e5a;
+}
+
+.ml-auto { /*сдвинуть к центру шапку*/
+    margin-left: unset!important;
+    margin-right: auto;
+}
+
+/*раскрытие аватаров*/
+
+.avatars-fullscreen-link-wrapper {
+    width: 89%;
+    background: #061733; /*цвет фона*/
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #0d8cd4; /*цвет текста*/
+}
+
+/*------*/
+
+.quotation { /*цитата*/
+    border-left: 6px double #132e5a;
+    background: linear-gradient(90deg, #132e5a, transparent);
+}
+
+/*------*/
+
+ [href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    background: #030f25;
+    border: 1px solid #132e5a;
+    font-size: 17px;
+    position: absolute;
+    color: #0d8cd4;
+    width: 28px;
+    height: 28px;
+    padding-left: 4px;
+    /*left: 1%;*/
+    top: 19%;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+[href="#footer"]:hover:before { 
+    color: #1d2087!important;
+    transition: 0.3s;
+}
+
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\25B2';
+    background: #030f25;
+    border: 1px solid #132e5a;
+    font-size: 17px;
+    position: absolute;
+    color: #0d8cd4;
+    width: 28px;
+    height: 28px;
+    padding-left: 5px;
+    right: 1%;
+    /*top: 2%;*/
+    z-index: 2;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    color: #1d2087!important;
+    transition: 0.3s;
+}
+
+@media (max-width: 700px) { /*мобилка*/
+
+div.content {
+    width: 100%;
+}
+
+.post-content,
+.datebg,
+.crumbs,
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm {
+    margin: 10px 10px 20px!important;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 10px!important;
+}
+
+div.left-menu {
+    width: 95%;
+    margin: auto;
+}
+
+.emj-dropdown-content {
+    width: 300px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #061733;
+    border: 1px solid #132e5a;
+}
+
+.avatars-fullscreen-link-wrapper {
+    width: 100%!important;
+    background: #061733; /*цвет фона*/
+}
+
+ul.menu__box {
+    background: #061733!important;
+    border: 1px solid #132e5a;
+}
+
+.menu__btn > span::before,
+.menu__btn > span,
+.menu__btn > span::after {
+    background: #0d8cd4!important;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    background: #030f25;
+    border: 1px solid #132e5a;
+    font-size: 17px;
+    position: absolute;
+    color: #0d8cd4;
+    width: 28px;
+    height: 28px;
+    padding-left: 4px;
+    right: 15%;
+    top: 27%;
+    transition: 0.3s;
+    z-index: 1;
+}
+}
+@media (max-width: 1023px) {
+
+.mobile_open_menu > h3,
+.left-menu > div.mobile_open_menu > h3 {
+    color: #0d8cd4!important;
+}
+}
