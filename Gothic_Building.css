@@ -77,12 +77,19 @@ div.left-menu { /*левое меню целиком*/
     color: #0d8cd4;
     width: 375px;
     background: url(https://i1.beon.fun/19/64/6419/42/1573442/menyu.png) no-repeat #080e1a;
-    border: 1px solid #132e5a;
+    border: 1px solid #132e5a!important;
 }
 
 .left-menu__friends.left-menu__friends_offline,
 .blog__about mb-3 { /*блок друзья оффлайн/блок "о себе"*/
     color: #0d8cd4!important;
+}
+
+.left-menu__user-notification.left-menu__unread-message,
+.notifications__comments.left-menu__user-notification,
+.left-menu__user-notification.left-menu__unread-notifications { /*лс/новые коммы, уведы*/
+    background: #061733e8;
+    
 }
 
 span.crumb-item { /*название днева*/
