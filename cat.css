@@ -1,0 +1,254 @@
+div.post-content.blog_total_counter { /*убирает отображение количества записей*/
+    display: none;
+}
+
+div.content { /*ширина записей*/
+    width: 65%;
+}
+
+h2 { /*"всего ответов: "*/
+    margin-left: 10px;
+    color: #0d0705!important;
+}
+
+a { /*ссылки*/
+    color: #0d0705!important;
+}
+
+a:hover { /*ссылки при наведении*/
+    color: #cca899!important;
+}
+
+input { /*кнопки и поля в форме*/
+    background-color: #867264!important;
+    color: #0d0705!important;
+    border: 1px solid #625045!important;
+}
+
+input:hover { /*кнопки и поля в форме при наведении*/
+    background-color: #625348!important;
+    color: #cca899!important;
+    border: 1px solid #625045!important;
+}
+
+[onclick="deleteComment(this)"] { /*кнопка "удалить" в коммах*/
+    color: #0d0705!important;
+}
+
+[onclick="deleteComment(this)"]:hover { /*кнопка "удалить" в коммах при наведении*/
+    color: #cca899!important;
+}
+
+[data-target="#deleteconfirmmodal"] { /*кнопка "удалить" в постах*/
+    color: #0d0705!important;
+}
+
+[data-target="#deleteconfirmmodal"]:hover { /*кнопка "удалить" в постах при наведении*/
+    color: #cca899!important;
+}
+
+
+span { 
+    color: #0d0705!important;
+}
+
+span:hover {
+    color: #cca899!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/93/18/1893/83/1574083/5f09d897129f787115.png) no-repeat fixed;
+}
+
+div.m2 { /*приветствие под "беон.фан"*/
+    color: #0d0705;
+}
+
+div.left-menu { /*левое меню целиком*/
+    width: 375px;
+    background: url(https://i1.beon.fun/19/64/6419/66/1574966/747andda-2.png) no-repeat fixed #2c1f19;
+    border: 1px solid #625045;
+    color: #0d0705;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.blog__about mb-3 { /*блок друзья оффлайн/блок "о себе"*/
+    color: #0d0705!important;
+}
+
+span.crumb-item { /*название днева*/
+    color: #0d0705!important;
+}
+
+.crumbs,
+.datebg {
+    color: #0d0705!important;
+    background: #867264d6;
+    border: 1px solid #625045;
+}
+
+.shadow-sm { /*тень под шапкой*/
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
+}
+
+.left-menu > div > h3 { /*заголовки левого меню*/
+    background-color: #867264!important;
+    color: #0d0705;
+}
+
+
+.blog__about.mb-3 { 
+    margin-bottom: 0!important;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 100px;
+}
+
+.pc-menu a:hover { /*текст при наведении в шапке*/
+    color: #cca899!important;
+}
+
+.bg-white { /*шапка для рамки*/
+    border: 1px solid #625045;
+    background: #867264d6!important;
+}
+
+.post-content { /*посты*/
+    color: #0d0705!important;
+    margin: 0 10px 20px!important;
+    background: linear-gradient(180deg, #917c6ad6, #3e281fd6);
+    border: 1px solid #625045;
+}
+
+
+.comment-content { /*коммы*/
+    color: #0d0705!important;
+    margin: 0 10px 20px!important;
+    background: linear-gradient(180deg, #917c6ad6, #3e281fd6);
+}
+
+
+.post-content.post-page { /*открытый пост*/
+    padding: 5px;
+}
+
+.comment-content { /*коммы*/
+    padding: 0 5px;
+    margin: 10px;
+}
+
+span.comments_count span:hover { /*кнопка "n комментариев" при наведении*/
+    color: #cca899!important;
+}
+
+.textareabg { /*форма*/
+    color: #0d0705!important;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #625045;
+    background: linear-gradient(180deg, #917c6ad6, #3e281fd6);
+    
+}
+
+span.post-title-date,
+div.small-text,
+div.sign { /*дата/мелкий текст (точно тот, что внутри показывающий для кого пост, может что-то ещё, не помню)*/
+    color: #0d0705;
+}
+
+.emj-dropdown-content { /*раскрытое окошко смайлов*/
+    width: 600px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #867264;
+    border: 1px solid #625045;
+}
+
+.ml-auto { /*сдвинуть к центру шапку*/
+    margin-left: unset!important;
+    margin-right: auto;
+}
+
+/*раскрытие аватаров*/
+
+.avatars-fullscreen-link-wrapper {
+    width: 89%;
+    background: #867264; /*цвет фона*/
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #0d0705; /*цвет текста*/
+}
+
+/*------*/
+
+.quotation { /*цитата*/
+    border-left: 6px double #867264;
+    background: linear-gradient(90deg, #867264, transparent);
+}
+
+@media (max-width: 700px) { /*мобилка*/
+
+div.content {
+    width: 100%;
+}
+
+div.left-menu {
+    width: 95%;
+    margin: auto;
+}
+
+div.left-menu { /*левое меню целиком*/
+    background: url(https://i1.beon.fun/19/64/6419/66/1574966/747andda-2.png) no-repeat fixed #2c1f19;
+    background-size: cover;
+}
+
+.emj-dropdown-content {
+    width: 300px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #867264;
+    border: 1px solid #0d0705;
+}
+
+.avatars-fullscreen-link-wrapper {
+    width: 100%!important;
+    background: #867264; /*цвет фона*/
+}
+
+ul.menu__box {
+    background: #867264!important;
+    border: 1px solid #0d0705;
+}
+
+.menu__btn > span::before,
+.menu__btn > span,
+.menu__btn > span::after { /*полоски меню в моб версии*/
+    background: #0d0705!important;
+}
+
+.post-content,
+.datebg,
+.crumbs,
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm {
+    margin: 10px 10px 20px!important;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 10px!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/93/18/1893/83/1574083/5f09d897129f787115.png) no-repeat fixed;
+    background-size: cover;
+}
+}
+
+@media (max-width: 1023px) {
+
+.mobile_open_menu > h3,
+.left-menu > div.mobile_open_menu > h3 {
+    color: #0d0705!important;
+}
+}
