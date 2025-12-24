@@ -1,4 +1,7 @@
-div.post-content.blog_total_counter { /*убирает отображение количества записей*/
+div.post-content.blog_total_counter,
+div.footer__infolinks.p-1,
+div#footer.p-1,
+div#page__rendertime.p-1 { 
     display: none;
 }
 
@@ -224,16 +227,14 @@ div.sign { /*дата/мелкий текст (точно тот, что вну�
 
 [href="#footer"]:before { /*вниз*/
     content: '\25BC';
-    background: #7aa3cf;
-    border: 1px solid #174077;
-    font-size: 17px;
+    font-size: 27px;
     position: absolute;
     color: #174077;
     width: 28px;
     height: 28px;
     padding-left: 4px;
     /*left: 1%;*/
-    top: 19%;
+    top: 3%;
     transition: 0.3s;
     z-index: 1;
 }
@@ -251,9 +252,7 @@ div.sign { /*дата/мелкий текст (точно тот, что вну�
 
 [onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
     content: '\25B2';
-    background: #7aa3cf;
-    border: 1px solid #174077;
-    font-size: 17px;
+    font-size: 27px;
     position: absolute;
     color: #174077;
     width: 28px;
@@ -318,20 +317,20 @@ ul.menu__box {
 
 [href="#footer"]:before { /*вниз*/
     content: '\25BC';
-    background: #030f25;
-    border: 1px solid #174077;
-    font-size: 17px;
+    font-size: 27px;
     position: absolute;
     color: #174077;
     width: 28px;
     height: 28px;
     padding-left: 4px;
     right: 15%;
-    top: 27%;
+    top: 17%;
     transition: 0.3s;
     z-index: 1;
 }
 }
+
+
 @media (max-width: 1023px) {
 
 .mobile_open_menu > h3,
