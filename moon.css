@@ -561,8 +561,8 @@ div.crumbs {
 
 /*кнопки вверх/вниз*/
 
-[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]{font-size:0px;} 
-[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]:before { /*вверх*/
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]{font-size:0px;} 
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
     content: '\227B';
     font-size: 30px;
     background-size: 69%;
@@ -579,7 +579,7 @@ div.crumbs {
 }
 
 [onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]{font-size:0px;}
-[onclick="event.preventDefault();window.scroll({top: document.body.scrollHeight,behavior: 'smooth'})"]:before { /*вниз*/
+[href="#footer"]:before { /*вниз*/
     content: '\227B';
     font-size: 30px;
     /*background: #ffffff;*/
@@ -709,7 +709,7 @@ div.tag_bar span,
     transform: rotate(0deg);
 }
 
-[style="float:right;cursor:pointer;text-shadow: 1px 1px 1px white;"]:before { /*вверх*/
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
     content: '\25B3';
     position: sticky;
     color: #000000!important;
