@@ -23,7 +23,8 @@ div.footer__infolinks.p-1,
 div#page__rendertime.p-1,
 .user:before,
 .blog:before,
-div#page__admincontact.text-center {
+div#page__admincontact.text-center,
+div.garland{
     display: none;
 }
 
