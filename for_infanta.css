@@ -96,7 +96,7 @@ font-size:0;
 
 body.bodybg {
     background:url(https://i1.beon.fun/19/64/6419/62/1623862/fon.png) no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
 }
 
 main.py-4, .crumbs {
