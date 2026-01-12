@@ -238,8 +238,9 @@ h3.left-menu-text {
 
 .blog__about  [href="/design/disable"] {
     color:#e1ecff;
-    text-shadow: 0 0 3px #e1ecff;
+    /*text-shadow: 0 0 3px #e1ecff;*/
     font-weight: bold;
+	font-size: 14px;
 }
 
 div.left-menu__user-notification.left-menu__unread-message {
