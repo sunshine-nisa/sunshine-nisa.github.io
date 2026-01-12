@@ -106,6 +106,10 @@ main.py-4, .crumbs {
     margin: auto;
 }
 
+.py-4+.crumbs {
+    display:none;
+}
+
 a, div {
     text-decoration: unset!important;
     color:#ededed;
