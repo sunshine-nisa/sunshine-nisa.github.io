@@ -281,6 +281,7 @@ position: absolute;
 
 .bg-white {
     background: url(https://i1.beon.fun/19/64/6419/53/1624053/verh.png) no-repeat;
+	background-size: cover;
     border-radius: unset;
     float: unset;
     color: #abb4b9!important;
@@ -369,7 +370,7 @@ div.col-md-6.text-right {
 .post-content, .comment-content {
     margin-bottom: 25px;
     background:url(https://i1.beon.fun/19/64/6419/60/1623860/zapisi.png) no-repeat fixed;
-    background: cover;
+    background-size: cover;
     border-radius: 10px;
     padding: 12px;
     margin: 10px 10px 20px!important;
