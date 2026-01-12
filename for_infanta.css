@@ -172,7 +172,7 @@ padding-bottom:2%;
 } 
 
 .left-menu>div {
-    background: url(https://i1.beon.fun/19/64/6419/61/1623861/menyu.png) no-repeat fixed;
+    background: url(https://i1.beon.fun/19/64/6419/52/1624052/menu-infanta.png) no-repeat fixed;
     border-radius: 10px;
     padding: 12px;
     color: #abb4b9!important;
@@ -279,7 +279,7 @@ position: absolute;
  /* ------- */
 
 .bg-white {
-    background: url(https://i1.beon.fun/19/64/6419/63/1623863/shapka.png) no-repeat;
+    background: url(https://i1.beon.fun/19/64/6419/53/1624053/verh.png) no-repeat;
     border-radius: unset;
     float: unset;
     color: #abb4b9!important;
@@ -364,7 +364,7 @@ display:none!important;
 .post-content, .comment-content {
     margin-bottom: 25px;
     background:url(https://i1.beon.fun/19/64/6419/60/1623860/zapisi.png) no-repeat fixed;
-    background: contain;
+    background: cover;
     border-radius: 10px;
     padding: 12px;
     margin: 10px 10px 20px!important;
