@@ -91,7 +91,7 @@ font-size:0;
 
 .content  {
     width: 60%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 body.bodybg {
@@ -894,20 +894,20 @@ border-radius:10px;
 
 
 ::-webkit-scrollbar {
-width: 6px;
-    border-left: 2px solid #f5f5f5;
-    border-right: 2px solid #f5f5f5;
+    width: 12px;
+    border-left: 8px solid #354759;
+    border-right: 8px solid #354759;
     background-color: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-border-left: 4px solid #f5f5f5;
-    border-right: 4px solid #f5f5f5;
- border-radius:30px!important;
+    border-left: 10px solid #ededed;
+    border-right: 10px solid #ededed;
+    border-radius:30px!important;
 }
 ::-webkit-scrollbar-thumb:hover {
-border-left: 4px solid #000;
-    border-right: 4px solid #000;
+    border-left: 10px solid #000;
+    border-right: 10px solid #000;
 }
 
 
