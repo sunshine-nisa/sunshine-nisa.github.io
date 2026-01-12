@@ -361,6 +361,10 @@ transition-delay: 0.2s;
 display:none!important;
 }
 
+div.col-md-6.text-right {
+	text-align: left!important;
+}
+
 .post-content, .comment-content {
     margin-bottom: 25px;
     background:url(https://i1.beon.fun/19/64/6419/60/1623860/zapisi.png) no-repeat fixed;
