@@ -1,0 +1,257 @@
+div.post-content.blog_total_counter { /*убирает отображение количества записей*/
+    display: none;
+}
+
+div.content { /*ширина записей*/
+    width: 65%;
+}
+
+h2 { /*"всего ответов: "*/
+    margin-left: 10px;
+    color: #a5cdff!important;
+}
+
+a { /*ссылки*/
+    color: #a5cdff!important;
+}
+
+a:hover { /*ссылки при наведении*/
+    color: #5a97e3!important;
+}
+
+input { /*кнопки и поля в форме*/
+    background-color: #131c31!important;
+    color: #a5cdff!important;
+    border: 1px solid #7ba8dd!important;
+}
+
+input:hover { /*кнопки и поля в форме при наведении*/
+    background-color: #131c31!important;
+    color: #5a97e3!important;
+    border: 1px solid #7ba8dd!important;
+}
+
+[onclick="deleteComment(this)"] { /*кнопка "удалить" в коммах*/
+    color: #a5cdff!important;
+}
+
+[onclick="deleteComment(this)"]:hover { /*кнопка "удалить" в коммах при наведении*/
+    color: #5a97e3!important;
+}
+
+[data-target="#deleteconfirmmodal"] { /*кнопка "удалить" в постах*/
+    color: #a5cdff!important;
+}
+
+[data-target="#deleteconfirmmodal"]:hover { /*кнопка "удалить" в постах при наведении*/
+    color: #5a97e3!important;
+}
+
+
+span { 
+    color: #a5cdff!important;
+}
+
+.crumbs a {
+    color: #a5cdff;
+}
+
+.crumbs a > span:hover,
+span.repostbutton:hover,
+span.bookmarkbutton:hover,
+span.complaintbutton:hover { /*полоска с названием днева и кнопки репост/закладки/спам при наведении*/
+    color: #5a97e3!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/19/64/6419/36/1665536/05.png) no-repeat fixed;
+}
+
+div.m2 { /*приветствие под "беон.фан"*/
+    color: #a5cdff;
+}
+
+div.left-menu { /*левое меню целиком*/
+    width: 375px;
+    background: url(https://i1.beon.fun/19/64/6419/37/1665537/256.png) no-repeat fixed #140a0e;
+    border: 1px solid #7ba8dd;
+    color: #a5cdff;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.blog__about mb-3 { /*блок друзья оффлайн/блок "о себе"*/
+    color: #a5cdff!important;
+}
+
+span.crumb-item { /*название днева*/
+    color: #a5cdff;
+}
+
+.crumbs,
+.datebg {
+    color: #a5cdff;
+    background: #131c31f5;
+    border: 1px solid #7ba8dd;
+}
+
+.shadow-sm { /*тень под шапкой*/
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
+}
+
+.left-menu > div > h3 { /*заголовки левого меню*/
+    background-color: #131c31!important;
+    color: #a5cdff;
+}
+
+
+.blog__about.mb-3 { 
+    margin-bottom: 0!important;
+    padding-bottom: 5px;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 100px;
+}
+
+.pc-menu a:hover { /*текст при наведении в шапке*/
+    color: #5a97e3!important;
+}
+
+.bg-white { /*шапка для рамки*/
+    border: 1px solid #7ba8dd;
+    background: #131c31f5!important;
+}
+
+.post-content { /*посты*/
+    color: #a5cdff!important;
+    margin: 0 10px 20px!important;
+    background: #131c31f5;
+    border: 1px solid #7ba8dd;
+}
+
+
+.comment-content { /*коммы*/
+    color: #a5cdff!important;
+    margin: 0 10px 20px!important;
+    background: #131c31f5;
+}
+
+
+.post-content.post-page { /*открытый пост*/
+    padding: 5px;
+}
+
+.comment-content { /*коммы*/
+    padding: 0 5px;
+    margin: 10px;
+}
+
+span.comments_count span:hover { /*кнопка "n комментариев" при наведении*/
+    color: #5a97e3!important;
+}
+
+.textareabg { /*форма*/
+    color: #a5cdff!important;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #7ba8dd;
+    background: #131c31f5;
+    
+}
+
+span.post-title-date,
+div.small-text,
+div.sign { /*дата/мелкий текст (точно тот, что внутри показывающий для кого пост, может что-то ещё, не помню)*/
+    color: #a5cdff;
+}
+
+.emj-dropdown-content { /*раскрытое окошко смайлов*/
+    width: 600px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #131c31;
+    border: 1px solid #7ba8dd;
+}
+
+.ml-auto { /*сдвинуть к центру шапку*/
+    margin-left: unset!important;
+    margin-right: auto;
+}
+
+/*раскрытие аватаров*/
+
+.avatars-fullscreen-link-wrapper {
+    width: 89%;
+    background: #131c31; /*цвет фона*/
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #a5cdff; /*цвет текста*/
+}
+
+/*------*/
+
+.quotation { /*цитата*/
+    border-left: 6px double #a5cdff;
+    background: linear-gradient(90deg, #a5cdff6e, transparent);
+}
+
+@media (max-width: 700px) { /*мобилка*/
+
+div.content {
+    width: 100%;
+}
+
+div.left-menu {
+    width: 95%;
+    margin: auto;
+}
+
+.emj-dropdown-content {
+    width: 300px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #131c31;
+    border: 1px solid #7ba8dd;
+}
+
+.avatars-fullscreen-link-wrapper {
+    width: 100%!important;
+    background: #131c31; /*цвет фона*/
+}
+
+ul.menu__box {
+    background: #131c31!important;
+    border: 1px solid #7ba8dd;
+}
+
+.menu__btn > span::before,
+.menu__btn > span,
+.menu__btn > span::after { /*полоски меню в моб версии*/
+    background: #a5cdff!important;
+}
+
+.post-content,
+.datebg,
+.crumbs,
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm {
+    margin: 10px 10px 20px!important;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 10px!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/19/64/6419/24/1594424/2402.png) no-repeat fixed;
+    background-size: cover;
+}
+}
+
+@media (max-width: 1023px) {
+
+.mobile_open_menu > h3,
+.left-menu > div.mobile_open_menu > h3 {
+    color: #a5cdff!important;
+}
+}
