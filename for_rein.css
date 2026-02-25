@@ -84,8 +84,8 @@ div.m2 { /*приветствие под "беон.фан"*/
 }
 
 div.left-menu { /*левое меню целиком*/
-    width: 374px;
-    background: url(https://i1.beon.fun/19/64/6419/13/1671813/menyu.png) no-repeat fixed;
+    width: 21%;
+    background: url(https://i1.beon.fun/19/64/6419/6/1673006/menyu.png) no-repeat fixed #e1fdb8;
     border: 1px solid #b3a67d;
     color: #e3ffc7;
 }
@@ -271,7 +271,7 @@ body.bodybg { /*фон*/
 }
 
 div.left-menu { /*левое меню целиком*/
-    /*background: url(https://i1.beon.fun/19/64/6419/13/1671813/menyu.png) no-repeat fixed;*/
+    /*background: url(https://i1.beon.fun/19/64/6419/6/1673006/menyu.png) no-repeat fixed #e1fdb8;/
     background-size: cover;
 }
 }
