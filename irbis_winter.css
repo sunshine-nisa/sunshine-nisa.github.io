@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Phudu&display=swap');
+/*font-family: 'Gentium Book Plus', serif;
+  font-family: 'Phudu', cursive;*/
+
+/* основа */
+ 
+div#footer, .footer__infolinks.p-1, div#app+div+[style="text-align: center"], div#page__rendertime.p-1, div#page__admincontact.text-center {
+    font-size:0;
+}
+
+div#footer, .footer__infolinks.p-1, div#app+div+[style="text-align: center"], div#page__rendertime.p-1 {
+    font-size:0;
+}
+
+* {
+    font-family: 'Gentium Book Plus', serif;
+}
+
+div#app {
+    padding: 0;
+}
+
+a, div, span[data-target="#deleteconfirmmodal"]  {
+    text-decoration: unset!important;
+    color:#6f85af;
+    transition: .3s;
+} 
+
+a:hover, span[data-target="#deleteconfirmmodal"]:hover {
+    text-decoration: unset!important;
+    color:#eef4ff;
+    transition: .3s;
+    text-shadow: 0 0 3px #6f85af;
+}
+
+body.bodybg {
+    background: url(https://i1.beon.fun/19/64/6419/19/1575619/5f09d897129f787115.png) repeat fixed;
+    background-size: auto;
+}
+
+main.py-4 {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    max-width: 1400px;
+    margin: auto;
+    background: #ffffff00;
+}
+
+.row.w-100 {
+    position: sticky;
+    top: 100%;
+
+}
+
+.comment-text+div {
+    font-size: 12px;
+    position: sticky;
+    top: 100%;
+    padding: 3px;
+}
+
+.post-opt [style="font-size: 1rem;"] {
+    font-size: 13px!important;
+}
+
+.post-opt span  {
+    color:#6f85af; 
+    transition: .3s;
+}
+
+span.post-title-date+span {
+    font-size: 10px;
+}
+
+::selection {
+    background: #f2f6ff;
+    color: #6f85af; 
+}
+
+[src="//beon.fun/i/offline.png"],
+[src="//beon.fun/i/online.png"],
+[src="//beon.fun/i/design-off.png"],
+[src="/i/blog.png"],
+[src="/i/user.png"],
+[src="/i/offline.png"],
+.user:before,
+.pagination-goto,
+.left-menu__friends,
+.left-menu__unread-message img.flag  {
+display:none;
+}
+
+/*div#footer:before {
+    content: 'Вопросы/помощь c дизайном - solarinoo.beon.fun/';
+    display: block;
+    font-size: 10px;
+    text-align: center;
+    color: #000000;
+}*/
+
+/*--------------------------------*/
+
+/*меню*/
+
+.blog__last-comments,
+.blog__last-comments:hover {
+    display:none;
+}
+
+[href="/design/disable"] {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.left-menu {
+    background: #c4d7f9;
+    width: 26%;
+    padding: 0px 1% 2% 1%;
+    overflow-x: hidden;
+}
+
+.left-menu * {
+    color:#6f85af;
+}
+
+h3.left-menu-text {
+    font-size: 18px;
+    background: #c4d7f9!important;
+    padding: 3px;
+    text-align: center!important;
+    text-transform: uppercase;
+    color: #6f85af;
+    border-bottom: 1px solid #f2f6ff;
+    border-top: 1px solid #f2f6ff;
+    letter-spacing: 2px;
+}
+
+div.left-menu {
+    background: url(https://i1.beon.fun/19/64/6419/21/1575621/242.png) left top no-repeat;
+    background-size: auto;
+    border: 2px solid #f2f6ff;
+    box-shadow: 0 0 5px 0px #f2f6ffbf;
+    background-color: #95baea;
+}
+
+.left-menu__unread-message img {
+    padding: 2px;
+    margin-top: -8px;
+    outline: 1px solid #fff;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+
+.left-menu__user-notification.left-menu__unread-message img+p {
+    font-size: 13px;
+    color: #6f85af;
+    overflow: auto;
+    line-height: normal;
+    max-height: 50px;
+    margin-top: 8px;
+} 
+
+
+span.post-title-date.pl-0 {
+    color:#6f85af;
+}
+
+
+.text-center img {
+    /*object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border: 5px solid #ffffff29;
+    border-radius: 50%;*/
+    margin-bottom: 5px;
+    /*filter: grayscale(1) brightness(1.5);*/
+}
+
+/*----------------------------*/
+
+/*вверх*/
+
+.ml-auto {
+    margin-left: unset!important;
+    margin-right: auto;
+}
+
+.bg-white {
+    background-color: #ffffff00;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
+}
+
+
+.m2 {
+    font-size: 0;
+}
+
+.pc-menu {
+    color: #6f85af!important;
+}
+
+.pc-menu a {
+    color: #6f85af!important;
+}
+
+.pc-menu a:hover {
+    color: #eef4ff!important;
+    text-shadow: 0 0 3px #6f85af;
+}
+
+/*-------------------------*/
+
+/*посты*/
+
+.content {
+    width: 70%;
+    margin: 0px auto 25px auto;
+    background: #d4e3ff;
+    background-attachment: fixed!important;
+    padding: 10px;
+    border: 2px solid #f2f6ff;
+    box-shadow: 0 0 5px 0px #f2f6ffbf;
+}
+
+div.post-content {
+    margin: 0px 0px 20px!important;
+}
+
+.post-content.blog_total_counter { 
+    font-size:0px;
+    height: 350px;
+    background: url(https://i1.beon.fun/19/64/6419/20/1575620/047.png) no-repeat center;
+    background-size: cover;
+    margin: 0px 0px 20px!important;
+}
+
+.post-content {
+    border: 2px solid #f2f6ff;
+    padding:7px;
+    background: #c4d7f9;
+    margin: 10px 10px 20px!important;
+}
+
+.post-content, .comment-content {
+    min-height: auto;
+    background: #c4d7f9;
+}
+
+.comment-content{
+    padding: 7px;
+    margin: 10px 10px 20px!important;
+}
+
+  .comment-content .comment-base {
+    padding: 7px;
+    border: 1px solid #f2f6ff;
+}
+
+.post-text {
+    padding: 7px;
+}
+
+.small-text { 
+   color: #6f85af;
+}
+
+ .post-title, h1 {
+    font-size: 23px;
+    padding-right: 5px;
+}
+
+.post-title:hover,
+.post-title-user:hover,
+.post-opt span:hover  {
+    color: #eef4ff!important;
+    padding-left: 5px;
+    transition: .3s;
+    text-shadow: 0 0 3px #6f85af;
+}
+ 
+.post-title-date {
+    color: #6f85af;
+    padding-left: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.comment-box h2 {
+font-size:13px;
+}
+
+.sign {
+    color: #6f85af;
+}
+
+.post-avatar img {
+   border:2px solid #f2f6ff;
+}
+
+.comment-box__message-partial.comment-content {
+    text-align: center;
+}
+
+/*.comment-content .post-title-user {
+    margin-left: 110px;
+}*/
+
+.quotation {
+    border-left:2px solid #f2f6ff;
+    background: linear-gradient(90deg, #f2f6ff70, transparent);
+    padding-top: 0;
+}
+
+
+/*------------------------------*/
+
+div.crumbs {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background: #ffffff00;
+    padding-top: 18px;
+}
+
+.crumbs  {
+    font-size: 15px;
+    color: #6f85af;
+}
+
+.py-4+.crumbs {
+    display:none;
+}
+
+span.repostbutton:hover,
+span.bookmarkbutton:hover,
+span.complaintbutton:hover { /*полоска с названием днева и кнопки репост/закладки/спам при наведении*/
+    color: #eef4ff!important;
+    text-shadow: 0 0 3px #6f85af;
+}
+
+
+#app > div:nth-child(4) {
+    display:none;
+}
+
+.pagination a {
+    float: right;
+    color: #6f85af;
+}
+
+.datebg {
+    background: #c4d7f9;
+    color: #6f85af;
+    padding-left: 0;
+    margin: 0px 0px 20px;
+    font-weight: 100;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #f2f6ff;
+}
+
+
+select, input, .btn-outline-primary, .textareabg input[type="submit"], .left-menu-text input[type="text"], .left-menu-text input[type="submit"], button.btn.btn-secondary, button.btn.btn-primary {
+    background: #c4d7f9;
+    border: 1px solid #f2f6ff;
+    border-radius: 0px;
+    color: #6f85af;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+select:hover,
+input:hover,
+.btn-outline-primary:hover,
+.textareabg input[type="submit"]:hover,
+.left-menu-text input[type="text"]:hover,
+.left-menu-text input[type="submit"]:hover, 
+button.btn.btn-secondary:hover, 
+button.btn.btn-primary:hover {
+    background: #c4d7f9;
+    border: 1px solid #eef4ff;
+    border-radius: 0px;
+    color: #eef4ff;
+    transition: 0.4s;
+}
+
+.left-menu-text input[type="text"], 
+.left-menu-text input[type="submit"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+ [href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*кнопка вниз*/
+    content: '\25BC';
+    font-size: 30px;
+    position: fixed;
+    color: #6f85af;
+    letter-spacing: 5px;
+    left: 2%;
+    top: 94%;
+    transition: 0.3s;
+}
+
+[href="#footer"]:hover:before { 
+    color: #eef4ff!important;
+    transition: 0.3s;
+    text-shadow: 0 0 3px #6f85af;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*кнопка вверх*/
+    content: '\25B2';
+    font-size: 30px;
+    position: fixed;
+    color: #6f85af;
+    left: 2%;
+    bottom: 5%;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    color: #eef4ff!important;
+    transition: 0.3s;
+    text-shadow: 0 0 3px #6f85af;
+}
+
+.textareabg {
+    background-color: #c4d7f9;
+    border: 2px solid #f2f6ff;
+    margin-left: 0px!important;
+    padding: 5px;
+}
+
+textarea {
+    min-width: 300px;
+    padding: 0.5%;
+    background: #d4e3ff;
+    color: #6f85af;
+    border:  1px solid #f2f6ff;
+}
+
+.alert-success {
+    font-size: 15px;
+    text-align: center;
+    color: #6f85af;
+    background-color: #c4d7f9;
+    border-color: #f2f6ff;
+    border-radius: 0px;
+    font-weight: bold;
+}
+
+.avatar-select-list {
+    background: transparent;
+    text-align: center;
+    height: 255px;
+    width: 130px;
+    overflow-y: scroll;
+}
+
+.avatar-select-label {
+    margin: 2px;
+    width: 90px;
+    border: 3px solid #f2f6ff; 
+    transition: 0.3s;
+}
+
+
+.avatar-select-label-selected {
+    width: 95px;
+    border: 3px solid #f2f6ff; 
+    transition: 0.3s;
+}
+ 
+.avatars-fullscreen-link-wrapper {
+    background: #c4d7f9; /*цвет фона*/
+    width: 90%!important;
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #6f85af; /*цвет текста*/
+}
+
+#avatars-fullscreen-modal .modal-content {
+    height: 700px;
+    width: 50%!important;
+    margin: auto;
+    background: #c4d7f9!important;
+}
+
+.emj-dropdown:hover .emj-dropdown-content {
+    display: block;
+    width: 30%;
+    height: 30%;
+    max-height: 300px;
+    background: #c4d7f9;
+    border: 1px solid #f2f6ff;
+}
+
+[class="collapse show"] {
+    width: 950px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #6f85af!important;
+    font-size: 15px;
+}
+
+a.navbar-brand {
+    color: #6f85af!important;
+}
+
+a.navbar-brand:hover {
+    color: #eef4ff!important;
+}
+
+.modal-body {
+    color: #6f85af;
+    position: relative;
+} 
+
+.mb-2, .my-2 { 
+    margin-bottom: 0.5rem!important; 
+    color: #6f85af!important;
+}
+
+.modal-content {
+    background: #c4d7f9;
+    color: #6f85af!important;
+    border: 1px solid #f2f6ff;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+div#newpostform br,div#newpostform br+br+p {
+    display: none;
+}
+ 
+span.emj-dropdown {
+    padding: 0px;
+}
+
+form.messageform p {
+    margin-bottom: 0px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+}
+
+.container-fluid.mt-5 {
+    margin-top: 0px !important;
+    padding-left: 0px!important;
+}
+
+ .user_footer {
+    border-top: 1px solid #f2f6ff;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+} 
+
+div.user_show {
+    border: 1px solid #f2f6ff;
+}
+
+.div_user_img {
+    width: 130px;
+    height: 185px;
+    border: 1px solid #f2f6ff00;
+    display: table-cell;
+    text-align: center;
+    border-radius: 0;
+    background: #c4d7f9;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+    background-color: #6f85af;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 2px solid #f2f6ff;
+    background-color: #6f85af;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+::-webkit-scrollbar-track {
+    border: 3px solid #f2f6ff;
+    background-color: #6f85af;
+}
+
+/*плеер*/
+
+div#beon-fnplayer {
+    padding: 5px;
+    background: transparent;
+}
+
+ #fnplayer-slider > span { 
+font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 4px;
+    background-color: #fff!important;
+}
+
+#fnplayer-slider-inner {
+    height: 4px;
+    width: 0%;
+    background-color: #000;
+}
+
+#fnplayer-volume {
+    height: 4px;
+    background-color: #000;
+}
+
+#fnplayer-volume-inner {
+    height: 4px;
+    width: 100%;
+    background-color: #fff!important;
+}
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-stop {
+    border: 0;
+    background: #fff!important;
+    margin-bottom: 1px;
+}
+
+#fnplayer-play {
+    border-color: transparent transparent transparent #fff!important;
+    margin-bottom: 1px;
+}
+
+
+@media (max-width: 700px) { 
+
+.menu__box {
+    background-color: #c4d7f9!important;
+}
+
+.menu__item {
+    color: #6f85af!important;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after { /*полосочки моб меню*/
+    background: #6f85af!important;
+    transform: rotateY(45deg);*/
+}
+
+.left-menu { 
+    width: 100%!important;
+}
+
+.content { 
+    width: 100%!important;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+     color: #6f85af!important;
+     font-size: 17px;
+}
+
+.post-title-user {
+    margin-left: 0px!important;
+} 
+
+[href="#footer"]:before {
+    content: '\25BC';
+    position: absolute;
+    right: 15%!important;
+    left: 80%!important;
+    top: 0%!important;
+    color: #6f85af!important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { 
+    content: '\25B2';
+    position: absolute;
+    color: #6f85af!important;
+    bottom:auto!important;
+    left: 90%;
+}
+
+.emj-dropdown:hover .emj-dropdown-content {
+    display: block;
+    width: 30%;
+    height: 30%;
+    max-height: 300px;
+    background: #c4d7f9;
+    border: 1px solid #f2f6ff;
+}
+
+[class="collapse show"] {
+    width: 100%!important;
+}
+
+span.comments_count a {
+    font-size: 14px!important;
+    margin-right: -25px!important;
+}
+
+.fas, .far, .tag_bar > * {
+    font-size: 1.2rem!important;
+    padding: 0rem!important;
+}
+
+ .col-12, .col-md-6 {
+    padding-left: 10px;
+}
+
+ .post-avatar img {
+  width:80px!important;
+}
+
+.avatar-select-list {
+    width:90px!important;
+}
+
+.avatar-select-label-selected {
+    width: 95px;
+    border: 3px solid #f2f6ff; 
+    transition: 0.3s;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    height: 700px;
+    width: 100%!important;
+    margin: auto;
+    background: #c4d7f9!important;
+}
+
+#avatars-fullscreen-modal .modal-body img {
+    max-width: unset;
+}
+
+.pagination {
+    float: unset;
+    background: #00000000;
+    color: #6f85af;
+    width: 100%;
+}
+
+}
