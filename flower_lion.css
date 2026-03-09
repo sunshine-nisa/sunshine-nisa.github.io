@@ -1,0 +1,390 @@
+@import url('https://solarinoo.github.io/black_0.1_.css');
+
+/*доп*/
+
+
+div.footer__infolinks.p-1,
+div#footer.p-1,
+div#page__rendertime.p-1 {
+    display: none;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    color: #ffeac3!important;
+    margin-top: -20px;
+    /*position: static;*/
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover {
+    color: #ffcb6a!important
+}
+
+.post-content.post-page h1 {
+    color: #ffeac3;
+}
+
+h5 {
+    color: #ffeac3;
+}
+
+[style="text-align: right;"] a, .content h1, [class="d-flex justify-content-between mb-3 "] a {
+     color: #ffeac3;
+}
+
+form#newtopicform {
+    margin: 0px 0px 25px !important;
+    padding: 15px 20px;
+    background: #fff;
+    border: 1px solid #231c0e;
+}
+
+.user_footer a, .info_container a, .info_text a, .info_text div {
+    color: #ffeac3!important;
+}
+
+.info_text, .info_container {
+      background: #fff;
+}
+
+/*-*/
+
+div#app {
+    max-width: 1300px;
+    margin: auto;
+}
+
+main.py-4 {
+    margin: auto;
+    /*flex-direction: row-reverse;*/
+}
+
+.py-4+.crumbs {
+    display:none;
+}
+
+[src="//beon.fun/i/offline.png"],
+[src="//beon.fun/i/online.png"],
+[src="/i/blog.png"],
+[src="/i/offline.png"],
+[src="/i/user.png"],
+[src="/i/access.png"],
+[src="/i/topic_options.png"],
+[src="/i/podcast.png"],
+.pagination-goto,
+.left-menu__friends,
+.left-menu__unread-message img.flag,
+.user:before,
+.blog:before,
+img.flag,
+/*.text-center img,*/
+.blog__iread,
+.blog__last-comments,
+.blog__refferers,
+.post-content.blog_total_counter {
+    display: none;
+}
+
+body {
+    background: url(https://i1.beon.fun/19/64/6419/8/1687108/fon.png) no-repeat fixed;
+    background-size: cover;
+}
+
+.modal-content {
+    background: #74664b;
+}
+
+.modal-body p {
+    color: #ffeac3!important;
+}
+
+.emj-dropdown-content {
+    width: 50%;
+    height: 15%;
+    max-height: 400px;
+    background: #74664b;
+}
+
+
+.post-content,
+.comment-content,
+.textareabg {
+    background: url(https://i1.beon.fun/19/64/6419/6/1687106/zapisi.png) no-repeat fixed;
+    background-size: cover;
+}
+
+.post-content {
+    margin: 0px 0px 10px !important;
+}
+
+.left-menu {
+    background: url(https://i1.beon.fun/19/64/6419/60/1687160/menyu-3.png) no-repeat #675733!important;
+    background-size: contain;
+}
+
+.bg-white {
+    background: url(https://i1.beon.fun/19/64/6419/5/1687105/verh.png) no-repeat fixed;
+    background-size: contain;
+}
+
+[href="mailto:a@beon.fun"] {
+    color: #ffeac3;
+}
+
+.crumb-item, .crumbs {
+    color: #ffeac3;
+}
+
+.datebg {
+    margin: 0 0 10px!important;
+    background: #74664b;
+    color: #ffeac3;
+    border: 1px solid #231c0e;
+}
+
+.crumbs:before {
+    display: block;
+    height: 180px;
+    content: '';
+    background: url(https://i1.beon.fun/19/64/6419/63/1687163/shapka2.png) no-repeat;
+    /*background-size: contain;*/
+    border: 1px solid #231c0e;
+    margin-bottom: 10px;
+}
+
+.post-title, h1,
+.post-title-date  {
+    color: #ffeac3;
+}
+
+span.post-title-date+span {
+    color: #ffeac3!important;
+    font-size: 10px;
+}
+
+.left-menu h3 {
+    color: #ffeac3;
+    /*background: #675733!important;*/
+}
+
+[onclick="return showSpoiler(this)"], a.user {
+    color: #ffeac3 !important;
+}
+
+.pc-menu a {
+    color: #ffeac3!important;
+    transition: 0.2s;
+}
+
+.pc-menu a:hover {
+    transition: 0s;
+    color:#ffcb6a!important;
+}
+
+a.navbar-brand {
+    color: #ffeac3!important;
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+a.navbar-brand:hover {
+    transition: 0s;
+    color:#ffcb6a!important;
+}
+
+.m2,
+.sign,
+.small-text {
+    color: #ffeac3;
+}
+
+.tag_bar > span:hover {
+    color:#ffcb6a;
+    transition: 0.3s;
+}
+
+a, div {
+    color: #ffeac3;
+    text-decoration: none !important;
+    transition: 0.2s;
+}
+
+a:hover, span[data-target="#deleteconfirmmodal"]:hover,
+.post-title:hover,
+a.user.post-title-user:hover,
+a.user:hover {
+    text-decoration: unset!important;
+    color:#ffcb6a!important;
+    transition: 0.2s;
+}
+
+  
+.fa-retweet::before, .fa-bookmark::before, .fa-exclamation-triangle::before, .fa-quote-left::before, span[data-target="#deleteconfirmmodal"]  {
+    color: #ffeac3;
+    padding: 3px;
+    transition: .5s;
+}
+.fa-heart:hover:before, .fa-retweet:hover:before, .fa-bookmark:hover:before, .fa-exclamation-triangle:hover:before, .fa-quote-left:hover:before  {
+    color: #ffcb6a!important;
+    cursor:pointer;
+    transition: .2s;
+}
+
+ [class="post-opt col-12 col-md-6"] span, .post-opt a, [onclick="deleteComment(this)"]  {
+    color: #ffeac3;
+   transition: .3s;
+}
+
+ [class="post-opt col-12 col-md-6"] span:hover,  .post-opt a:hover, [onclick="deleteComment(this)"]:hover {
+    color: #ffcb6a!important;
+    transition: .3s;
+}
+
+select, input, .btn-outline-primary, .textareabg input[type="submit"], .textareabg input[type="button"], .left-menu-text input[type="submit"], button.btn.btn-secondary, button.btn.btn-primary, input.w-100.input-tags, input.w-100.input-mood, input.w-100.input-music, input.w-100.input-want {
+    background: #74664b;
+    color: #ffeac3;
+    border: 1px solid #231c0e;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+a.btn.btn-outline-primary.mb-2.w-100:hover {
+    background: #231c0e!important;
+    border: 1px solid #231c0e!important;
+}
+
+select:hover,
+input:hover,
+.btn-outline-primary:hover,
+.textareabg input[type="submit"]:hover,
+.textareabg input[type="button"]:hover,
+.left-menu-text input[type="submit"]:hover, 
+button.btn.btn-secondary:hover, 
+button.btn.btn-primary:hover,
+.btn-outline-primary:hover,
+input.w-100.input-tags:hover, input.w-100.input-mood:hover,
+input.w-100.input-music:hover,
+input.w-100.input-want:hover  {
+    color: #ffcb6a;
+    transition: 0.4s;
+    background: #231c0e!important;
+}
+
+
+.left-menu {
+    width: 27%;
+    margin-left: 0!important;
+    margin-bottom: auto;
+    border: 1px solid #231c0e !important;
+    /*background: #040404;*/
+}
+
+.quotation {
+    border-left: 6px double #231c0e;
+    background: #74664bb8;
+    color: #ffeac3;
+    font-size: 12px;
+}
+
+textarea, .alert {
+    background: #74664b;
+    color: #ffeac3;
+    border: 1px solid #231c0e;
+    border-radius: 0;
+}
+
+.avatar-select-label {
+    width: 90px;
+}
+
+.avatar-select-label-selected {
+    border: 1px solid #231c0e;
+    width: 100px;
+    transition: 0.3s;
+}
+
+.avatars-fullscreen-link-wrapper {
+    background: #74664b;
+}
+
+::selection {
+    color: #000;
+    background: #ffeac3;
+}
+
+.avatar-select-label-selected {
+    border: 1px solid #231c0e;
+    transition: 0.3s;
+}
+
+::-webkit-scrollbar {
+    background-color: #231c0e;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 7px solid #74664b;
+    background-color: #ffeac3;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #74664b;
+    background-color: #231c0e;
+}
+
+
+
+@media (max-width: 840px), (max-width: 700px) {
+
+div#app {
+    padding: 5px!important;
+}
+
+.crumbs:before {
+    display: block;
+    height: 180px;
+    content: '';
+    background: url(https://i1.beon.fun/19/64/6419/63/1687163/shapka2.png) no-repeat center;
+    /*background-size: contain;*/
+    border: 1px solid #231c0e;
+    margin-bottom: 10px;
+}
+
+.left-menu,
+.datebg,
+.bg-white {
+    background: #74664bdb!important;
+}
+
+.menu__box {
+    background:#74664b;
+}
+
+.menu__item  {
+   color: #ffeac3;
+}
+
+.menu__item:hover {
+    color: #ffcb6a;
+}
+
+.menu__btn > span::before,
+.menu__btn > span,
+.menu__btn > span::after {
+    background: #ffeac3!important;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+        color: #ffeac3!important;
+        font-weight: bold;
+}
+
+.py-4 {
+    width: 100%!important;
+}
+
+#avatars-fullscreen-modal .modal-body img {
+    max-width: unset;
+}
+}
