@@ -178,6 +178,7 @@ div.post-header {
 .post-text a,
 .comment-text a,
 span.link-container.text-primary {
+    text-decoration: none!important;
     color:#db8891!important;
 }
 
