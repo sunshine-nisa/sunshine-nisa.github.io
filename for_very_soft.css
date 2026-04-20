@@ -18,10 +18,10 @@ div#page__rendertime.p-1,
 div#page__admincontact.text-center,
 .community__moders,
 .community__members,
-.blog__read-me,
 .blog__last-comments,
 .left-menu__friends.left-menu__friends_offline,
-.left-menu__user-notification.left-menu__friends {
+.left-menu__user-notification.left-menu__friends,
+.blog__refferers{
     display: none;
 }
 
@@ -176,12 +176,14 @@ div.post-header {
 }
 
 .post-text a,
-.comment-text a {
+.comment-text a,
+span.link-container.text-primary {
     color:#db8891!important;
 }
 
 .post-text a:hover,
-.comment-text a:hover {
+.comment-text a:hover,
+span.link-container.text-primary:hover {
     text-decoration: none!important;
     color:#f3b4bb!important;
     text-shadow: none;
