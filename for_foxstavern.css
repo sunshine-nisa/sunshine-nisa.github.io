@@ -668,6 +668,7 @@ span.crumb-item {
 .notifications__comments.left-menu__user-notification,
 .left-menu__user-notification.left-menu__unread-notifications {
     background: #50392dd6;
+    padding-bottom: 7px;
 }
 
 h3.left-menu-text,
@@ -678,9 +679,9 @@ h3.left-menu-text,
     padding-right: 5px;
 }
 
-.left-menu > div.mobile_open_menu > h3 {
+/*.left-menu > div.mobile_open_menu > h3 {
     margin-top: -16px !important;
-}
+}*/
 
 main.py-4 {
     width: 97%!important;
@@ -690,6 +691,7 @@ main.py-4 {
 div.left-menu {
     width: 100%!important;
     margin-left: 0;
+    /*margin-top: 16px;*/
 }
 
 .blog__last-comments,
