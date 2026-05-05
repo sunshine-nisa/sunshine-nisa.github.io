@@ -663,6 +663,58 @@ span.crumb-item {
     background-color: #ffdba0;
 }
 
+/*плеер*/
+
+div#beon-fnplayer {
+    padding: 5px;
+    background: transparent;
+}
+
+ #fnplayer-slider > span { 
+font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 6px;
+    background-color: #c7bfb1!important;
+}
+
+#fnplayer-slider-inner {
+    height: 6px;
+    width: 0%;
+    background-color: #ffdba0 ;
+}
+
+#fnplayer-volume {
+    height: 6px;
+    background-color: #c7bfb1;
+}
+
+#fnplayer-volume-inner {
+    height: 6px;
+    width: 100%;
+    background-color: #ffdba0 !important;
+    border: 1px solid #ffdba0;
+} 
+
+#fnplayer-volume-mask {
+border:none!important;
+}
+
+#fnplayer-stop {
+    border: 0;
+    background: #ffdba0 !important;
+    border-radius: 10px;
+    margin-bottom: 1px;
+}
+
+#fnplayer-play {
+    border-color: transparent transparent transparent #ffdba0 !important;
+    margin-bottom: 1px;
+}
+
+/*---------*/
+
 /*мобка*/
 
 @media (max-width: 700px) {
