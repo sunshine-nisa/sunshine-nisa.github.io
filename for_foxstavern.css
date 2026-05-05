@@ -479,9 +479,16 @@ div.left-menu__friends.left-menu__friends_offline,
 
 
 .left-menu {
-    background: url(https://i1.beon.fun/53/92/9253/71/1757771/menyu.png) no-repeat top #311a10;
+    background: #311a10;
     padding: 20px;
     margin-bottom: 10px;
+    background-size: contain;
+}
+
+.blog__about.pb-2 {
+    background: url(https://i1.beon.fun/53/92/9253/19/1759319/menyu4.png) no-repeat top #311a10;
+    padding: 0 0 150px 0 !important;;
+    /*margin-bottom: 10px;*/
     background-size: cover;
 }
 
@@ -500,7 +507,7 @@ span.post-title-date {
 }
 
 div.left-menu {
-    width: 30%;
+    width: 27.8%;
     margin-left: 10px;
     margin-top: 4px;
     border: solid 3px #2b1c1a;
@@ -511,7 +518,7 @@ div.left-menu {
 }
 
 h3.left-menu-text {
-    background: #291a14!important;
+    background: #50392d!important;
     color: #ffdba0!important;
     text-align: center;
     padding-right: 5px;
@@ -673,15 +680,12 @@ span.crumb-item {
 
 h3.left-menu-text,
 .mobile_open_menu > h3 {
-    background: #291a14!important;
+    background: #50392d!important;
     color: #ffdba0!important;
     text-align: center;
     padding-right: 5px;
 }
 
-/*.left-menu > div.mobile_open_menu > h3 {
-    margin-top: -16px !important;
-}*/
 
 main.py-4 {
     width: 97%!important;
@@ -896,7 +900,6 @@ div.tag_bar span,
 
 div.left-menu__friends.left-menu__friends_offline {
     background: #ffffff00;
-    margin-top: -16px!important;
 }
 
 
