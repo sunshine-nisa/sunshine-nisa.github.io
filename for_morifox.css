@@ -765,8 +765,7 @@ div.left-menu {
     /*margin-top: 16px;*/
 }
 
-.blog__last-comments,
-.blog__iread {
+.blog__last-comments {
     display: none!important;
 }
 
