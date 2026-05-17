@@ -359,12 +359,11 @@ ul.menu__box {
 }
 
 body.bodybg { /*фон*/
-    background: url(https://i1.beon.fun/19/64/6419/14/1671814/fon.jpg) no-repeat fixed;
+    background: url(https://i1.beon.fun/53/92/9253/4/1778204/fon.png) no-repeat fixed;
     background-size: cover;
 }
 
 div.left-menu { /*левое меню целиком*/
-    /*background: url(https://i1.beon.fun/19/64/6419/6/1673006/menyu.png) no-repeat fixed #e1fdb8;/
     background-size: cover;
 }
 }
