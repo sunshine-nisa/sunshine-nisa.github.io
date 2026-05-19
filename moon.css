@@ -452,7 +452,8 @@ div.left-menu__friends.left-menu__friends_offline,
 .blog__read-me,
 .blog__iread,
 .blog__last-comments,
-.blog__gifts {
+.blog__gifts,
+.blog__refferers{
     display: none;
 }
 
@@ -462,7 +463,8 @@ div.community__members,
 div.community__moders,
 div.left-menu__user-notification.left-menu__unread-message,
 div.notifications__comments.left-menu__user-notification,
-div.left-menu__user-notification.left-menu__unread-notifications {
+div.left-menu__user-notification.left-menu__unread-notifications,
+.left-menu__user-notification{
     background: #fffef7;
     border-image-slice: 97 95 97 90;
     border-image-width: 20px 20px 20px 20px; /*толщина вот тута*/
