@@ -240,7 +240,9 @@ a.navbar-brand:hover {
 .left-menu__user-notification.left-menu__friends,
 .blog__iread,
 .blog__last-comments,
-.blog__refferers {
+.blog__refferers,
+.community__moders,
+.community__members {
     display: none;
 }
 
