@@ -229,6 +229,8 @@ a.navbar-brand:hover {
 .left-menu__friends.left-menu__friends_offline,
 .left-menu__user-notification.left-menu__friends,
 .blog__iread,
+.community__moders,
+.community__members,
 .blog__last-comments,
 .blog__refferers {
     display: none;
@@ -750,6 +752,8 @@ input[type=submit]:nth-child(27):hover {
 .left-menu__user-notification.left-menu__friends,
 .blog__iread,
 .blog__last-comments,
+.community__moders,
+.community__members,
 .blog__refferers {
     display: none!important;
 }
