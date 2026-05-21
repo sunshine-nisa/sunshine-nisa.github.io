@@ -303,6 +303,10 @@ h3.left-menu-text {
 
 /*посты*/
 
+.container-fluid.post-content.p-3 {
+    margin: auto!important;
+}
+
 .post-content {
     margin: 0 10px 20px!important;
     border: 1px solid #bbe6ff!important;
