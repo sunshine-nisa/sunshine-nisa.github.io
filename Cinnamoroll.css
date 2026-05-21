@@ -304,7 +304,8 @@ h3.left-menu-text {
 /*посты*/
 
 .container-fluid.post-content.p-3 {
-    margin: auto!important;
+    margin: auto !important;
+    width: 97.6%;
 }
 
 .post-content {
