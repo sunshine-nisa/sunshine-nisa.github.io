@@ -621,58 +621,6 @@ body {
     overflow-x: unset!important;
 }
 
-.blog__about:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: 110px!important;
-    margin-top: -130px;
-    width: 175px;
-    height: 180px;
-    background: url(https://i1.beon.fun/15/0/15/39/1782439/01.png) no-repeat center, transparent;
-    z-index: 1;
-}
-
-.blog__gifts:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: 10px!important;
-    margin-top: -125px;
-    width: 164px;
-    height: 180px;
-    background: url(https://i1.beon.fun/15/0/15/3/1782403/2.png) no-repeat center, transparent;
-    z-index: 1;
-}
-
-.blog__read-me:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: 220px!important;
-    margin-top: -130px;
-    width: 163px;
-    height: 180px;
-    background: url(https://i1.beon.fun/15/0/15/37/1782437/3.png) no-repeat center, transparent;
-    z-index: 1;
-}
-
-.blog__tags:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: 10px!important;
-    margin-top: -125px;
-    width: 175px;
-    height: 180px;
-    background: url(https://i1.beon.fun/15/0/15/51/1782451/4.png) no-repeat center, transparent;
-    z-index: 1;
-}
-
 .left-menu__user-notification.left-menu__friends,
 .blog__iread,
 .blog__last-comments,
