@@ -12,7 +12,7 @@ div#page__rendertime.p-1,
 .post-content .fa-link:before,
 .comment-content .fa-link:before,
 [src="/i/offline.png"],
-[src="///i/online.png"],
+[src="/i/online.png"],
 [src="//beon.fun/i/design-off.png"],
 .left-menu__unread-message img.flag,
 img.flag {
@@ -112,7 +112,7 @@ h3.left-menu-text {
     display: block;
     text-align: center!important;
     text-decoration: none;
-    background: linear-gradient(to right, transparent, #2b434a 50%, transparent 100%)!important;
+    background: #2b434a 50%!important;
     font-size: 20px;
     color: #a1aeb5;
 }
@@ -124,8 +124,24 @@ h3.left-menu-text {
     display: block;
     text-align: center;
     text-decoration: none;
-    background: linear-gradient(to right, transparent, #2b434a 50%, transparent 100%);
+    background: #2b434a 50%;
+    border-radius: 15px 15px 0 0;
     font-size: 20px;
+}
+
+.post-content.post-page .post-avatar,
+.small-text,
+[data-target="#deleteconfirmmodal"] {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.post-header {
+    margin-left: 0!important;
+}
+
+.post-title-user {
+    margin-left: 5px;
 }
 
 .post-content,
@@ -155,7 +171,6 @@ h3.left-menu-text {
     text-decoration: unset!important;
 }
 
-.post-content.post-page,
 .comment-content {
     padding: 5px;
 }
