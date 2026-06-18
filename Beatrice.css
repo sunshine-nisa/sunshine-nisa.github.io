@@ -1,0 +1,735 @@
+.post-content.blog_total_counter,
+.footer__infolinks.p-1,
+div#page__admincontact.text-center,
+div#footer.p-1,
+div#page__rendertime.p-1,
+.blog__refferers,
+.pagination-goto,
+[src="/i/access.png"],
+[src="/i/topic_options.png"],
+.user:before,
+.blog:before,
+.post-content .fa-link:before,
+.comment-content .fa-link:before,
+[src="/i/offline.png"],
+[src="/i/online.png"],
+[src="//beon.fun/i/design-off.png"],
+.left-menu__unread-message img.flag,
+img.flag {
+    display: none;
+}
+
+div#app {
+    padding: 0.3%;
+    width: 68%;
+    margin: auto;
+}
+
+a, div {
+    color: #c78c16;
+    text-decoration: unset;
+}
+
+a:hover {
+    color: #fabb3c !important;
+    text-shadow: 1px 0 3px #fabb3c;
+    text-decoration: unset;
+}
+
+input {
+    background: #000;
+    border: 1px dashed #c78c16;
+    color: #000;
+}
+
+body {
+    background: url(https://i1.beon.fun/53/92/9253/0/1824900/fon3.png) no-repeat center bottom fixed #000;
+    background-size: cover;
+}
+
+.py-4 {
+    flex-direction: row-reverse;
+}
+
+.py-4 + .crumbs  {
+    display:none;
+}
+
+/*верх*/
+
+.bg-white {
+    background: #0000
+}
+
+a.navbar-brand,
+.pc-menu a,
+.m2,
+[style="color: red; font-weight: bold;"] {
+    color: #c78c16!important;
+}
+
+a.navbar-brand:hover {
+    color: #fabb3c !important;
+    text-shadow: none!important;
+}
+
+.navbar-brand,
+.m2 {
+    margin-left: -25px;
+}
+
+.pc-menu a:hover {
+    color: #fabb3c !important;
+    text-shadow: 1px 0 3px #fabb3c;
+}
+
+/*-----*/
+
+div.crumbs {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.crumb-item {
+    font-weight: bold;
+    border-bottom: 1px dashed #c78c165c;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    float: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #fabb3c;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*меню*/ 
+
+[href="/design/disable"] {
+    color: #fabb3c !important;
+    text-shadow: 1px 0 3px #fabb3c;
+}
+
+[href="/design/disable"]:hover {
+    color: #c78c16 !important;
+    text-shadow: 1px 0 3px #c78c16;
+}
+
+.left-menu {
+    width: 25%;
+    background: #0000;
+    border: 1px solid #0000!important;
+    margin-top: 19px;
+}
+
+h3.left-menu-text {
+    display: block;
+    text-align: center!important;
+    text-decoration: none;
+    background: #c78c16!important;
+    font-size: 20px;
+    color: #000;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.left-menu__user-notification.left-menu__friends,
+.blog__iread,
+.community__moders,
+.community__members,
+.blog__last-comments,
+.blog__refferers {
+    display: none;
+}
+
+.blog__about {
+    padding-bottom: 7px;
+}
+
+.left-menu__user-notification.left-menu__unread-message,
+.notifications__comments.left-menu__user-notification,
+.left-menu__user-notification.left-menu__unread-notifications,
+.left-menu__user-notification,
+.blog__about,
+.blog__gifts,
+.blog__read-me,
+.community__moders,
+.community__members,
+.blog__tags {
+    margin-bottom: 10px;
+    border: 1px dashed #c78c16 !important;
+    background: #000000d6;
+}
+
+/*посты*/
+
+.content {
+    margin-top: 20px;
+}
+
+.container-fluid.post-content.p-3 {
+    margin: auto!important;
+}
+
+.post-content {
+    margin: 0 10px 35px!important;
+    border: 1px dashed #c78c16 !important;
+    background: #000000d6;
+    padding: 0 20px 20px 20px;
+    position: relative;
+}
+
+.post-content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    background:
+        url(https://i1.beon.fun/53/92/9253/84/1824884/levyy-verhniy.png) top left,
+        url(https://i1.beon.fun/53/92/9253/83/1824883/verhniy-pravyy.png) top right,
+        url(https://i1.beon.fun/53/92/9253/85/1824885/nijniy-levyy.png) bottom left,
+        url(https://i1.beon.fun/53/92/9253/87/1824887/nijniy-pravyy.png) bottom right;
+
+    background-repeat: no-repeat;
+
+    background-size:
+        40px 40px,
+        40px 40px,
+        40px 40px,
+        40px 40px;
+}
+
+.post-row, .comment-row {
+    padding: 5px !important;
+    padding-top: 0 !important;
+}
+
+.post-text a,
+.comment-text a,
+.text-primary {
+    color: #fabb3c !important;
+    text-shadow: 1px 0 3px #fabb3c;
+    text-decoration: unset!important;
+    
+    &:hover {
+        color: #c78c16 !important;
+        text-shadow: 1px 0 3px #c78c16
+        text-decoration: unset!important;
+}
+}
+
+.comment-content {
+    min-height: 0!important;
+    margin: 0 10px 20px!important;
+    border: 1px dashed #c78c16 !important;
+    background: #000000d6;
+    padding-left: 7px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+}
+
+.comment-box h2 {
+    margin-left: 10px;
+}
+
+.post-title, h1 {
+    text-decoration: unset;
+    font-size: 22px;
+}
+
+.post-title-user {
+    font-size: 15px;
+}
+
+.comment-content .post-title-user {
+    margin-left: 8px;
+}
+
+.post-header {
+    margin-top: 5px;
+    margin-left: 20px !important;
+}
+
+.post-content.post-page .post-header {
+    margin-top: 0!important;
+    margin-left: 0 !important;
+}
+
+.post-content.post-page h1 {
+    margin-left: 30px;
+}
+
+.post-content.post-page {
+    padding: 12px;
+}
+
+.post-content.post-page .post-title-user,
+.small-text,
+[data-target="#deleteconfirmmodal"] {
+    margin-left: 8px!important;
+}
+
+.post-avatar {
+    margin-left: 0 !important;
+    padding: 3px;
+    margin-right: 7px!important;
+}
+
+.fa-chevron-down:before {
+    font-size: 12px;
+}
+
+.datebg {
+    display: block;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-bottom: -2px;
+    margin-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    border: 1px dashed #c78c16 !important;
+    background: #000000d6;
+}
+
+.sign,
+.small-text,
+.post__tags-list,
+.post-title-date {
+    color: #c78c16!important;
+}
+
+span.post-title-date+span {
+    font-size: 10px;
+}
+
+.tag:before {
+    content: '#';
+    font-size: 12px;
+    margin-right: 2px;
+    color: #c78c16;
+}
+
+/*форма*/
+
+.textareabg {
+    background: #000000d6;
+    margin: 0 10px 20px 10px!important;
+    border: 1px dashed #c78c16;
+    padding: 7px!important;
+}
+
+input.w-100.input-mood,
+input.w-100.input-music,
+input.w-100.input-want,
+input.w-100.input-tags,
+select.w-100,
+form.messageform input.w-100,
+select#addtag-img-size,
+select#addtag-img-align,
+select#upload-img-size,
+select#upload-img-align,
+select.cb_img-size,
+select.cb_img-align,
+.col-md-4 > select {
+    background: #000;
+    border: 1px dashed #c78c16;
+    color: #c78c16;
+}
+
+.textarea-wrapper > textarea {
+    background: #000;
+    color: #c78c16;
+    border: 1px dashed #c78c16;
+}
+
+/*смайлики*/
+
+.emj-dropdown {
+    padding: 0px;
+}
+
+.emj-dropdown-content {
+    width: 30%;
+    height: 45%;
+    max-height: 400px;
+    background: #000;
+    border: 1px dashed #c78c16;
+}
+
+/*-----*/
+
+.quotation {
+    border-left: 3px solid #c78c16;
+    background: linear-gradient(45deg, #ad863a7a, transparent);
+    color: #c78c16;
+    padding-left: 5px;
+    margin-left: 7px;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+.alert {
+    background: #000;
+    border: 1px dashed #c78c16!important;
+    color: #c78c16;
+    border-radius: 0!important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*авы*/
+
+.avatars-fullscreen-link-wrapper {
+    background: #000;
+}
+
+ #avatars-fullscreen-modal .modal-content {
+    max-height: 90vh;
+    width: 60%;
+    margin: auto;
+}
+
+.avatar-select-list {
+    background: transparent;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.avatar-select-label {
+    width: 90px;
+    margin: 2px;
+    filter: grayscale(0);
+    border: 1px solid #c78c16;
+    transition: 0.3s;
+}
+
+ 
+.avatar-select-label-selected {
+    width: 100px;
+    border: 2px solid #c78c16;
+    filter: grayscale(0);
+    transition: 0.3s;
+}
+
+/* скролл */
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: #c78c16;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid #000;
+    background-color: #c78c16;
+    min-height: 24px;
+    min-width: 24px; 
+}
+
+::-webkit-scrollbar-track {
+    border: 8px solid #000; 
+    background-color: #c78c16;
+}
+
+/*кнопки и модалка*/
+
+/*кнопки вверх-вниз*/
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\25B2';
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    border: 1px dashed #c78c16!important;
+    background: #000;
+    color: #c78c16;
+    padding-left: 6px;
+    padding-bottom: 2px;
+    border-radius:0;
+    left: 35px;
+    bottom: 52.5%;
+    z-index: 8;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    border: 1px dashed #000!important;
+    background: #c78c16!important;
+    color: #000!important;
+    transition: 0.3s;
+}
+
+[href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    left: 35px;
+    bottom: 48.5%;
+    border: 1px dashed #c78c16!important;
+    background: #000;
+    color: #c78c16;
+    padding-left: 6px;
+    padding-top: 2px;
+    border-radius:0;
+    z-index: 7;
+    transition: 0.3s;
+}
+
+[href="#footer"]:hover:before { 
+    border: 1px dashed #000!important;
+    background: #c78c16!important;
+    color: #000!important;
+    transition: 0.3s;
+}
+
+/*---*/
+
+span[data-target="#deleteconfirmmodal"],
+[onclick="deleteComment(this)"],
+.repostbutton,
+.bookmarkbutton,
+.complaintbutton,
+.fast-quote {
+    color: #c78c16!important;
+    text-decoration: unset;
+}
+
+span[data-target="#deleteconfirmmodal"]:hover,
+[onclick="deleteComment(this)"]:hover,
+.repostbutton:hover,
+.bookmarkbutton:hover,
+.complaintbutton:hover,
+.fast-quote:hover {
+    color: #fabb3c!important;
+    text-decoration: unset;
+}
+
+.liked .fas, .reposted .fas, .bookmarked .fas {
+    color: #fabb3c!important;
+}
+
+[type=reset], [type=submit], button, html [type=button], a.btn.btn-outline-primary.mb-2.w-100, a.btn.btn-outline-primary.mb-3, button.btn.btn-primary.avatars-modal__approve {
+    background: #000;
+    border: 1px dashed #c78c16;
+    border-radius: 0!important;
+    color: #c78c16;
+}
+
+[type=reset]:hover, [type=submit]:hover, button:hover, html [type=button]:hover, a.btn.btn-outline-primary.mb-2.w-100:hover, a.btn.btn-outline-primary.mb-3:hover, button.btn.btn-primary.avatars-modal__approve:hover {
+    background: #c78c16;
+    border: 1px dashed #000;
+    border-radius: 0!important;
+    color: #000;
+}
+
+.close:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background: #0000 !important;
+    border: none!important;
+    color: #ffaa00!important;
+    text-shadow: none !important;
+}
+
+.close:not(:disabled):not(.disabled):hover {
+    cursor: pointer;
+    background: #0000 !important;
+    border: none!important;
+    color: #fabb3c;
+    text-shadow: none !important;
+}
+
+.modal-content {
+    background: #000;
+    border: 1px dashed #c78c16!important;
+    border-radius: 0!important;
+}
+
+.modal-header {
+    border-bottom: 1px dashed #c78c16;
+}
+
+.modal-footer {
+    border-top: 1px dashed #c78c16;
+}
+
+@media (max-width: 700px) {
+
+div#app {
+    width: 95%;
+    margin: auto;
+}
+
+.py-4 {
+    flex-direction: column!important;
+    width: 100%!important;
+}
+
+.post-content,
+.comment-content,
+.comment-box h2,
+.textareabg {
+    margin: 0 0 20px 0 !important;
+}
+
+.post-content {
+    padding: 0 0 20px 0!important;
+}
+    
+.comment-row {
+    padding: 0 !important;
+}
+
+.post-avatar {
+    padding: 0!important;
+}
+
+.post-content.post-page .post-avatar,
+.post-avatar {
+    margin-left: 5px !important;
+}
+
+.post-header {
+    margin-left: 35px !important;
+}
+
+.navbar-brand, .m2 {
+    margin-left: -13px!important;
+}
+
+.datebg {
+    margin-right: 0 !important;
+}
+
+.left-menu {
+    width: 100%;
+    margin-bottom: 7px!important;
+    overflow-x: unset;
+}
+
+.left-menu__user-notification.left-menu__unread-message,
+.notifications__comments.left-menu__user-notification,
+.left-menu__user-notification.left-menu__unread-notifications,
+.left-menu__user-notification,
+.left-menu__friends.left-menu__friends_offline,
+.blog__about,
+.blog__gifts,
+.blog__read-me,
+.community__moders,
+.community__members,
+.blog__tags,
+.blog__last-comments {
+    margin-bottom: 10px;
+    border: 1px dashed #c78c16 !important;
+    background: #000000d6;
+}
+
+/*кнопки вверх-вниз*/
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    color: #c78c16;
+    top: 6px;
+    left: 79%;
+    border: 1px solid #bebebe00!important;
+    background: #ffffff00!important;
+    border-radius:0px;
+    z-index: 7;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\25B2';
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: sticky;
+    color: #c78c16;
+    right: 20px;
+    bottom: 15px;
+    border: 1px solid #bebebe00!important;
+    background: #ffffff00!important;
+    border-radius:0px;
+    right: 20px;
+    bottom: 67px;
+    z-index: 8;
+    transition: 0.3s;
+}
+
+.mobile_open_menu > h3 {
+    color: #000 !important;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background: #c78c16;
+}
+
+.menu__box {
+    background: #000;
+    border: 1px dashed #c78c16!important;
+}
+
+.menu__item {
+    color: #c78c16;
+}
+
+.emj-dropdown-content {
+    width: 90%;
+    height: 35%;
+    max-height: 400px;
+    background: #000;
+    border: 1px dashed #c78c16;
+}
+
+.fas, .far, .tag_bar > * {
+    font-size: 14px;
+    padding: 0 !important;
+}
+
+span.comments_count a,
+span.comments_count span::before {
+    font-size: 14px;
+}
+
+.post-avatar img {
+    width: 75px!important;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    width: 100%!important;
+    margin: auto;
+}
+
+#avatars-fullscreen-modal .modal-body img {
+    max-width: unset!important;
+}
+
+.avatar-select-label {
+    width: 72px!important;
+}
+
+.avatar-select-label-selected {
+    width: 80px!important;
+}
