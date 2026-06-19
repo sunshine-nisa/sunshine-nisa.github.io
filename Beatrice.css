@@ -43,7 +43,7 @@ input {
 }
 
 body {
-    background: url(https://i1.beon.fun/53/92/9253/0/1824900/fon3.png) no-repeat center bottom fixed #000;
+    background: url(https://i1.beon.fun/53/92/9253/37/1826237/fon.png) no-repeat center bottom fixed #000;
     background-size: cover;
 }
 
@@ -58,7 +58,8 @@ body {
 /*верх*/
 
 .bg-white {
-    background: #0000
+    background: #0000;
+    margin-top: 22px !important;
 }
 
 a.navbar-brand,
