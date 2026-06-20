@@ -250,7 +250,7 @@ select.cb_img-align,
 
 .quotation {
     border-left: 6px double #d2dee5;
-    background: linear-gradient(45deg, #d2dee58c, transparent);
+    background: #d2dee58c;
     color: #1f373e;
     padding-left: 5px;
     margin-left: 7px;
