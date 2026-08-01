@@ -1,0 +1,416 @@
+div.post-content.blog_total_counter { /*убирает отображение количества записей*/
+    display: none;
+}
+
+div.content { /*ширина записей*/
+    width: 65%;
+}
+
+h2 { /*"всего ответов: "*/
+    margin-left: 10px;
+    color: #5d506d!important;
+}
+
+a { /*ссылки*/
+    color: #5d506d!important;
+}
+
+a:hover { /*ссылки при наведении*/
+    color: #593a80!important;
+}
+
+input { /*кнопки и поля в форме*/
+    background-color: #fff!important;
+    color: #5d506d!important;
+    border: 1px solid #3c3659!important;
+}
+
+input:hover { /*кнопки и поля в форме при наведении*/
+    background-color: #fff!important;
+    color: #593a80!important;
+    border: 1px solid #3c3659!important;
+}
+
+button, [type=reset], [type=submit], html [type=button], a.btn.btn-outline-primary.mb-2.w-100, a.btn.btn-outline-primary.mb-3 {
+    background: #100c18!important;
+    border: 1px solid #3c3659!important;
+    color: #5d506d!important;
+}
+
+button:hover, [type=reset]:hover, [type=submit]:hover, html [type=button]:hover, a.btn.btn-outline-primary.mb-2.w-100:hover, a.btn.btn-outline-primary.mb-3:hover {
+    background: #100c18!important;
+    border: 1px solid #3c3659!important;
+    color: #593a80!important;
+}
+
+[onclick="deleteComment(this)"] { /*кнопка "удалить" в коммах*/
+    color: #5d506d!important;
+}
+
+[onclick="deleteComment(this)"]:hover { /*кнопка "удалить" в коммах при наведении*/
+    color: #593a80!important;
+}
+
+[data-target="#deleteconfirmmodal"] { /*кнопка "удалить" в постах*/
+    color: #5d506d!important;
+}
+
+[data-target="#deleteconfirmmodal"]:hover { /*кнопка "удалить" в постах при наведении*/
+    color: #593a80!important;
+}
+
+
+span { 
+    color: #5d506d!important;
+}
+
+.crumbs a {
+    color: #5d506d;
+}
+
+.crumbs a > span:hover,
+span.repostbutton:hover,
+span.bookmarkbutton:hover,
+span.complaintbutton:hover { /*полоска с названием днева и кнопки репост/закладки/спам при наведении*/
+    color: #593a80!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/53/92/9253/82/1876982/fon.png) no-repeat fixed;
+}
+
+div.m2 { /*приветствие под "беон.фан"*/
+    color: #5d506d;
+}
+
+div.left-menu { /*левое меню целиком*/
+    width: 21%;
+    background: url(https://i1.beon.fun/53/92/9253/81/1876981/menyu.png) no-repeat fixed;
+    border: 1px solid #3c3659;
+    color: #5d506d!important;
+}
+
+div.left-menu a,
+div.left-menu [class="post-opt"],
+div.left-menu [class="readertime"] {
+    color: #5d506d!important;
+}
+
+div.left-menu a:hover {
+    color: #593a80!important;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.blog__about mb-3 { /*блок друзья оффлайн/блок "о себе"*/
+    color: #5d506d!important;
+}
+
+[href="/design/disable"] {
+    font-weight: bold;
+    color: #fff!important;
+}
+
+span.crumb-item { /*название днева*/
+    color: #5d506d;
+}
+
+.crumbs,
+.datebg {
+    color: #5d506d;
+    background: #100c18d6;
+    border: 1px solid #3c3659;
+}
+
+.shadow-sm { /*тень под шапкой*/
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
+}
+
+.left-menu > div > h3 { /*заголовки левого меню*/
+    background-color: #100c18!important;
+    color: #5d506d;
+}
+
+
+.blog__about.mb-3 { 
+    margin-bottom: 0!important;
+    padding-bottom: 5px;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 100px;
+}
+
+.pc-menu a:hover { /*текст при наведении в шапке*/
+    color: #593a80!important;
+}
+
+.bg-white { /*шапка для рамки*/
+    border: 1px solid #3c3659;
+    background: #100c18d6!important;
+}
+
+.post-content { /*посты*/
+    color: #5d506d!important;
+    margin: 0 10px 20px!important;
+    background: #100c18d6;
+    border: 1px solid #3c3659;
+    padding-bottom: 5px;
+}
+
+.comment-content { /*коммы*/
+    color: #5d506d!important;
+    margin: 0 10px 20px!important;
+    background: #100c18d6;
+    border: 1px solid #3c3659;
+    padding-bottom: 5px!important;
+}
+
+.post-text a,
+.comment-text a,
+span.link-container.text-primary {
+    color: #7b6595!important;
+}
+
+.post-text a:hover,
+.comment-text a:hover,
+span.link-container.text-primary:hover {
+    color: #593a80!important;
+}
+
+
+.post-content.post-page { /*открытый пост*/
+    padding: 5px;
+}
+
+.comment-content { /*коммы*/
+    padding: 0 5px;
+    margin: 10px;
+}
+
+span.comments_count span:hover { /*кнопка "n комментариев" при наведении*/
+    color: #593a80!important;
+}
+
+.textareabg { /*форма*/
+    color: #5d506d!important;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #3c3659;
+    background: #100c18d6;
+    
+}
+
+span.post-title-date.pl-0 {
+    color: #5d506d!important;
+}
+
+div.small-text,
+div.sign { 
+    color: #5d506d;
+}
+
+.emj-dropdown-content { /*раскрытое окошко смайлов*/
+    width: 600px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #100c18;
+    border: 1px solid #3c3659;
+}
+
+.ml-auto { /*сдвинуть к центру шапку*/
+    margin-left: unset!important;
+    margin-right: auto;
+}
+
+/*раскрытие аватаров*/
+
+.avatars-fullscreen-link-wrapper {
+    width: 89%;
+    background: #fff; /*цвет фона*/
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #5d506d; /*цвет текста*/
+}
+
+/*------*/
+
+.post-avatar img {
+    border: 3px solid #3c3659;
+    transform: rotate(354deg);
+    filter: grayscale(0) drop-shadow(0px -1px 2px #00000040);
+    margin: 5px 10px;
+}
+
+.sign {
+    margin-left: 25px;
+}
+
+/*------*/
+
+.quotation { /*цитата*/
+    color: #5d506d !important;
+    border-left: 6px double #5d506d;
+    background: linear-gradient(90deg, #5d506d6e, transparent);
+}
+
+/*плеер*/
+
+div#beon-fnplayer {
+    padding: 5px;
+    background: transparent;
+}
+
+#fnplayer-slider > span { 
+    font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 6px;
+    background-color: #5d506d!important;
+    border: 1px solid #3c3659;
+}
+
+#fnplayer-slider-inner {
+    height: 6px;
+    width: 0%;
+    background-color: #100c18;
+}
+
+#fnplayer-volume {
+    height: 6px;
+    background-color: #100c18;
+    border: 1px solid #5d506d;
+}
+
+#fnplayer-volume-inner {
+    height: 6px;
+    width: 100%;
+    background-color: #5d506d!important;
+} 
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-stop {
+    border: 0;
+    background: #5d506d!important;
+    border-radius: 10px;
+    margin-bottom: 1px;
+}
+
+#fnplayer-play {
+    background: #0000 !important;
+    box-sizing: border-box;
+    width: 0;
+    height: 10px;
+    border-color: transparent transparent transparent #5d506d !important;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid !important;
+    border-width: 5px 0 5px 10px !important;
+}
+
+/*---------*/
+
+.podcast-player {
+    border: none!important;
+}
+
+
+/*модалка*/
+
+.modal-content {
+    background: #100c18;
+    color: #5d506d!important;
+}
+
+.modal-header {
+    border-bottom: #3c3659;
+}
+
+.modal-footer {
+    border-top: #3c3659;
+}
+
+/*кнопка вверх*/
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    background: #100c18;
+    border: 1px solid #3c3659;
+    text-shadow: none!important;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover {
+    color: #593a80!important;
+    text-shadow: none!important;
+}
+
+@media (max-width: 700px) { /*мобилка*/
+
+div.content {
+    width: 100%;
+}
+
+div.left-menu {
+    width: 95%;
+    margin: auto;
+}
+
+.emj-dropdown-content {
+    width: 300px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #100c18;
+    border: 1px solid #3c3659;
+}
+
+.avatars-fullscreen-link-wrapper {
+    width: 100%!important;
+    background: #100c18; /*цвет фона*/
+}
+
+ul.menu__box {
+    background: #100c18!important;
+    border: 1px solid #3c3659;
+}
+
+.menu__btn > span::before,
+.menu__btn > span,
+.menu__btn > span::after { /*полоски меню в моб версии*/
+    background: #5d506d!important;
+}
+
+.post-content,
+.datebg,
+.crumbs,
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm {
+    margin: 10px 10px 20px!important;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 10px!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/53/92/9253/82/1876982/fon.png) no-repeat fixed;
+    background-size: cover;
+}
+
+div.left-menu { /*левое меню целиком*/
+    background-size: cover;
+}
+}
+
+
+
+@media (max-width: 1023px) {
+
+.mobile_open_menu > h3,
+.left-menu > div.mobile_open_menu > h3 {
+    color: #100c18!important;
+}
+}
