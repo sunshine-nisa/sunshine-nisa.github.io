@@ -3,7 +3,13 @@ div.post-content.blog_total_counter { /*убирает отображение к
 }
 
 div.content { /*ширина записей*/
-    width: 65%;
+    width: 100%;
+}
+
+.py-4 {
+    width: 76%;
+    margin: auto;
+    flex-direction: row-reverse;
 }
 
 h2 { /*"всего ответов: "*/
@@ -64,6 +70,11 @@ span {
     color: #5d506d!important;
 }
 
+.crumbs {
+    width: 76%;
+    margin: 10px auto!important;
+}
+
 .crumbs a {
     color: #5d506d;
 }
@@ -84,10 +95,12 @@ div.m2 { /*приветствие под "беон.фан"*/
 }
 
 div.left-menu { /*левое меню целиком*/
-    width: 21%;
-    background: url(https://i1.beon.fun/53/92/9253/81/1876981/menyu.png) no-repeat fixed;
+    flex: 0 0 25%;
+    width: 27%;
+    background: url(https://i1.beon.fun/53/92/9253/46/1877246/menyu2.png) no-repeat right fixed;
     border: 1px solid #3c3659;
     color: #5d506d!important;
+    margin-right: 0 !important;
 }
 
 div.left-menu a,
@@ -121,6 +134,10 @@ span.crumb-item { /*название днева*/
     border: 1px solid #3c3659;
 }
 
+.datebg {
+    margin: 10px 10px 20px 0!important;
+}
+
 .shadow-sm { /*тень под шапкой*/
     box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
 }
@@ -147,11 +164,12 @@ span.crumb-item { /*название днева*/
 .bg-white { /*шапка для рамки*/
     border: 1px solid #3c3659;
     background: #100c18d6!important;
+    width: 76%;
 }
 
 .post-content { /*посты*/
     color: #5d506d!important;
-    margin: 0 10px 20px!important;
+    margin: 0 10px 20px 0 !important;;
     background: #100c18d6;
     border: 1px solid #3c3659;
     padding-bottom: 5px;
@@ -159,7 +177,7 @@ span.crumb-item { /*название днева*/
 
 .comment-content { /*коммы*/
     color: #5d506d!important;
-    margin: 0 10px 20px!important;
+    margin: 0 10px 20px 0 !important;;
     background: #100c18d6;
     border: 1px solid #3c3659;
     padding-bottom: 5px!important;
