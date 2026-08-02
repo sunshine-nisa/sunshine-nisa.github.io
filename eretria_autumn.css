@@ -155,6 +155,7 @@ ul.navbar-nav.ml-auto {
 
 [href="/design/disable"] {
     color: #a9917a!important;
+    font-weight: 600;
 }
 
 [href="/design/disable"]:hover {
@@ -162,9 +163,18 @@ ul.navbar-nav.ml-auto {
 }
 
 .left-menu {
-    background: #241a14f2;
+    background: url(https://i1.beon.fun/53/92/9253/11/1878311/10-2.png) no-repeat fixed #241a14f2;
+    background-size: contain;
     border: 1px solid #4c3a2d!important;
     border-radius: 5px;
+}
+
+div.left-menu a, div.left-menu-text > div, div.left-menu [class="post-opt"], div.left-menu [class="readertime"], .blog__last-comments .left-menu-text  {
+    color: #a9917a!important;
+}
+
+div.left-menu a:hover{
+    color: #744e3f!important;
 }
 
 h3.left-menu-text {
@@ -505,6 +515,10 @@ div#app {
 .left-menu {
     margin-bottom: 7px!important;
     overflow-x: unset;
+}
+
+.left-menu {
+    background-size: cover;
 }
 
 .mobile_open_menu > h3 {
