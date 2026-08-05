@@ -141,7 +141,7 @@ button.btn.btn-sm.btn-outline-secondary,
 #posts > div > div.mt-3.mode > form > div.mb-2 > div.d-flex.align-items-center.gap-1.tag-input-wrapper > button,
 .dark .btn-success,
 a.btn.btn-sm.btn-success.rounded-3,
-button[data-v-8e8bf78e] {
+button.btn.btn-link.btn-sm {
     background: #ff93930d !important;
     border: 1px solid #ffb3b32e !important;
     color: #e38585 !important;
@@ -164,7 +164,7 @@ button.btn.btn-sm.btn-outline-secondary:hover,
 #posts > div > div.mt-3.mode > form > div.mb-2 > div.d-flex.align-items-center.gap-1.tag-input-wrapper > button:hover,
 .dark .btn-success:hover,
 a.btn.btn-sm.btn-success.rounded-3:hover,
-button[data-v-8e8bf78e]:hover {
+button.btn.btn-link.btn-sm:hover {
     background: #0d0f15!important;
     border: 1px solid #ffb3b32e !important;
     color: #e38585 !important;
