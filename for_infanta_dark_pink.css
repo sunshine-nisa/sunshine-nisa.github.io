@@ -4,7 +4,8 @@ a,
 .down-link[data-v-5fd87958],
 .sidebar-row>a[data-v-c84b30a3],
 .sidebar-row>a[data-v-7c303778],
-.avatar-open-link span {
+.avatar-open-link span,
+button.btn.btn-link.btn-sm {
     color: #e38585!important;
     text-decoration: unset!important;
 }
@@ -13,7 +14,8 @@ a:hover,
 .down-link[data-v-5fd87958]:hover,
 .sidebar-row>a[data-v-c84b30a3]:hover,
 .sidebar-row>a[data-v-7c303778]:hover,
-.avatar-open-link span:hover {
+.avatar-open-link span:hover,
+button.btn.btn-link.btn-sm: hover {
     color: #ba483e !important;
     text-decoration: unset!important;
 }
@@ -140,8 +142,7 @@ button.btn.btn-primary,
 button.btn.btn-sm.btn-outline-secondary,
 #posts > div > div.mt-3.mode > form > div.mb-2 > div.d-flex.align-items-center.gap-1.tag-input-wrapper > button,
 .dark .btn-success,
-a.btn.btn-sm.btn-success.rounded-3,
-button.btn.btn-link.btn-sm {
+a.btn.btn-sm.btn-success.rounded-3 {
     background: #ff93930d !important;
     border: 1px solid #ffb3b32e !important;
     color: #e38585 !important;
@@ -163,8 +164,7 @@ button.btn.btn-primary:hover,
 button.btn.btn-sm.btn-outline-secondary:hover,
 #posts > div > div.mt-3.mode > form > div.mb-2 > div.d-flex.align-items-center.gap-1.tag-input-wrapper > button:hover,
 .dark .btn-success:hover,
-a.btn.btn-sm.btn-success.rounded-3:hover,
-button.btn.btn-link.btn-sm:hover {
+a.btn.btn-sm.btn-success.rounded-3:hover {
     background: #0d0f15!important;
     border: 1px solid #ffb3b32e !important;
     color: #e38585 !important;
