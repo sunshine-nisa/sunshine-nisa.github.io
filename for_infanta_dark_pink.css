@@ -4,8 +4,7 @@ a,
 .down-link[data-v-5fd87958],
 .sidebar-row>a[data-v-c84b30a3],
 .sidebar-row>a[data-v-7c303778],
-.avatar-open-link span,
-button[data-v-8e8bf78e] {
+.avatar-open-link span {
     color: #e38585!important;
     text-decoration: unset!important;
 }
@@ -14,8 +13,7 @@ a:hover,
 .down-link[data-v-5fd87958]:hover,
 .sidebar-row>a[data-v-c84b30a3]:hover,
 .sidebar-row>a[data-v-7c303778]:hover,
-.avatar-open-link span:hover,
-button[data-v-8e8bf78e]:hover {
+.avatar-open-link span:hover {
     color: #ba483e !important;
     text-decoration: unset!important;
 }
