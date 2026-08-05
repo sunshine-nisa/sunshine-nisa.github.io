@@ -169,7 +169,7 @@ button.btn.btn-link.btn-sm:hover {
     border: 1px solid #ffb3b32e !important;
     color: #e38585 !important;
     padding: 5px 5px !important;
-    border-radius: 12px !important;
+    border-radius: 12px !important; 
 }
 
 /*форма*/
