@@ -5,7 +5,7 @@ a,
 .sidebar-row>a[data-v-c84b30a3],
 .sidebar-row>a[data-v-7c303778],
 .avatar-open-link span,
-button.btn.btn-link.btn-sm {
+button[data-v-8e8bf78e] {
     color: #e38585!important;
     text-decoration: unset!important;
 }
@@ -15,7 +15,7 @@ a:hover,
 .sidebar-row>a[data-v-c84b30a3]:hover,
 .sidebar-row>a[data-v-7c303778]:hover,
 .avatar-open-link span:hover,
-button.btn.btn-link.btn-sm: hover {
+button[data-v-8e8bf78e]: hover {
     color: #ba483e !important;
     text-decoration: unset!important;
 }
