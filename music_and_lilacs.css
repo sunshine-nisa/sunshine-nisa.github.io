@@ -862,8 +862,7 @@ nav.navbar > .container-fluid > div:first-child {
     right: 5px !important;
 } 
 
-a.my-menu.for-mobile.mobile-scroll-down.d-inline.d-md-none,
-.left-menu > div.left-menu__user-notification {
+a.my-menu.for-mobile.mobile-scroll-down.d-inline.d-md-none {
     display: none!important;
 }
 
@@ -940,5 +939,9 @@ span.post-title-date+span {
 
 .sign {
     font-size: 11px;
+}
+
+.crumbs {
+    text-align: left!important;
 }
 }
