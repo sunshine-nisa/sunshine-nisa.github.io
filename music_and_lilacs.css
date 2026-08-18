@@ -889,6 +889,7 @@ a.my-menu.for-mobile.mobile-scroll-down.d-inline.d-md-none,
 
 .menu__box {
     height: 80%;
+    width: 65%;
 }
 
 .post-content,
