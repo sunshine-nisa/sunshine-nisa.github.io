@@ -937,6 +937,10 @@ span.post-title-date+span {
     font-size: 0px;
 }
 
+  .datebg {
+    background: linear-gradient(90deg, transparent 0%, #9376b324 18%, #9376b370 100%) left center / 23% 1px no-repeat, linear-gradient(270deg, transparent 0%, #9376b324 18%, #9376b370 100%) right center / 23% 1px no-repeat !important;
+  }
+
 .sign {
     font-size: 11px;
 }
