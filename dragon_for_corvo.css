@@ -1128,7 +1128,6 @@ span.comments_count span::before {
 
 span.comments_count a {
     font-size: 14px!important;
-margin-right: -10px!important;
 }
 
 [onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before {
