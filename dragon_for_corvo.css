@@ -1146,7 +1146,9 @@ margin-right: -10px!important;
 
 .content {
     padding: 0!important;
+    margin-top: -10px!important;
 }
+
 .post-content:after {
     margin-right: 8px!important;
 }
@@ -1231,6 +1233,7 @@ body.bodybg {
 
 .blog__about:before {
     display: none!important;
+}
 
 .left-menu:before {
     content: ''!important;
@@ -1248,5 +1251,9 @@ body.bodybg {
 
 .col-md-6 {
     padding:0!important;
+}
+
+.datebg {
+    margin-bottom: -20px!important;
 }
 }
