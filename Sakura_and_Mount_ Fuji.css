@@ -1030,7 +1030,7 @@ span.post-title-date+span {
     background-color: #7098c9;
 }
 
-.left-menu > div.left-menu__user-notification {
+.left-menu__user-notification.left-menu__friends {
     display: none;
 }
 
