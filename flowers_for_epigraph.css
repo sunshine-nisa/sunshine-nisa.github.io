@@ -506,6 +506,10 @@ p.left-menu-text {
     margin-top: -4px;
 }
 
+.post-title:hover {
+    color: #c9c4af!important;
+}
+
 .post-text a,
 .comment-text a,
 .text-primary {
