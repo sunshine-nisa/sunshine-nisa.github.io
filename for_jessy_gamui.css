@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  font-family: Arial, sans-serif; /*шрифт*/
+}
+
+body { /*фон страницы*/
+    background: url('https://i1.beon.fun/53/92/9253/55/1911855/pagebg.png') no-repeat center fixed;
+    background-size: cover;
+}
+
+a, div { /*цвет ссылок и обычного текста*/
+    color: #858585!important;
+}
+
+a:hover { /*цвет ссылок при наведении*/
+    color: #b3b3b3!important;
+}
+
+input {
+    background: #1f1e1e99;
+    border: 1px solid #404040 !important;
+    color: #858585;
+    border-radius: 0!important;
+    transition: all 0.3s ease; 
+}
+
+div#app { 
+    width: 70%; /*ширина страницы*/
+    margin: auto; /*внешние отступы, чтобы автоматически всё выровнялось по центру*/
+}
+
+.py-4 { 
+    flex-direction: row-reverse; /*отвечает за перенос меню на правую сторону*/
+}
+
+.pagination-goto { /*текст "перейти на страницу" рядом с нумерацией страниц*/
+    color: #858585;
+}
+
+.py-4 + .crumbs {
+    width: 73.7%;
+}
+
+/*шапка*/
+
+.bg-white {
+    background: #312f2f66;
+    border: 1px solid #404040;
+    margin-right: 5px !important;
+}
+
+.shadow-sm { /*тень под шапкой*/
+    box-shadow: none !important;
+}
+
+[style="color: red; font-weight: bold;"] { /* буковка "О!" ядрёным красным цветом рядом с игрой Пузырки*/
+    color: #585757!important;
+}
+
+.navbar>.container-fluid {
+    /*width: 85%;*/
+    margin: auto !important;
+    padding: 0 !important;
+    padding-right: 140px !important;
+}
+
+.pc-menu, /*кружочки возле ссылок в шапке*/
+.pc-menu a { /*ссылки в шапке*/
+    color: #585757 !important;
+}
+
+.pc-menu a:hover { /*ссылки в шапке при наведении*/
+    color: #858585!important;
+}
+
+/*боковое меню*/
+
+.left-menu {
+    width: 27%; /*ширина меню*/
+    background: #312f2f66;
+    border: 1px solid #404040!important;
+}
+
+h3.left-menu-text {
+    background: #1f1e1e99 !important;
+    color: #858585!important;
+}
+
+.post-content.blog_total_counter, /*блок со счётчиком постов*/
+.community__moders, /*модераторы сообщества*/
+.community__members, /*участники сообщества*/
+.blog__gifts,
+.blog__read-me,
+.blog__iread,
+.blog__last-comments,
+.blog__refferers { /*блоки сверху вниз по порядку: подарки, меню читают, я читаю, последние комментарии, на меня ссылаются*/
+    display: none; /*скрытие блоков*/
+}
+
+/*посты*/
+
+.post-title { /*заголовок поста*/
+    display: block;
+    text-align: center;
+    text-decoration: none!important;
+}
+
+.post-content { /*пост*/
+    background: #312f2f66;
+    border: 1px solid #404040;
+    margin: 0 10px 20px 0!important;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.post-content.post-page { /*пост внутри*/
+    padding: 5px; /*внутренний отступ, чтобы текст и авы не были впритык к рамке*/
+}
+
+.comment-content { /*комментарии*/
+    background: #312f2f66;
+    border: 1px solid #404040;
+    margin: 0 10px 20px 0!important;
+    padding: 5px;
+}
+
+.text-primary { /*ссылки, вставляемые через "вставить ссылку" в форме ввода текста*/
+    color: #858585!important;
+}
+
+.text-primary:hover {
+    color: #b3b3b3!important;
+}
+
+/*форма ввода текста*/
+
+.textareabg {
+    background: #312f2f66;
+    border: 1px solid #404040;
+    margin-left: 0 !important;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+/*подвал*/
+
+.bottombg.p-1 {
+    width: 73.7%;
+    background: #312f2f66;
+    border: 1px solid #404040;
+}
+
+/*кнопки справа*/
+
+nav.navbar > .container-fluid > div:first-child { /*контейнер кнопки выхода на главную*/
+    display: flex !important;
+    position: fixed !important;
+    flex-direction: column !important;
+    width: 40px !important;
+    top: 14px !important;
+    right: 16px !important;
+    z-index: 2 !important;
+}
+
+nav.navbar .navbar-brand { /*кнопка выхода на главную*/
+    display: flex;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #585757 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+nav.navbar .navbar-brand::before { /*текст кнопки выхода на главную*/
+    content: "BEON";
+    font-family: Arial, sans-serif !important;
+    font-size: 12px !important;
+    margin-right: 1px;
+}
+
+nav.navbar .navbar-brand, /*обычный текст "beon.fun"*/
+.m2 { /*приветствие*/
+    font-size: 0 !important; /*убирает данный текст за счёт отсутствия размера шрифта*/
+}
+
+[href="/design/disable"],  #app > main > div.left-menu > div.blog__about > div:nth-child(3) > div:nth-child(4), #app > main > div.left-menu > div.blog__about.pb-2 > div > div:nth-child(6), #app > main > div.left-menu > div.blog__about.pb-2 > div > div:nth-child(7) { /*убирает пустые строки в боковом меню*/
+    font-size: 0!important;
+}
+
+[href="/design/disable"]:before { /*кнопка отключения дизайна*/
+    content: "\e40a";
+    display: flex !important;
+    position: fixed !important;
+    top: 65px !important;
+    right: 16px !important;
+    flex-direction: column !important;
+    width: 40px !important;
+    height: 40px !important;
+    font-family: "Material Icons" !important;
+    font-size: 27px !important;
+    margin-right: 1px;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #585757!important;
+    z-index: 2 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] { /*кнопка "вверх"*/
+    display: flex;
+
+    position: fixed !important;
+    top: 115px !important;
+    right: 16px !important;
+    z-index: 2 !important;
+    font-size: 0 !important;
+
+    box-sizing: border-box !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #585757 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    text-shadow: none !important;
+    line-height: 1 !important;
+    transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*стрелочка на кнопке "вверх"*/
+    content: "\f063";
+    transform: rotate(180deg); /*поворот стрелки на 180 градусов*/
+    font-family: "Font Awesome 5 Free", "Font Awesome 6 Free" !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+}
+
+[href="#footer"] { /*кнопка "вниз"*/
+    display: flex!important;
+
+    position: fixed !important;
+    top: 165px !important;
+    right: 16px !important;
+    z-index: 2 !important;
+    font-size: 0 !important;
+
+    box-sizing: border-box !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: #585757!important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-decoration: none !important;
+    line-height: 1 !important;
+    transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease !important;
+}
+
+[href="#footer"]::before { /*стрелочка на кнопке "вниз"*/
+    content: "\f063";
+    font-family: "Font Awesome 5 Free", "Font Awesome 6 Free" !important;
+    font-size: 20px !important;
+    font-weight: 900 !important;
+}
+
+nav.navbar .navbar-brand:hover, /*кнопка выхода на главную при наведении*/
+[href="/design/disable"]:hover:before, /*кнопка отключения диза при наведении*/
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover, /*кнопка "вверх" при наведении*/
+[href="#footer"]:hover { /*кнопка "вниз" при наведении*/
+    color: #858585!important;
+}
+
+/*прочие кнопки*/
+
+span[data-target="#deleteconfirmmodal"],
+[onclick="deleteComment(this)"] { /*кнопка удалить в постах и коммах*/
+    color: #858585!important;
+}
+
+span[data-target="#deleteconfirmmodal"]:hover,
+[onclick="deleteComment(this)"]:hover { /*кнопка удалить в постах и коммах при наведении*/
+    color: #b3b3b3!important;
+}
+
+a.btn.btn-primary, /*тут все кнопки из окон загрузок картинок и всего прочего*/
+a.btn.btn-secondary,
+a.btn.btn-outline-primary.mb-2.w-100,
+a.btn.btn-outline-primary.mb-3,
+button.btn.btn-secondary,
+button.btn.btn-primary,
+a#linkmodal__link.btn {
+    background: #1f1e1e99;
+    border: 1px solid #404040 !important;
+    border-radius: 0!important;
+    color: #858585;
+    transition: all 0.3s ease; 
+}
+
+a.btn.btn-primary:hover,
+a.btn.btn-secondary:hover,
+a.btn.btn-outline-primary.mb-2.w-100:hover,
+a.btn.btn-outline-primary.mb-3:hover,
+button.btn.btn-secondary:hover,
+button.btn.btn-primary:hover,
+a#linkmodal__link.btn:hover {
+    background: #1f1e1e99;
+    border: 1px solid #666565 !important;
+    border-radius: 0!important;
+    color: #b3b3b3!important;
+    transition: all 0.3s ease; 
+}
+
+input[type=submit]:nth-child(1),
+input[type=submit]:nth-child(2),
+input[type=submit]:nth-child(3),
+#submitpreview,
+input[type=submit]:nth-child(7),
+input[type=submit]:nth-child(20),
+input[type=button]:nth-child(21),
+input[type=submit]:nth-child(22),
+input[type=submit]:nth-child(23),
+input[type=submit]:nth-child(24),
+ input[type=submit]:nth-child(25),
+input[type=submit]:nth-child(26),
+input[type=submit]:nth-child(27) {
+    border-radius: 0!important;
+}
+
+input[type=submit]:nth-child(1):hover,
+input[type=submit]:nth-child(2):hover,
+input[type=submit]:nth-child(3):hover,
+#submitpreview:hover,
+input[type=submit]:nth-child(7):hover,
+input[type=submit]:nth-child(20):hover,
+input[type=button]:nth-child(21):hover,
+input[type=submit]:nth-child(22):hover,
+input[type=submit]:nth-child(23):hover,
+input[type=submit]:nth-child(24):hover,
+ input[type=submit]:nth-child(25):hover,
+input[type=submit]:nth-child(26):hover,
+input[type=submit]:nth-child(27):hover {
+    background: #1f1e1e99;
+    border: 1px solid #666565 !important;
+    color: #b3b3b3!important;
+    transition: all 0.3s ease; 
+}
+
+/*-----*/
+
+.alert { /*плашка с уведомлениями. например, когда отписываются от комментариев*/
+    background: #1f1e1e99;
+    border: 1px solid #404040 !important;
+    border-radius: 0!important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.quotation { /*цитата*/
+    border-left: 3px solid #b3b3b3;
+    color: #b3b3b3;
+}
+
+/* скролл */
+
+::-webkit-scrollbar { /*сама дорожка*/
+    width: 17px;
+    height: 17px;
+    background-color: #858585;
+}
+
+::-webkit-scrollbar-thumb { /*ползунок*/
+    border: 6px solid #1f1e1e;
+    background-color: #858585;
+    min-height: 24px;
+    min-width: 24px; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track { /*"дорожка", по которой едет ползунок*/
+    border: 8px solid #1f1e1e; 
+    background-color: #858585;
+}
+
+/*-----*/
+
+.avatars-fullscreen-link-wrapper { /*голубая кнопка "открыть" в аватарах*/
+    background: #1f1e1e;
+}
+
+/*всплывающие окна для загрузок чего-либо*/
+
+.modal-content { /*фон окна*/
+    background-color: #1f1e1e;
+    border-radius: 0!important;
+}
+
+.modal-header { 
+    border-bottom: 1px solid #404040; 
+}
+
+.modal-footer {
+    border-top: 1px solid #404040; 
+}
+
+/*на странице настроек блога*/
+
+.container-fluid.post-content.p-3 {
+    width: 99%;
+}
+
+@media (max-width: 700px) { /*вид с телефона*/
+
+div#app { 
+    width: 100%;
+    padding-top: 5px;
+}
+
+.py-4 {
+    flex-direction: column!important;
+}
+
+.py-4 + .crumbs {
+    width: 100%;
+}
+
+.bg-white {
+    width: 98%;
+}
+
+.navbar>.container-fluid {
+    width: 100%;
+    padding: 0 !important;
+}
+
+nav.navbar > .container-fluid > div:first-child {
+    position: unset !important;
+    width: 60px !important;
+}
+
+nav.navbar .navbar-brand {
+    width: 60px !important;
+}
+
+nav.navbar .navbar-brand::before {
+    font-size: 16px !important;
+    margin-bottom: 2px;
+}
+
+.left-menu {
+    width: 98%;
+    margin: auto!important;
+    margin-bottom: 10px!important;
+}
+
+.post-content,
+.comment-content,
+.textareabg {
+    margin: 0 5px 20px 5px !important;
+}
+
+.menu__box { /*выезжающее боковое меню*/
+    background: #1f1e1e;
+    border: 1px solid #404040 !important;
+    height: 90%;
+}
+
+.menu_item { /*цвет текста в выезжающем меню*/
+    color: #858585;
+}
+
+a.my-menu.for-mobile.mobile-scroll-down.d-inline.d-md-none {
+    display: none!important;
+}
+
+[href="#footer"] {
+    position: absolute !important;
+    top: 4px !important;
+    right: 70px!important;
+    z-index: 0 !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    position: absolute !important;
+    top: unset !important;
+    right: 16px !important;
+}
+
+.bottombg.p-1 {
+    width: 98%;
+    margin: auto;
+}
+}
