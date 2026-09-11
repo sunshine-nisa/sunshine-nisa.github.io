@@ -817,6 +817,11 @@ div#beon-fnplayer {
     border-width: 5px 0 5px 10px !important;
 }
 
+#fnplayer-play.paused {
+    border-style: double!important;
+    border-width: 0px 0 0px 10px!important;
+}
+
 
 @media (max-width: 700px) {
 
