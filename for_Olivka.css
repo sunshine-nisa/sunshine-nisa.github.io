@@ -735,17 +735,16 @@ span.comments_count a {
     content: '\25BC';
     display: flex;
     position: absolute !important;
-    font-size: 24px;
+    font-size: 30px;
     width: 35px;
     height: 35px;
-    padding-left: 5px;
     padding-top: 1px !important;
     align-items: center !important;
     right: 65px;
-    bottom: 20px;
+    top: 15px;
     color: #f5a000;
-    background: #2c2c2c;
-    border: 1px solid #3e3e3e;
+    background: none !important;
+    border: none !important;
     z-index: 1;
     transition: 0.3s;
 }
