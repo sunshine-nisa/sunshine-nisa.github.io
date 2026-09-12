@@ -683,8 +683,8 @@ span.comments_count a {
     width: 80%;
     height: 30%;
     max-height: 400px;
-    background: #fff;
-    border: 1px dashed #c3d0fa;
+    background: #222;
+    border: 1px solid #3e3e3e;
 }
 
 #avatars-fullscreen-modal .modal-content {
