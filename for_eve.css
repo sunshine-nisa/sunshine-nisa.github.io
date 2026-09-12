@@ -126,9 +126,8 @@ nav.navbar > .container-fluid > div:first-child {
 
 .menu__item {
     color: #e39ab8;
-    font-size: 16px;
     font-weight: 400;
-    font-family: "EB Garamond", serif;
+    font-family: "Inter", sans-serif;
 }
 
 .menu__item:hover {
