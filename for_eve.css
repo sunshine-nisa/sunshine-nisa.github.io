@@ -2,7 +2,6 @@
 
 * {
     font-family: "Inter", sans-serif;
-    font-weight: 400;
 }
 
 a, div, .small-text, .sign, .post-title-date {
@@ -126,8 +125,9 @@ nav.navbar > .container-fluid > div:first-child {
 
 .menu__item {
     color: #e39ab8;
+    font-size: 16px;
     font-weight: 400;
-    font-family: "Inter", sans-serif;
+    font-family: "EB Garamond", serif;
 }
 
 .menu__item:hover {
@@ -695,7 +695,7 @@ div#beon-fnplayer {
 }
 
 .crumbs {
-    width: 100%!important;
+    width: 97%!important;
 }
 
 .left-menu {
