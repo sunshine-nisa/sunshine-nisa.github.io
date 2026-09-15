@@ -753,6 +753,7 @@ input[type=submit]:nth-child(27):hover {
     border-left: 3px solid #b39f89;
     margin-bottom: 0 !important;
     padding-top: 0 !important;
+    color: #1a1b18;
 }
 
 /* скролл */
