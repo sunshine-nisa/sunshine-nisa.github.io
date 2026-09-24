@@ -15,7 +15,7 @@ a:hover {
     cursor: url(https://i1.beon.fun/58/91/9158/84/1834484/cursor-11.png), auto!important;
 }
 
-a.user[href$='karen']:before,
+
 a.user[href$='snow']:before {
     content: "" !important;
     display: inline-block;
