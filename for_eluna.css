@@ -749,7 +749,7 @@ input[type=submit]:nth-child(27):hover {
 /*модалка*/
 
 .modal-content {
-    background-color: #ebf4e8;
+    background-color: #dde3f8;
     border: 1px solid #9cace596;
     border-radius: 3px;
 }
@@ -1001,7 +1001,7 @@ span.post-title-date+span {
 }
 
 .avatars-fullscreen-link-wrapper {
-    background-color: #ebf4e800 !important;
+    background-color: #dde3f800 !important;
     background-image: none!important;
 }
 
