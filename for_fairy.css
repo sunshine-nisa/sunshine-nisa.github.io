@@ -1,0 +1,372 @@
+div.post-content.blog_total_counter,
+.blog__refferers { /*убирает отображение количества записей*/
+    display: none;
+}
+
+/*div.content { /*ширина записей*/
+    width: 65%;
+}*/
+
+div.content {
+    width: 80%;
+}
+
+div#app {
+    max-width: 1500px;
+    margin: auto;
+}
+
+h2 { /*"всего ответов: "*/
+    margin-left: 10px;
+}
+
+a, div { /*ссылки*/
+    color: #5483a8;
+    text-decoration: none !important;
+}
+
+a:hover { /*ссылки при наведении*/
+    color: #4d91c8!important;
+    text-decoration: none !important;
+}
+
+input { /*кнопки и поля в форме*/
+    background-color: #bbdbf6!important;
+    color: #5483a8!important;
+    border: 1px solid #5d859b!important;
+}
+
+input:hover { /*кнопки и поля в форме при наведении*/
+    background-color: #a3caeb!important;
+    color: #4d91c8!important;
+    border: 1px solid #5d859b!important;
+}
+
+[onclick="deleteComment(this)"] { /*кнопка "удалить" в коммах*/
+    color: #5483a8!important;
+}
+
+[onclick="deleteComment(this)"]:hover { /*кнопка "удалить" в коммах при наведении*/
+    color: #4d91c8!important;
+}
+
+[data-target="#deleteconfirmmodal"] { /*кнопка "удалить" в постах*/
+    color: #5483a8!important;
+}
+
+[data-target="#deleteconfirmmodal"]:hover { /*кнопка "удалить" в постах при наведении*/
+    color: #4d91c8!important;
+}
+
+body.bodybg { /*фон*/
+    background: url(https://i1.beon.fun/53/92/9253/72/1949172/fon.png) no-repeat fixed;
+    background-size: cover;
+}
+
+div.left-menu { /*левое меню целиком*/
+    color: #3c667d!important;
+    width: 375px;
+    background: url(https://i1.beon.fun/53/92/9253/84/1949284/menyu-4.png) no-repeat left fixed;
+    background-size: cover;
+    border: 1px solid #3c667d!important;
+}
+
+.left-menu-text > div, div.left-menu a,
+.left-menu-text .post-opt,
+.readertime,
+.left-menu__user-notification.left-menu__unread-message p { /*левое меню целиком*/
+    color: #3c667d!important;
+}
+
+.left-menu a:hover {
+    color: #4d91c8!important;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.blog__about mb-3 { /*блок друзья оффлайн/блок "о себе"*/
+    color: #5483a8!important;
+}
+
+.crumbs {
+    color: #3c667d!important;
+    /*background: #bbdbf6e8;*/
+    background: url(https://i1.beon.fun/53/92/9253/85/1949285/niz.png) no-repeat bottom;
+    border: 1px solid #3c667d;
+}
+
+.crumbs a {
+    color: #3c667d!important;
+}
+
+.crumbs a:hover {
+    color: #bbdbf6!important;
+}
+
+.pagination-goto, .pagination, .pagination a {
+    color: #3c667d!important;
+}
+
+.datebg {
+    color: #5483a8!important;
+    /*background: #bbdbf6e8;*/
+    background: url(https://i1.beon.fun/53/92/9253/85/1949285/niz.png) no-repeat top;
+    border: 1px solid #3c667d;
+    margin: 0 0 10px 10px!important;
+}
+
+.shadow-sm { /*тень под шапкой*/
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0)!important;
+}
+
+.left-menu > div > h3 { /*заголовки левого меню*/
+    background-color: #bbdbf6!important;
+    color: #5483a8;
+}
+
+
+.blog__about.mb-3 { 
+    margin-bottom: 0!important;
+}
+
+.pc-menu, .pc-menu a, a.navbar-brand, .m2, .m2 a {
+    color: #3c667d!important;
+}
+
+.pc-menu a:hover, a.navbar-brand:hover, .m2 a:hover { /*текст при наведении в шапке*/
+    color: #4d91c8!important;
+}
+
+.bg-white { /*шапка для рамки*/
+    border: 1px solid #3c667d;
+    /*background: #bbdbf6e8!important;*/
+    background: url(https://i1.beon.fun/53/92/9253/53/1950153/shapka2.png) no-repeat;
+}
+
+.post-content { /*посты*/
+    margin: 0 0 10px 10px!important;
+    background: #bbdbf6e8;
+    border: 1px solid #3c667d;
+}
+
+.comment-content { /*коммы*/
+    margin: 0 10px 20px!important;
+    background: #bbdbf6e8;
+    border: 1px solid #3c667d;
+}
+
+.post-text a, .comment-text a, .text-primary {
+    color: #4d91c8!important;
+    text-decoration: none !important;
+}
+
+.post-text a:hover, .comment-text a:hover, .text-primary:hover {
+    color: #5483a8!important;
+    text-decoration: none !important;
+}
+
+
+.post-content.post-page { /*открытый пост*/
+    padding-left: 0;
+}
+
+.comment-content { /*коммы*/
+    padding: 0 5px;
+    margin: 10px;
+}
+
+span.comments_count span:hover { /*кнопка "n комментариев" при наведении*/
+    color: #4d91c8!important;
+}
+
+.textareabg { /*форма*/
+    color: #5483a8!important;
+    padding: 0 5px;
+    margin: 10px;
+    margin-right: 0!important;
+    border: 1px solid #3c667d;
+    background: #bbdbf6e8!important;
+}
+
+.bottombg.p-1 {
+    /*background: #bbdbf6e8!important;*/
+    background: url(https://i1.beon.fun/53/92/9253/86/1949286/niz2.png) no-repeat;
+    border: 1px solid #3c667d;
+}
+
+.bottombg.p-1 a,
+div#page__admincontact.text-center,
+div#footer.p-1 {
+    color: #bbdbf6!important;
+}
+
+span.post-title-date,
+div.small-text,
+div.sign { /*дата/мелкий текст (точно тот, что внутри показывающий для кого пост, может что-то ещё, не помню)*/
+    color: #5483a8;
+}
+
+.emj-dropdown-content { /*раскрытое окошко смайлов*/
+    width: 600px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #bbdbf6;
+    border: 1px solid #3c667d;
+}
+
+.ml-auto { /*сдвинуть к центру шапку*/
+    margin-left: unset!important;
+    margin-right: auto;
+}
+
+/*раскрытие аватаров*/
+
+.avatars-fullscreen-link-wrapper {
+    width: 89%;
+    background: #bbdbf6; /*цвет фона*/
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: #5483a8; /*цвет текста*/
+}
+
+/*------*/
+
+.quotation { /*цитата*/
+    border-left: 6px double #4d91c8;
+    background: linear-gradient(90deg, #8fc1e9, transparent);
+}
+
+/*------*/
+
+ [href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 25px;
+    position: absolute;
+    color: #5483a8;
+    padding-left: 4px;
+    top: 2px;
+    transition: 0.3s;
+}
+
+[href="#footer"]:hover:before { 
+    color: #4d91c8!important;
+    transition: 0.3s;
+}
+
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\25B2';
+    font-size: 25px;
+    color: #5483a8;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    color: #4d91c8!important;
+    transition: 0.3s;
+}
+
+@media (max-width: 700px) { /*мобилка*/
+
+.left-menu > div.mobile_open_menu > h3 {
+    color: #5483a8;
+}
+
+div.content {
+    width: 100%;
+}
+
+.post-content,
+.datebg,
+.crumbs,
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm {
+    margin: 10px 10px 20px!important;
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-white.shadow-sm { /*шапка*/
+    padding-left: 10px!important;
+}
+
+div.left-menu {
+    width: 95%;
+    margin: auto;
+}
+
+div.left-menu {
+    color: #3c667d !important;
+    background: url(https://i1.beon.fun/53/92/9253/71/1950171/menyu-4.png) no-repeat left fixed;
+    background-size: cover;
+    border: 1px solid #3c667d !important;
+}
+
+.emj-dropdown-content {
+    width: 300px!important;
+    height: 200px!important;
+    max-height: 200px;
+    background: #bbdbf6;
+    border: 1px solid #3c667d;
+}
+
+.avatars-fullscreen-link-wrapper {
+    width: 100%!important;
+    background: #bbdbf6; /*цвет фона*/
+}
+
+ul.menu__box {
+    background: #bbdbf6!important;
+    border: 1px solid #3c667d;
+}
+
+.menu__item {
+    color: #5483a8;
+}
+
+.menu__btn > span::before,
+.menu__btn > span,
+.menu__btn > span::after {
+    background: #5483a8!important;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 25px;
+    position: absolute;
+    color: #5483a8 !important;
+    right: 15%;
+    top: 18%;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\25B2';
+    font-size: 25px;
+    color: #bbdbf6;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before:hover { 
+    color: #4d91c8!important;
+    transition: 0.3s;
+}
+}
+
+@media (max-width: 1366px) {
+
+div.left-menu {
+    color: #3c667d !important;
+    width: 375px;
+    background: url(https://i1.beon.fun/53/92/9253/71/1950171/menyu-4.png) no-repeat left fixed;
+    background-size: cover;
+    border: 1px solid #3c667d !important;
+}
+}
