@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 
-a.user[href$='terurinny']:before,
-a.user[href$='karen']:before,
-a.user[href$='karenhale']:before {
+a.user[href$='terurinny']:before {
     content: "" !important;
     display: inline-block;
     background: url(https://i1.beon.fun/53/92/9253/89/1958189/ikonka2.png) no-repeat;
