@@ -1,0 +1,1358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+
+* {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/*основа*/ 
+ 
+a, div {
+    color: #bf927c;
+    text-decoration: unset;
+}
+
+a:hover {
+    color: #ca7c35;
+    text-decoration: unset;
+}
+
+input {
+    background: #24140c;
+    color: #bf927c;
+    border: 1px solid #815931!important;
+}
+
+input:focus {
+    background: #24140c!important;
+    border: 1px solid #81593173!important;
+    outline: none!important;
+    color: #bf927c!important;
+}
+
+::selection {
+    background: #bf927c30;
+    color: #bf927c;
+}
+
+[action="/search"] > input {
+    margin-right: 5px !important;
+    margin-bottom: 7px!important;
+    padding-left: 5px;
+    padding-top: 0 !important;
+}
+
+.bodybg {
+    background: linear-gradient(180deg, #10090a85 0%, #10090a85 55%, #1c0c0766 100%),
+        url(https://i1.beon.fun/53/92/9253/58/1973558/fon.png) no-repeat fixed;
+    background-size: cover;
+}
+
+/*.bodybg:before {
+   content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/96/1973596/shapka2-2.png) no-repeat top left;
+    background-size: cover;
+}*/
+
+div#app {
+    margin: auto;
+    padding: 0 !important;
+}
+
+main.py-4 {
+    width: 85%;
+    margin: auto;
+    padding-top: 10px !important;
+}
+
+.py-4 + .crumbs {
+    display: none;
+}
+
+.left-menu__user-notification.left-menu__friends,
+.left-menu__friends.left-menu__friends_offline,
+.post-content.blog_total_counter,
+.blog__iread,
+.blog__refferers,
+.user:before,
+.blog:before,
+.post-content .fa-link:before,
+img.flag,
+.blog__last-comments,
+[src="/i/access.png"],
+[src="/i/topic_options.png"],
+[src="/i/podcast.png"],
+[src="//beon.fun/i/design-off.png"],
+.blog__gifts,
+.blog__refferers {
+    display: none!important;
+}
+
+div#footer, .footer__infolinks.p-1, div#app+div+[style="text-align: center"], div#page__rendertime.p-1, .text-center {
+    font-size: 0;
+}
+
+/*шапка*/
+
+.bg-white {
+    margin: auto;
+    padding-bottom: 15px;
+    position: relative;
+    height: 179px;
+    background: url(https://i1.beon.fun/53/92/9253/26/1973626/shapka2-7.png) no-repeat top left;
+    background-size: cover;
+}
+
+.shadow-sm {
+    box-shadow: none!important;
+}
+
+.navbar-expand-md>.container-fluid {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar-brand {
+    color: #bf927c!important;
+    font-weight: 500;
+}
+
+.m2 {
+    color: #bf927c!important;
+    margin-top: -5px;
+}
+
+.navbar-brand:hover,
+.m2 a:hover {
+    color: #ca7c35!important;
+}
+
+.pc-menu a {
+    color: #bf927c!important;
+}
+
+.pc-menu a:hover {
+    color: #ca7c35!important;
+}
+
+[style="color: red; font-weight: bold;"] {
+    color:#bf927c!important;
+}
+
+.crumbs {
+    margin: auto;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.crumb-item {
+    border-bottom: 1px solid #81593185;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    float: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #ca7c35 !important;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pagination a {
+    font-weight: 600;
+}
+
+.pagination-goto {
+    display: none;
+}
+
+/*меню*/
+
+.left-menu__user-notification.left-menu__unread-notifications > div > a {
+    padding-left: 3px;
+}
+
+.left-menu__user-notification.left-menu__unread-message,
+.notifications__comments.left-menu__user-notification,
+.left-menu__user-notification.left-menu__unread-notifications,
+.left-menu__user-notification,
+.blog__about,
+.blog__gifts,
+.blog__read-me,
+.community__moders,
+.community__members,
+.blog__tags {
+    background: url(https://i1.beon.fun/53/92/9253/49/1968949/zapisi2-2.png) repeat fixed;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 15px;
+}
+
+.left-menu__user-notification.left-menu__unread-message:after,
+.notifications__comments.left-menu__user-notification:after,
+.left-menu__user-notification.left-menu__unread-notifications:after,
+.left-menu__user-notification:after,
+.blog__about:after,
+.blog__gifts:after,
+.blog__read-me:after,
+.community__moders:after,
+.community__members:after,
+.blog__tags:after  {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/98/1973498/levyy-verhniy.png) left 9px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/4/1973504/pravyy-verhniy.png) right 6px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/99/1973499/levyy-nijniy.png) left 9px bottom 8px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/5/1973505/pravyy-nijniy.png) right 9px bottom 7px no-repeat;
+    background-size: 50px 59px, 50px 59px, 50px 59px, 100px 140px;
+}
+
+.left-menu__user-notification.left-menu__unread-message:before,
+.notifications__comments.left-menu__user-notification:before,
+.left-menu__user-notification.left-menu__unread-notifications:before,
+.left-menu__user-notification:before,
+.blog__about:before,
+.blog__gifts:before,
+.blog__read-me:before,
+.community__moders:before,
+.community__members:before,
+.blog__tags:before  {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/0/1973500/polosa-verh.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/2/1973502/polosa-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/1/1973501/polosa-levo.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/3/1973503/polosa-pravo.png) right top repeat-y;
+    background-size: 116px 4px, 116px 4px, 4px 116px, 4px 116px;
+}
+
+.blog__tags .left-menu-text {
+    padding-right: 30px!important;
+}
+
+
+[href="/design/disable"] {
+    color: #ca7c35!important;
+    font-weight: 600;
+}
+
+[href="/design/disable"]:hover {
+    color: #bf927c!important;
+    font-weight: 600;
+}
+
+.left-menu {
+    width: 23%;
+    border: none!important;
+    margin-right: 10px!important;
+    padding: 10px !important;
+    padding-top: 15px !important;
+    position: relative;
+}
+
+h3.left-menu-text {
+    color: #bf927c;
+    font-weight: 400;
+    font-size: 18px;
+    background: none !important;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.left-menu__user-notification.left-menu__unread-message h3.left-menu-text {
+    text-align: center;
+}
+
+.left-menu__user-notification.left-menu__unread-message p {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+/*посты*/
+
+.content {
+    padding-left: 5px;
+    margin-top: 15px;
+}
+
+.post-title {
+    position: relative;
+    font-size: 22px !important;
+    text-decoration: unset;
+}
+
+.post-title-user,
+span.user-drop-menu.cur-p,
+.post-title-date,
+span.post-title-date+span {
+    position: relative;
+}
+
+.post-header {
+    position: relative;
+}
+
+.post-content {
+    background: url(https://i1.beon.fun/53/92/9253/49/1968949/zapisi2-2.png) repeat fixed;
+    margin: 0 10px 45px 5px !important;
+    padding: 15px;
+    padding-top: 13px;
+    padding-right: 40px;
+    min-height: unset;
+    position: relative;
+}
+
+.post-content:after {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/98/1973498/levyy-verhniy.png) left 9px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/4/1973504/pravyy-verhniy.png) right 6px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/99/1973499/levyy-nijniy.png) left 9px bottom 8px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/5/1973505/pravyy-nijniy.png) right 9px bottom 7px no-repeat;
+    background-size: 50px 59px, 50px 59px, 50px 59px, 100px 140px;
+}
+
+.post-content:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/0/1973500/polosa-verh.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/2/1973502/polosa-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/1/1973501/polosa-levo.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/3/1973503/polosa-pravo.png) right top repeat-y;
+    background-size: 116px 4px, 116px 4px, 4px 116px, 4px 116px;
+}
+
+.comment-content {
+    background: url(https://i1.beon.fun/53/92/9253/49/1968949/zapisi2-2.png) repeat fixed;
+    border: 1px solid #815931;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+    min-height: unset;
+    position: relative;
+}
+
+.comment-content:after {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/98/1973498/levyy-verhniy.png) left 9px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/4/1973504/pravyy-verhniy.png) right 6px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/99/1973499/levyy-nijniy.png) left 9px bottom 8px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/13/1974913/pravyy-nijniy-dlya-komma.png) right 6px bottom 8px no-repeat;
+    background-size: 50px 59px, 50px 59px, 50px 59px, 50px 59px;
+}
+
+.comment-content:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/0/1973500/polosa-verh.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/2/1973502/polosa-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/1/1973501/polosa-levo.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/3/1973503/polosa-pravo.png) right top repeat-y;
+    background-size: 116px 4px, 116px 4px, 4px 116px, 4px 116px;
+}
+
+.comment-header {
+    padding-bottom: 5px;
+}
+
+.comment-box > h2 {
+    font-size: 20px;
+    color: #bf927c;
+    padding-left: 10px;
+    margin-top: -7px !important;
+    margin-bottom: 25px;
+}
+
+.post-title-user {
+    font-size: 14px;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+[data-target="#deleteconfirmmodal"] {
+    color: #bf927c;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.small-text {
+    color: #bf927c;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.post-avatar {
+    margin-left: 10px !important;
+    margin-right: 10px;
+}
+
+.sign {
+    padding-top: 5px;
+    line-height: 1.1em;
+    color: #bf927c;
+}
+
+span.comments_count span::before,
+span.comments_count a {
+    font-size: 13px!important;
+}
+
+.post-opt {
+    width: 97%;
+    margin: auto;
+    margin-left: 0 !important;
+    padding-top: 3px;
+}
+
+.post-opt .post-opt {
+    border-top: none;
+    margin: 0 !important;
+}
+
+.post-opt.mt-3 {
+    padding-left: 5px;
+}
+
+.row.w-100.mt-3.post-opt {
+    width: 97% !important;
+    padding-top: 3px;
+    padding-left: 3px;
+    margin-left: 5px;
+}
+
+.row.w-100.mt-3.post-opt .col-md-6 {
+    padding: 0 !important;
+    padding-right: 5px !important;
+}
+
+.post-text a,
+.comment-text a,
+.text-primary {
+    color: #ca7c35!important;
+    text-decoration: unset;
+}
+
+.post-text a:hover,
+.comment-text a:hover,
+.text-primary:hover {
+    color: #bf927c!important;
+    text-decoration: unset;
+}
+
+.post-title-date {
+    color: #bf927c;
+}
+
+span.post-title-date+span { /*запись для...*/
+    font-size: 10px;
+}
+
+.fa-chevron-down:before {
+    font-size: 12px;
+    margin-left: -5px;
+    color: #bf927c!important;
+}
+
+.datebg {
+    font-size: 13px !important;
+    color: #bf927c;
+    margin-left: 5px;
+    margin-bottom: 35px;
+    padding-top: 16px;
+    padding-left: 15px;
+    font-weight: 400;
+    background: url(https://i1.beon.fun/53/92/9253/53/1974953/data.png) no-repeat;
+    background-size: 309px 52px;
+    height: 52px;
+}
+
+.post-content.post-page .post-title-date {
+    position: absolute;
+    /*margin-left: -85px!important;*/
+}
+
+.post-content.post-page {
+    padding: 15px;
+    padding-top: 13px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+}
+
+.container-fluid.post-content.p-3 {
+    width: 98%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.post-content.post-page .post-avatar {
+    margin-left: 5px !important;
+}
+
+.post-content.post-page .post-opt {
+    padding-left: 5px;
+}
+
+.comment-content .post-title-date {
+    margin-left: -5px !important;
+    padding-right: 5px;
+    font-size: 10px;
+}
+
+span[data-target="#deleteconfirmmodal"],
+[onclick="deleteComment(this)"] {
+    color: #bf927c!important;
+    text-decoration: unset;
+}
+
+span[data-target="#deleteconfirmmodal"]:hover,
+[onclick="deleteComment(this)"]:hover {
+    color: #ca7c35!important;
+    text-decoration: unset!important;
+}
+
+.tag:before {
+    content: '#';
+    font-size: 10px;
+    margin-right: 2px;
+    color: #bf927c;
+}
+
+.blog__tags a:before {
+    content: '#';
+    color: #bf927c;
+}
+
+.post__tags-list {
+    color: #bf927c!important;
+}
+
+.fa-heart,
+.fa-retweet, 
+.fa-bookmark,
+.fa-exclamation-triangle,
+.fa-quote-left,
+.fa-trash-alt,
+.fa-pen {
+    color: #bf927c;
+    font-size: 12px;
+}
+
+i.fas.fa-heart:hover,
+i.fas.fa-retweet:hover, 
+i.fas.fa-bookmark:hover,
+i.fas.fa-exclamation-triangle:hover,
+i.fas.fa-quote-left:hover,
+i.fas.fa-trash-alt:hover,
+.fa-pen:hover {
+    color: #bf927c!important;
+}
+
+.reposted .fas, .bookmarked .fas {
+    color: #ca7c35!important;
+}
+
+.post-likes-count i.fa-heart, .post-likes-count span.fa-heart, .likebutton i.fa-heart, .likebutton span.fa-heart {
+    font-size: 0 !important;
+    display: inline-block !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-image: url(https://i1.beon.fun/53/92/9253/3/1974903/do-layka2.png) !important;
+    background-size: contain !important;
+    background-position: center !important;
+    vertical-align: middle !important;
+    margin-bottom: 9px;
+}
+
+.post-likes-count.liked i.fa-heart, .post-likes-count.active i.fa-heart, .likebutton.liked i.fa-heart, .likebutton.active i.fa-heart, .liked .fa-heart {
+    background-image: url(https://i1.beon.fun/53/92/9253/4/1974904/posle-layka2.png) !important;
+}
+
+/*аватары*/
+
+.avatars-fullscreen-link-wrapper {
+    background: #24140c !important;
+    border-top: 1px solid #815931;
+    border-bottom: 1px solid #815931;
+    border-right: 1px solid #815931;
+}
+
+ #avatars-fullscreen-modal .modal-content {
+    max-height: 90vh;
+    width: 60%;
+    margin: auto;
+}
+
+.avatar-select-list {
+    background: transparent;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.avatar-select-label {
+    width: 85px;
+    margin: 2px;
+    filter: grayscale(0);
+    border: 1px solid #815931;
+}
+
+.avatar-select-label-selected {
+    width: 95px;
+    border: 3px solid #815931;
+}
+
+/*кнопки и модалка*/
+
+.custom-file-label:after {
+    background: #24140c!important;
+    border-left: 1px solid #815931!important;
+    border-radius: 0!important;
+    color: #bf927c!important;
+}
+
+.custom-file-label:after:hover {
+    background: #462a1c!important;
+    border-left: 1px solid #815931!important;
+    border-radius: 0!important;
+    color: #ca7c35!important;
+}
+
+[type=reset], [type=submit], button, html [type=button], a.btn.btn-outline-primary.mb-2.w-100, a.btn.btn-outline-primary.mb-3 {
+    background: #24140c!important;
+    border: 1px solid #815931!important;
+    border-radius: 0!important;
+    color: #bf927c!important;
+    margin-top: 5px;
+}
+
+[type=reset]:hover, [type=submit]:hover, button:hover, html [type=button]:hover, a.btn.btn-outline-primary.mb-2.w-100:hover, a.btn.btn-outline-primary.mb-3:hover {
+    background: #462a1c!important;
+    border: 1px solid #815931!important;
+    border-radius: 0!important;
+    color: #ca7c35!important;
+    margin-top: 5px;
+}
+
+.div_user_img {
+    border-top: 1px solid #815931!important;
+    border-right: 1px solid #815931!important;
+    border-left: 1px solid #815931!important;
+    border-radius: 0!important;
+}
+
+.user_footer {
+    border: 1px solid #815931!important;
+    border-radius: 0!important;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #140a05;
+    background-clip: padding-box;
+    border: 1px solid #815931!important;
+    border-radius: 0;
+    outline: 0;
+}
+
+.modal-header{
+        border-bottom: 1px solid #815931!important;
+}
+
+.modal-footer {
+        border-top: 1px solid #815931!important;
+}
+
+.custom-control-label:before, .custom-file-label, .custom-select {
+    background-color: #24140c!important;
+    border: 1px solid #815931!important;
+    border-radius: 0!important;
+}
+
+/*кнопки вверх-вниз*/
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\2191';
+    display: flex;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    padding-left: 10px;
+    padding-top: 0px !important;
+    align-items: center !important;
+    left: 16px;
+    top: 45%;
+    color: #bf927c;
+    background: #24140c;
+    border: 1px solid #815931;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    background: #462a1c;
+    color:#ca7c35;
+    border: 1px solid #815931;
+    transition: 0.3s;
+}
+
+[href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\2193';
+    font-size: 20px;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    padding-left: 9px;
+    padding-top: 2px !important;
+    align-items: center !important;
+    left: 16px;
+    top: 50%;
+    color: #bf927c;
+    background: #24140c;
+    border: 1px solid #815931;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+[href="#footer"]:hover:before { 
+    background: #462a1c;
+    color:#ca7c35;
+    border: 1px solid #815931;
+    transition: 0.3s;
+}
+
+/*-----*/
+
+.alert {
+    background: #24140c;
+    color: #bf927c;
+    border: 1px solid #815931!important;
+    border-radius: 0!important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: #24140c;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid #24140c;
+    background-color: #815931;
+    min-height: 24px;
+    min-width: 24px; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: 8px solid #24140c; 
+    background-color: #815931;
+}
+
+
+.emj-dropdown-content {
+    width: 48%;
+    height: 15%;
+    max-height: 400px;
+    background: 24140c;
+    border: 1px solid #815931;
+}
+
+.dropbtn {
+    padding-right: 7px;
+}
+
+.fa-smile-wink:before {
+    padding-right: 5px;
+}
+
+.quotation {
+    border-left: 2px solid #bf927c;
+    background: #ca7c355e;
+    padding-top: 0 !important;
+    margin-left: 0;
+    color: #bf927c;
+}
+
+/*форма*/
+
+.textareabg {
+    background: url(https://i1.beon.fun/53/92/9253/49/1968949/zapisi2-2.png) repeat fixed!important;
+    border: 1px solid #815931;
+    margin-top: 0px !important;
+    margin-right: 10px !important;
+    margin-left: 5px !important;
+    margin-bottom: 15px !important;
+    padding: 20px !important;
+    position: relative;
+}
+
+.textareabg:after {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/98/1973498/levyy-verhniy.png) left 9px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/4/1973504/pravyy-verhniy.png) right 6px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/99/1973499/levyy-nijniy.png) left 9px bottom 8px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/13/1974913/pravyy-nijniy-dlya-komma.png) right 6px bottom 8px no-repeat;
+    background-size: 50px 59px, 50px 59px, 50px 59px, 50px 59px;
+}
+
+.textareabg:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/0/1973500/polosa-verh.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/2/1973502/polosa-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/1/1973501/polosa-levo.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/3/1973503/polosa-pravo.png) right top repeat-y;
+    background-size: 116px 4px, 116px 4px, 4px 116px, 4px 116px;
+}
+
+.textarea-wrapper > textarea {
+    background: #24140c!important;
+    border: 1px solid #815931;
+    color: #bf927c;
+}
+
+.textarea-wrapper > textarea:focus,
+p.clipboard-image-field:focus {
+    background: #24140c!important;
+    border: 1px solid #81593173;
+    outline: none!important;
+    color: #bf927c;
+}
+
+
+
+.tag_bar {
+    color: #bf927c!important;
+    font-size: 13px;
+}
+
+.tag_bar > span:hover {
+    color: #ca7c35!important;
+    font-size: 13px;
+}
+
+.tag_bar .fa-trash-alt:before {
+    color: #bf927c!important;
+    font-size: 13px!important;
+}
+
+input.w-100,
+input.w-100.input-mood,
+input.w-100.input-music,
+input.w-100.input-want,
+input.w-100.input-tags,
+select.w-100,
+select#addtag-img-size,
+select#addtag-img-align,
+select#upload-img-size,
+select#upload-img-align,
+p.clipboard-image-field,
+select.cb_img-size,
+select.cb_img-align,
+[name="postaccess"],
+[name="postgroup"],
+[name="postcommaccess"] {
+    background: #24140c!important;
+    border: 1px solid #815931!important;
+    color: #bf927c!important;
+}
+
+input.w-100:focus,
+input.w-100.input-mood:focus,
+input.w-100.input-music:focus,
+input.w-100.input-want:focus,
+input.w-100.input-tags:focus,
+select.w-100:focus,
+select#addtag-img-size:focus,
+select#addtag-img-align:focus,
+select#upload-img-size:focus,
+select#upload-img-align:focus,
+p.clipboard-image-field:focus,
+select.cb_img-size:focus,
+select.cb_img-align:focus,
+[name="postaccess"]:focus,
+[name="postgroup"]:focus,
+[name="postcommaccess"]:focus {
+    background: #24140c!important;
+    border: 1px solid #81593173!important;
+    outline: none!important;
+    color: #bf927c!important;
+}
+
+.col-md-4 p,
+.col-md-4 > div,
+#newpostform > form > div:nth-child(18) > div,
+span.cur-p,
+label {
+    color: #bf927c!important;
+}
+
+span.cur-p:hover {
+    color: #ca7c35!important;
+}
+
+/*подкаст*/
+
+.podcast-player {
+    border: none!important;
+}
+
+input[type=range] {
+    height: 5px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    background: rgba(221, 210, 184, .16) !important;
+    accent-color: #bf927c!important;
+}
+
+.podcast-player__title {
+    color: #bf927c!important;
+}
+
+/*плеер*/
+
+div#beon-fnplayer {
+    background: transparent;
+}
+
+#fnplayer-slider > span { 
+    font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 6px;
+    background-color: #bf927c!important;
+    border: none!important;
+}
+
+#fnplayer-slider-inner {
+    height: 6px;
+    width: 0%;
+    background-color: #ca7c35;
+}
+
+#fnplayer-volume {
+    height: 6px;
+    background-color: #ca7c35;
+    border: none!important;
+}
+
+#fnplayer-volume-inner {
+    height: 6px;
+    width: 100%;
+    background-color: #bf927c!important;
+    border: none;
+} 
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-stop {
+    border: 0;
+    background: #bf927c!important;
+    border: none!important;
+    border-radius: 0;
+    margin-top: 0 !important;
+}
+
+#fnplayer-play {
+    background: #0000 !important;
+    box-sizing: border-box;
+    width: 0;
+    height: 10px;
+    border-color: transparent transparent transparent #bf927c!important;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid !important;
+    border-width: 5px 0 5px 10px !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}
+
+#fnplayer-play.paused {
+    border-style: double!important;
+    border-width: 0px 0 0px 10px!important;
+}
+
+@media (max-width: 700px) {
+
+div#app {
+    width: 97%;
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.navbar-expand-md>.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bg-white {
+    width: 95%;
+    height: 100% !important;
+    margin: auto !important;     
+    margin-top: 20px !important;
+    padding-bottom: 25px;
+    background: url(https://i1.beon.fun/53/92/9253/49/1968949/zapisi2-2.png) repeat;
+    position: relative;
+}
+
+.bg-white:after {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/98/1973498/levyy-verhniy.png) left 9px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/4/1973504/pravyy-verhniy.png) right 6px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/99/1973499/levyy-nijniy.png) left 9px bottom 8px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/13/1974913/pravyy-nijniy-dlya-komma.png) right 6px bottom 8px no-repeat;
+    background-size: 50px 59px, 50px 59px, 50px 59px, 50px 59px;
+}
+
+.bg-white:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/0/1973500/polosa-verh.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/2/1973502/polosa-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/1/1973501/polosa-levo.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/3/1973503/polosa-pravo.png) right top repeat-y;
+    background-size: 116px 4px, 116px 4px, 4px 116px, 4px 116px;
+}
+
+main.py-4 {
+    width: 100%;
+    margin: auto;
+    padding-top: 0px !important;
+}
+
+.left-menu {
+    width: 100% !important;
+    overflow-x: unset;
+    margin: auto !important;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+    background: url(https://i1.beon.fun/53/92/9253/49/1968949/zapisi2-2.png) repeat!important;
+    color: #bf927c !important;
+    border: 1px solid #815931;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    padding-top: 20px !important;
+    margin-bottom: 20px;
+    position: relative;
+    height: 75px;
+}
+
+.left-menu > div.mobile_open_menu > h3:after {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/98/1973498/levyy-verhniy.png) left 10px top 1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/4/1973504/pravyy-verhniy.png) right 7px top 1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/99/1973499/levyy-nijniy.png) left 10px bottom 11px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/13/1974913/pravyy-nijniy-dlya-komma.png) right 6px bottom 11px no-repeat;
+    background-size: 40px 47px, 40px 47px, 40px 47px, 40px 47px;
+}
+
+.left-menu > div.mobile_open_menu > h3:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/0/1973500/polosa-verh.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/2/1973502/polosa-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/1/1973501/polosa-levo.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/3/1973503/polosa-pravo.png) right top repeat-y;
+    background-size: 116px 4px, 116px 4px, 4px 116px, 4px 116px;
+}
+
+.left-menu > div > h3 .fas.fa-angle-down:before {
+    font-size: 16px !important;
+}
+
+.left-menu__user-notification.left-menu__unread-message:after,
+.notifications__comments.left-menu__user-notification:after,
+.left-menu__user-notification.left-menu__unread-notifications:after,
+.left-menu__user-notification:after,
+.blog__about:after,
+.blog__gifts:after,
+.blog__read-me:after,
+.community__moders:after,
+.community__members:after,
+.blog__tags:after  {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/98/1973498/levyy-verhniy.png) left 9px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/4/1973504/pravyy-verhniy.png) right 6px top -1px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/99/1973499/levyy-nijniy.png) left 9px bottom 8px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/13/1974913/pravyy-nijniy-dlya-komma.png) right 6px bottom 8px no-repeat;
+    background-size: 50px 59px, 50px 59px, 50px 59px, 50px 59px;
+}
+
+.post-avatar img {
+    width: 70px!important;
+}
+
+.post-avatar {
+    margin-left: 10px !important;
+}
+
+.avatars-fullscreen-link-wrapper {
+    background: #24140c !important;
+    border: 1px solid #815931;
+}
+
+.sign {
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.post-title {
+    margin-bottom: -13px;
+}
+
+span.post-title-date+span {
+    display: none;
+}
+
+.post-title-user {
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.post-content {
+    padding-bottom: 25px!important;
+}
+
+.post-content .post-title-date {
+    font-size: 10px;
+}
+
+.comment-text {
+    margin-right: 5px;
+    color: #bf927c;
+    margin-left: 4px;
+}
+
+.fa-lock-open:before {
+    font-size: 10px;
+}
+
+.fa-external-link-alt:before,
+.fas.fa-align-justify:before,
+.fas.fa-align-center:before,
+.fas.fa-align-right:before,
+.fas.fa-image:before,
+.fa-cloud-upload-alt:before,
+.fa-clipboard:before,
+.fa-music:before,
+.fa-video:before,
+.fa-user:before,
+.fa-book:before,
+.fa-link:before,
+.fa-paragraph:before,
+.fa-remove-format:before,
+.fa-tags:before {
+    font-size: 13px;
+}
+
+.tag_bar {
+    padding-bottom: 15px;
+}
+
+.tag_bar > span {
+    font-size: 13px;
+
+}
+
+.tag_bar > * {
+    padding: 0 !important;
+    margin-right: 0 !important;
+}
+
+.fa-smile-wink:before {
+    padding-right: 5px;
+    font-size: 16px;
+}
+
+.crumbs {
+    margin: auto !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#avatars-fullscreen-modal .modal-body img {
+    max-width: unset;
+}
+
+.avatar-select-label {
+    width: 73px;
+    margin: 2px;
+    border: 1px solid #815931;
+}
+
+.avatar-select-label-selected {
+    width: 83px;
+    border: 3px solid #815931;
+}
+
+.avatars-fullscreen-link-wrapper {
+   width: 98% !important;
+    margin: auto;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    max-height: 80vh!important;
+    width: 100%;
+    margin: auto;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\2193';
+    font-size: 35px;
+    position: absolute;
+    left: 70% !important;
+    top: 20px !important;
+    color: #bf927c;
+    background: #0000 !important;
+    border: none !important;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\2191';
+    font-size: 35px;
+    position: sticky;
+    color: #bf927c;
+    background: #0000 !important;
+    border: none !important;
+    margin-top: -15px !important;
+    margin-right: 10px !important;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background: #bf927c;
+}
+
+.menu__box {
+    background: #24140c;
+    border: 1px solid #815931;
+    margin-top: 24px;
+    box-shadow: none;
+    height: 90%;
+}
+
+.menu__item {
+    color: #bf927c!important;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.blog__refferers {
+    display: none!important;
+}
+
+.emj-dropdown {
+    padding: 0;
+}
+
+.emj-dropdown-content {
+    width: 80%;
+    height: 30%;
+    max-height: 400px;
+    background: #24140c;
+    border: 1px solid #815931;
+}
+}
