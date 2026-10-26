@@ -1,0 +1,764 @@
+/* ==========================================
+   GOTHIC HALLOWEEN — BeOn.Fun
+   Палитра: чёрный, бронза, золото, бордо
+   ========================================== */
+
+/* ---------- 1. Основные цвета ---------- */
+
+:root {
+    --gh-bg: #0b1013;
+    --gh-panel: rgba(15, 21, 24, 0.94);
+    --gh-panel-soft: rgba(22, 28, 31, 0.92);
+    --gh-bronze: #8e633f;
+    --gh-bronze-light: #b58a58;
+    --gh-gold: #d6b47a;
+    --gh-burgundy: #641f2b;
+    --gh-text: #d7d9d5;
+    --gh-muted: #a6b0b1;
+    --gh-glow: rgba(214, 180, 122, 0.22);
+    --modal: #0f1518;
+}
+
+/* ---------- 2. Общая структура ---------- */
+
+div.post-content.blog_total_counter,
+.blog__refferers {
+    display: none;
+}
+
+/* Сохраняем ширину основной ленты */
+div.content {
+    width: 80%;
+    padding-left: 15px;
+}
+
+div#app {
+    /*max-width: 1500px;*/
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+/* ---------- 3. Текст и ссылки ---------- */
+
+a,
+div {
+    color: var(--gh-text);
+    text-decoration: none !important;
+}
+
+a {
+    color: var(--gh-gold);
+}
+
+a:hover {
+    color: #f1d8a5 !important;
+    text-decoration: none !important;
+}
+
+/* ---------- 4. Фон страницы ---------- */
+
+
+/* ===== GOTHIC HALLOWEEN: фон страницы ===== */
+
+body.bodybg {
+    background-color: #0b1013 !important;
+    background-image: url(https://i1.beon.fun/38/92/9238/69/1971869/fon.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+
+/* ---------- 5. Поля и кнопки ---------- */
+
+input {
+    background: #171d20 !important;
+    color: var(--gh-text) !important;
+    border: 1px solid var(--gh-bronze) !important;
+    border-radius: 2px;
+}
+
+input:hover {
+    background: #252a2c !important;
+    color: var(--gh-gold) !important;
+    border-color: var(--gh-gold) !important;
+}
+
+/* Удаление комментариев */
+[onclick="deleteComment(this)"] {
+    color: var(--gh-muted) !important;
+}
+
+[onclick="deleteComment(this)"]:hover {
+    color: #d88b83 !important;
+}
+
+/* Удаление записей */
+[data-target="#deleteconfirmmodal"] {
+    color: var(--gh-muted) !important;
+}
+
+[data-target="#deleteconfirmmodal"]:hover {
+    color: #d88b83 !important;
+}
+
+[type=reset], [type=submit], button, html [type=button], a.btn.btn-outline-primary.mb-2.w-100, a.btn.btn-outline-primary.mb-3, button.btn.btn-primary.avatars-modal__approve {
+    background: #171d20 !important;
+    color: var(--gh-text) !important;
+    border: 1px solid var(--gh-bronze) !important;
+    border-radius: 2px;
+}
+
+[type=reset]:hover, [type=submit]:hover, button:hover, html [type=button]:hover, a.btn.btn-outline-primary.mb-2.w-100:hover, a.btn.btn-outline-primary.mb-3:hover, button.btn.btn-primary.avatars-modal__approve:hover {
+    background: #252a2c !important;
+    color: var(--gh-gold) !important;
+    border-color: var(--gh-gold) !important;
+    border-radius: 2px;
+}
+
+/* ---------- 6. Левое меню ---------- */
+
+div.left-menu {
+    width: 375px;
+    color: var(--gh-text) !important;
+    background: var(--gh-panel);
+    border: none !important;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 20px;
+}
+
+.left-menu:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/28/1972128/menyu-niz.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/28/1972128/menyu-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/27/1972127/menyu-bok.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/27/1972127/menyu-bok.png) right top repeat-y;
+    background-size: 128px 6px, 128px 6px, 6px 182px, 6px 182px;
+}
+
+.left-menu:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/23/1972123/menyu-verhniy-levyy.png) left -4px top -6px no-repeat,      
+        url(https://i1.beon.fun/53/92/9253/25/1972125/menyu-pravyy-verhniy.png) right -7px top -6px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/24/1972124/menyu-levyy-nijniy.png) left -4px bottom -5px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/26/1972126/menyu-pravyy-nijniy.png) right -5px bottom -5px no-repeat;
+    background-size: 91px 67px, 91px 67px, 91px 67px, 91px 67px;
+}
+
+.left-menu-text > div,
+div.left-menu a,
+.left-menu-text .post-opt,
+.readertime,
+.left-menu__user-notification.left-menu__unread-message p {
+    color: var(--gh-muted) !important;
+}
+
+.left-menu a:hover {
+    color: var(--gh-gold) !important;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.blog__about.mb-3 {
+    color: var(--gh-text) !important;
+}
+
+/* Заголовки разделов левого меню */
+.left-menu > div > h3 {
+    background: none!important;
+
+    color: var(--gh-gold) !important;
+    border-bottom: 1px solid var(--gh-bronze);
+    padding: 3px 5px;
+}
+
+/* Убираем лишний отступ */
+.blog__about.mb-3 {
+    margin-bottom: 0 !important;
+}
+
+/* ---------- 7. Навигация и шапка ---------- */
+
+a.navbar-brand,
+.m2 {
+    margin-left: 145px;
+}
+
+.navbar-brand:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    float: left;
+    width: 83px;
+    height: 40px;
+    top: 25px;
+    left: 80px;
+    background: url(https://i1.beon.fun/53/92/9253/56/1972056/logo.png) no-repeat top, transparent;
+    background-size: contain;
+    transition: 0.2s;
+}
+
+/*.navbar-expand-md .navbar-collapse {
+    display: unset !important;
+    flex-basis: auto;
+    margin-left: 50px;
+}*/
+
+.pc-menu,
+.pc-menu a,
+a.navbar-brand,
+.m2,
+.m2 a {
+    color: var(--gh-muted) !important;
+}
+
+.pc-menu a:hover,
+a.navbar-brand:hover,
+.m2 a:hover {
+    color: var(--gh-gold) !important;
+}
+
+.pc-menu {
+    margin-left: 20px;
+}
+
+/* Основная панель шапки */
+.bg-white {
+    background-color: rgba(12, 17, 19, 0.96) !important;
+    border: 1px solid var(--gh-bronze) !important;
+    box-shadow: 0 0 10px var(--gh-glow);
+    padding-top: 13px;
+}
+
+.bg-white:after {
+    content: '';
+    position: absolute;
+    top: -50px !important;
+    left: -27px !important;
+    right: -27px !important;
+    height: 150px;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/64/1977764/shapka1-2.png) no-repeat top 27px center,  
+        url(https://i1.beon.fun/53/92/9253/29/1972029/shapka-levo.png) no-repeat top 16px left, 
+        url(https://i1.beon.fun/53/92/9253/30/1972030/shapka-pravo.png) no-repeat top 4px right;
+    background-size: 94px 50px, 180px 131px, 180px 132px;
+}
+
+.bg-white:before {
+    content: '';
+    position: absolute;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/88/1972088/post-polosa-niz.png) left top repeat-x;
+    background-size: 128px 5px;
+}
+
+/* Тень под шапкой */
+.shadow-sm {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* ---------- 8. Хлебные крошки ---------- */
+
+.crumbs {
+    color: var(--gh-muted) !important;
+    background: var(--gh-panel);
+    border: 1px solid var(--gh-bronze);
+    margin-bottom: 20px!important;
+}
+
+.crumbs a {
+    color: var(--gh-gold) !important;
+}
+
+.crumbs a:hover {
+    color: #f1d8a5 !important;
+}
+
+/* ---------- 9. Пагинация ---------- */
+
+.pagination-goto,
+.pagination,
+.pagination a {
+    color: var(--gh-muted) !important;
+}
+
+.pagination a:hover {
+    color: var(--gh-gold) !important;
+}
+
+/* ---------- 10. Даты записей ---------- */
+
+.datebg {
+    padding: 28px !important;
+    padding-left: 50px !important;
+    font-size: 10px !important;
+    text-transform: uppercase;
+    height: 70px;
+    color: #d6b47a !important;
+    background: url(https://i1.beon.fun/53/92/9253/69/1972069/data2.png) no-repeat left;
+    background-size: 348px 67px !important;
+    border: none;
+}
+
+/*текст "запись для ..."*/
+span.post-title-date+span {
+    font-size: 10px;
+}
+
+/* ---------- 11. Записи ---------- */
+
+.container-fluid.post-content.p-3, /*страницы настроек*/
+.post-content.p-1,
+.post-content.p-2 { 
+    padding: 20px 70px!important;
+}
+
+.post-content {
+    margin: 0 0 30px 10px !important;
+    padding: 20px 70px;
+    background: var(--gh-panel) !important;
+    color: var(--gh-text) !important;
+
+    box-shadow:
+        inset 0 0 12px rgba(0, 0, 0, 0.18),
+        0 2px 8px rgba(0, 0, 0, 0.18);
+
+    position: relative;
+}
+
+.post-content:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/88/1972088/post-polosa-niz.png) left top repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/88/1972088/post-polosa-niz.png) left bottom repeat-x, 
+        url(https://i1.beon.fun/53/92/9253/87/1972087/post-polosa-bok.png) left top repeat-y, 
+        url(https://i1.beon.fun/53/92/9253/87/1972087/post-polosa-bok.png) right top repeat-y;
+    background-size: 128px 6px, 128px 6px, 6px 182px, 6px 182px;
+}
+
+.post-content:after {
+    content: '';
+    position: absolute;
+    top: -13px !important;
+    right: -15px !important;
+    left: -18px !important;
+    bottom: -23px !important;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/83/1972083/posl-levyy-verhniy-ugol.png) left 3px top 0px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/85/1972085/post-pravyy-verhniy-ugol.png) right 6px top 5px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/84/1972084/post-levyy-nijniy-ugol.png) left 7px bottom 7px no-repeat, 
+        url(https://i1.beon.fun/53/92/9253/86/1972086/postpravyy-nijniy-ugol.png) right 6px bottom 7px no-repeat;
+    background-size: 150px 154px, 150px 154px, 150px 154px, 150px 154px;
+}
+
+/* Открытая запись */
+.post-content.post-page {
+    padding: 20px 70px;
+}
+
+/*категории*/
+.post__tags-list {
+    color: var(--gh-text)!important;
+}
+
+/* ---------- 12. Комментарии ---------- */
+
+.comment-content {
+    padding: 10px;
+    margin: 10px !important;
+
+    background: var(--gh-panel-soft) !important;
+    color: var(--gh-text) !important;
+
+    border: 1px solid #76553a !important;
+    border-radius: 2px;
+}
+
+/* Ссылки в записях и комментариях */
+.post-text a,
+.comment-text a,
+.text-primary {
+    color: var(--gh-gold) !important;
+    text-decoration: none !important;
+}
+
+.post-text a:hover,
+.comment-text a:hover,
+.text-primary:hover {
+    color: #f1d8a5 !important;
+    text-decoration: none !important;
+}
+
+/* Количество комментариев */
+span.comments_count span:hover {
+    color: var(--gh-gold) !important;
+}
+
+/* ---------- 13. Форма комментария ---------- */
+
+.textareabg {
+    color: var(--gh-text) !important;
+    padding: 10px!important;
+    margin: 10px;
+    margin-right: 0 !important;
+
+    border: 1px solid var(--gh-bronze);
+    background: var(--gh-panel) !important;
+}
+
+/* Нижняя панель */
+.bottombg.p-1 {
+    background: var(--gh-panel) !important;
+    border: 1px solid var(--gh-bronze);
+}
+
+.bottombg.p-1 a,
+div#page__admincontact.text-center,
+div#footer.p-1 {
+    color: var(--gh-muted) !important;
+}
+
+/* ---------- 14. Дополнительный текст ---------- */
+
+span.post-title-date,
+div.small-text,
+div.sign {
+    color: var(--gh-muted) !important;
+}
+
+/* Окно выбора смайликов */
+.emj-dropdown-content {
+    width: 600px !important;
+    height: 200px !important;
+    max-height: 200px;
+
+    background: #151b1e !important;
+    color: var(--gh-text) !important;
+    border: 1px solid var(--gh-bronze);
+}
+
+/* Положение шапки */
+.ml-auto {
+    margin-left: unset !important;
+    margin-right: auto;
+}
+
+/* ---------- 15. Полноэкранные аватары ---------- */
+
+.avatars-fullscreen-link-wrapper {
+    width: 89%;
+    background: #171d20 !important;
+}
+
+.avatars-fullscreen-link-wrapper a {
+    color: var(--gh-gold) !important;
+}
+
+/* ---------- 16. Цитаты ---------- */
+
+.quotation {
+    border-left: 4px double var(--gh-bronze-light);
+    background: linear-gradient(
+        90deg,
+        rgba(100, 31, 43, 0.38),
+        transparent
+    );
+
+    color: var(--gh-text);
+}
+
+/* ---------- 17. Кнопки прокрутки ---------- */
+
+[href="#footer"] {
+    font-size: 0;
+}
+
+[href="#footer"]:before {
+    content: '\25BC';
+    font-size: 25px;
+    position: absolute;
+    color: var(--gh-bronze-light);
+    padding-left: 4px;
+    top: 2px;
+    transition: 0.3s;
+}
+
+[href="#footer"]:hover:before {
+    color: var(--gh-gold) !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before {
+    content: '\25B2';
+    font-size: 25px;
+    color: var(--gh-bronze-light);
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before {
+    color: var(--gh-gold) !important;
+}
+
+
+/* ===== GOTHIC HALLOWEEN: полоска заголовка ===== */
+
+/*
+  Предварительный вариант.
+  Селектор .post-title нужно проверить по HTML страницы.
+*/
+
+.post-content .post-title {
+    display: block;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--gh-bronze);
+    position: relative;
+}
+
+/* Золотистый акцент на линии */
+.post-content .post-title::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #8e633f 8%,
+        #d6b47a 50%,
+        #8e633f 92%,
+        transparent
+    );
+
+    box-shadow: 0 0 5px rgba(214, 180, 122, 0.22);
+}
+
+
+/* ===== Полоска под названием записи ===== */
+
+.post-content .post-title {
+    padding-bottom: 2px !important;
+    margin-bottom: 5px !important;
+}
+
+/* Сохраняем тонкую золотистую линию */
+.post-content .post-title::after {
+    bottom: -1px;
+}
+
+/* ===== Модалка ===== */
+
+.modal-content {
+    background: var(--modal);
+    border: 1px solid var(--gh-bronze);
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--gh-bronze);
+}
+
+.modal-footer {
+    border-top: 1px solid var(--gh-bronze);
+}
+
+/*-----*/
+
+.alert {
+    background: rgba(12, 17, 19, 0.96) !important;
+    border: 1px solid var(--gh-bronze) !important;
+    color: var(--gh-text);
+}
+
+/*плеер*/
+
+div#beon-fnplayer {
+    background: transparent;
+}
+
+#fnplayer-slider > span { 
+    font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 6px;
+    background-color: var(--gh-muted)!important;
+    border: none!important;
+}
+
+#fnplayer-slider-inner {
+    height: 6px;
+    width: 0%;
+    background-color: var(--gh-gold);
+}
+
+#fnplayer-volume {
+    height: 6px;
+    background-color: var(--gh-gold);
+    border: none!important;
+}
+
+#fnplayer-volume-inner {
+    height: 6px;
+    width: 100%;
+    background-color: var(--gh-muted)!important;
+    border: none;
+} 
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-stop {
+    border: 0;
+    background: var(--gh-muted)!important;
+    border: none!important;
+    border-radius: 0;
+}
+
+#fnplayer-play {
+    background: #0000 !important;
+    box-sizing: border-box;
+    width: 0;
+    height: 10px;
+    border-color: transparent transparent transparent var(--gh-muted)!important;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid !important;
+    border-width: 5px 0 5px 10px !important;
+    margin-left: 0 !important;
+}
+
+#fnplayer-play.paused {
+    border-style: double!important;
+    border-width: 0px 0 0px 10px!important;
+}
+
+/* ===== Мобильная версия ===== */
+
+@media (max-width: 700px) {
+
+div#app {
+    width: 97%;
+    max-width: unset!important;
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.bg-white:before, .bg-white:after,
+.left-menu:before, .left-menu:after,
+.post-content:before, .post-content:after {
+    display: none;
+}
+
+.left-menu, .content {
+    width: 100% !important;
+    padding-left: 0 !important;
+}
+
+.left-menu {
+    margin-bottom: 10px!important;
+    padding: 0 !important;
+    outline: 1px solid var(--gh-bronze)!important;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+    font-size: 20px;
+}
+
+.datebg {
+    background: rgba(12, 17, 19, 0.96) !important;
+    border: 1px solid var(--gh-bronze)!important;
+    height: unset;
+    padding: 10px !important;
+    margin: 10px 0 !important;
+}
+
+.post-content {
+    border: 1px solid var(--gh-bronze);
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    padding: 10px !important;
+    padding-left: 5px !important;
+}
+
+.comment-content {
+    margin: 10px 0 !important;
+}
+
+.textareabg {
+    margin-left: 0 !important;
+}
+
+.navbar-brand:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    float: left;
+    width: 83px;
+    height: 40px;
+    top: 20px;
+    left: 5px;
+    background: url(https://i1.beon.fun/53/92/9253/56/1972056/logo.png) no-repeat top, transparent;
+    background-size: contain;
+    transition: 0.2s;
+}
+
+a.navbar-brand, .m2 {
+    margin-left: 80px;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background-color: var(--gh-muted) !important;
+}
+
+.menu__box {
+    background: rgba(12, 17, 19, 0.96) !important;
+    border: 1px solid var(--gh-bronze) !important;
+    padding-top: 55px !important;
+}
+
+.menu__item {
+    color: var(--gh-muted) !important;
+}
+
+.menu__item:hover {
+    color: #f1d8a5 !important;
+    background: none !important;
+}
+
+[href="#footer"]:before {
+    content: '\25BC';
+    font-size: 25px;
+    position: absolute;
+    color: var(--gh-bronze-light);
+    padding-left: 4px;
+    top: 17px;
+    transition: 0.3s;
+}
+}
