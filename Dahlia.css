@@ -1,0 +1,870 @@
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css');
+
+:root {
+    --header: #ffe7f2;
+    --post: #ffe7f2b8;
+    --border: #f5cbdce6;
+    --border-light: #bb5083;
+    --backdrop: #ffe7f2;
+    --text: #db8fb3;
+    --hover-color: #bb5083;
+    --modal: #ffe7f2;
+
+}
+
+.blog__iread,
+.blog__last-comments,
+.blog__refferers,
+.post-content.blog_total_counter,
+.user:before,
+.blog:before,
+.pagination-goto,
+[src="/i/access.png"],
+[src="/i/topic_options.png"],
+[src="/i/podcast.png"],
+.py-4 + .crumbs,
+.footer__infolinks.p-1,
+div#page__admincontact.text-center,
+div#footer.p-1,
+div#page__rendertime.p-1 {
+    display: none;
+}
+
+/*основа*/
+
+a, div, .text-primary:hover, .post-title-date, [style="color: red; font-weight: bold;"] {
+    color: var(--text)!important;
+    text-decoration: none !important;
+}
+
+a:hover, .text-primary {
+    color: var(--hover-color)!important;
+    text-decoration: none !important;
+}
+
+input {
+    background: var(--backdrop);
+    border: 1px dashed var(--border);
+    border-radius: 5px!important;
+    color: var(--text);
+}
+
+input:focus {
+    background: var(--backdrop);
+    border: 1px dashed var(--border-light);
+    border-radius: 5px!important;
+    color: var(--hover-color);
+    outline: none!important;
+}
+
+[action="/search"] > input {
+    margin-right: 5px !important;
+    padding-left: 5px;
+    padding-top: 0 !important;
+}
+
+div#app {
+    padding: 0!important;
+}
+
+body {
+    background: url(https://i1.beon.fun/53/92/9253/36/1982336/fon.png) no-repeat fixed;
+    background-size: cover;
+}
+
+.py-4 {
+    width: 70%;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+/*верх*/
+
+.shadow-sm {
+    box-shadow: none!important;
+}
+
+.bg-white {
+    background: var(--header) !important;
+    border-radius: 0 0 5px 5px;
+    padding: 15px 15% !important;
+}
+
+
+/*-----*/
+
+.crumbs {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.crumbs:after {
+    content: '';
+    display: block;
+    height: 240px;
+    background: url(https://i1.beon.fun/53/92/9253/37/1982337/shapka.png) no-repeat top !important;
+    background-size: cover !important;
+    margin-top: -33px;
+    margin-left: -5px !important;
+    margin-right: -13px !important;
+    border-top: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--border);
+}
+
+/*боковое меню*/
+
+.left-menu {
+    flex: 0 0 24%;
+    /* width: 27%; */
+    border: 1px dashed var(--border)!important;
+    border-radius: 5px;
+    margin-left: 10px !important;
+    background: url(https://i1.beon.fun/53/92/9253/99/1982399/menyu3.png) no-repeat right fixed;
+}
+
+.left-menu__user-notification.left-menu__unread-message, 
+.notifications__comments.left-menu__user-notification, 
+.left-menu__user-notification.left-menu__unread-notifications, 
+.left-menu__user-notification, 
+.left-menu__user-notification.left-menu__friends, 
+.left-menu__friends.left-menu__friends_offline,
+.blog__about, 
+.blog__gifts, 
+.blog__read-me, 
+.community__moders, 
+.community__members, 
+.blog__tags {
+    /*background: var(--post);
+    border: 1px dashed var(--border);*/
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+h3.left-menu-text {
+    font-size: 18px;
+    background: none !important;
+    border-bottom: 1px dashed var(--border);
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 5px;
+    color: var(--text);
+}
+
+/*посты*/
+
+.post-content {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    padding: 20px;
+    padding-top: 15px;
+    background: url(https://i1.beon.fun/53/92/9253/33/1982333/zapisi-sleva.png) repeat-y left top, 
+        url(https://i1.beon.fun/53/92/9253/34/1982334/zapisi-sprava.png) repeat-y right top, 
+        url(https://i1.beon.fun/53/92/9253/14/1983914/zapisi-verh3.png) repeat-x top,
+        url(https://i1.beon.fun/53/92/9253/78/1983878/zapisi-niz.png) repeat-x bottom 
+        var(--post);
+}
+
+.post-content, .comment-content {
+    border: 1px dashed var(--border);
+    border-radius: 5px;
+    min-height: unset;
+    margin-right: 0!important;
+}
+
+.post-text a, comment-text a {
+    color: var(--hover-color)!important;
+}
+
+.post-text a:hover, comment-text a:hover {
+    color: var(--text)!important;
+}
+
+.post-text.flex-grow-1 {
+    padding: 10px;
+    padding-left: 0;
+}
+
+.post-base.d-flex.flex-column.w-100,
+.comment-base.d-flex.flex-column {
+    margin-left: 5px!important;
+}
+
+.post-title, h1 {
+    font-size: 20px !important;
+}
+
+.post-content.post-page {
+    padding: 20px;
+}
+
+.post-content.post-page .post-header {
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    background: none !important;
+    height: unset;
+}
+
+span.post-title-date+span {
+    font-size: 10px;
+}
+
+.comment-content {
+    padding: 10px;
+    padding-bottom: 5px !important;
+    padding-top: 5px;
+    margin-right: 10px;
+    background: var(--post);
+}
+
+.post__tags-list a.tag:before {
+    content: '#';
+    font-size: 12px;
+    margin-right: 2px;
+    color: var(--text);
+}
+
+.blog__tags a:before {
+    content: '#';
+    color: var(--text);
+}
+
+.messageform__taglink.tag:before {
+    content: '#';
+    margin-right: 2px;
+    color: var(--text);
+}
+
+.datebg {
+    margin: 10px 10px 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 7px !important;
+    font-weight: bold;
+    font-size: 14px !important;
+    font-weight: 400;
+    background: var(--post) !important;
+    border: 1px dashed var(--border);
+    border-radius: 5px;
+}
+
+/*кнопки вверх-вниз*/
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '';
+    display: flex;
+    position: fixed;
+    bottom: 9%;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/25/1983925/vverh.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    content: '';
+    display: flex;
+    position: fixed;
+    bottom: 8%;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/1/1984001/vverh2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 0.3s;
+}
+
+[href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '';
+    display: flex;
+    position: fixed;
+    bottom: 3%;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/26/1983926/vniz.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+[href="#footer"]:hover:before { 
+    content: '';
+    display: flex;
+    position: fixed;
+    bottom: 3%;
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/2/1984002/vniz2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 0.3s;
+}
+
+/*кнопки и форма*/
+
+span[data-target="#deleteconfirmmodal"], [onclick="deleteComment(this)"] {
+    color: var(--text);
+    text-decoration: unset;
+}
+
+span[data-target="#deleteconfirmmodal"]:hover, [onclick="deleteComment(this)"]:hover {
+    color: var(--hover-color);
+    text-decoration: unset;
+}
+
+[type=reset], [type=submit], button, html [type=button], a.btn.btn-outline-primary.mb-2.w-100, a.btn.btn-outline-primary.mb-3, button.btn.btn-primary.avatars-modal__approve {
+    background: var(--backdrop);
+    border: 1px dashed var(--border);
+    border-radius: 5px!important;
+    color: var(--text);
+    margin-top: 5px;
+}
+
+[type=reset]:hover, [type=submit]:hover, button:hover, html [type=button]:hover, a.btn.btn-outline-primary.mb-2.w-100:hover, a.btn.btn-outline-primary.mb-3:hover, button.btn.btn-primary.avatars-modal__approve:hover {
+    background: var(--post-top);
+    border: 1px dashed var(--border-light);
+    border-radius: 5px!important;
+    color: var(--hover-color);
+}
+
+input.w-100,
+input.w-100.input-mood,
+input.w-100.input-music,
+input.w-100.input-want,
+input.w-100.input-tags,
+select.w-100,
+select#addtag-img-size,
+select#addtag-img-align,
+select#upload-img-size,
+select#upload-img-align,
+p.clipboard-image-field,
+select.cb_img-size,
+select.cb_img-align,
+[name="postaccess"],
+[name="postgroup"],
+[name="postcommaccess"] {
+    background: var(--backdrop);
+    border: 1px dashed var(--border);
+    border-radius: 5px!important;
+    color: var(--text);
+}
+
+input.w-100:focus,
+input.w-100.input-mood:focus,
+input.w-100.input-music:focus,
+input.w-100.input-want:focus,
+input.w-100.input-tags:focus,
+select.w-100:focus,
+select#addtag-img-size:focus,
+select#addtag-img-align:focus,
+select#upload-img-size:focus,
+select#upload-img-align:focus,
+p.clipboard-image-field:focus,
+select.cb_img-size:focus,
+select.cb_img-align:focus,
+[name="postaccess"]:focus,
+[name="postgroup"]:focus,
+[name="postcommaccess"]:focus {
+    background: var(--backdrop);
+    border: 1px dashed var(--border-light);
+    border-radius: 5px!important;
+    color: var(--hover-color);
+    outline: none!important;
+}
+
+.textareabg {
+    background: var(--post);
+    border: 1px dashed var(--border);
+    border-radius: 5px;
+    padding: 10px !important;
+    margin-right: 0;
+    margin-left: 0!important;
+}
+
+.textarea-wrapper > textarea {
+    flex: 1;
+    width: 98%;
+    background: var(--backdrop);
+    border: 1px dashed var(--border);
+    border-radius: 5px;
+    color: var(--text);
+}
+
+.textarea-wrapper > textarea:focus {
+    background: var(--backdrop);
+    border: 1px dashed var(--border-light);
+    border-radius: 5px;
+    color: var(--text);
+    outline: none!important;
+}
+
+/*модалка*/
+
+.modal-content {
+    background: var(--header);
+    border: 1px dashed var(--border);
+    border-radius: 5px !important;
+}
+
+.modal-header {
+    border-bottom: 1px dashed var(--border);
+}
+
+.modal-footer {
+    border-top: 1px dashed var(--border);
+}
+
+/*аватары*/
+
+.avatars-fullscreen-link-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: var(--backdrop);
+    border-top: 1px dashed var(--border);
+}
+
+.avatar-select-wrapper {
+    margin: 0 0 0 10px !important;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.avatar-select-list {
+    background-color: var(--backdrop);
+    padding: 5px;
+}
+
+.avatar-select-label {
+    width: 95px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none !important;
+}
+
+.avatar-select-label-selected {
+    border: 2px solid var(--hover-color)!important;
+}
+
+/*-----*/
+
+.alert {
+    background: var(--backdrop);
+    color: var(--text);
+    border: 1px dashed var(--border)!important;
+    border-radius: 5px!important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.quotation {
+    border-left: 3px solid var(--border-light);
+    background: var(--post-bottom);
+    padding-left: 5px;
+    margin-left: 7px;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: var(--backdrop);
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid var(--backdrop);
+    background-color: var(--border-light);
+    min-height: 24px;
+    min-width: 24px; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    border: 8px solid var(--backdrop); 
+    background-color: var(--border-light);
+}
+
+.emj-dropdown-content {
+    width: 48%;
+    height: 15%;
+    max-height: 400px;
+    background: var(--post);
+    border: 1px dashed var(--border);
+}
+
+.emj-dropdown-content {
+    width: 48%;
+    height: 15%;
+    max-height: 400px;
+    background: #d1d9d7;
+    border: 1px dashed #41585196;
+}
+
+.liked .fas, .reposted .fas, .bookmarked .fas, .reposted .fas, .bookmarked .fas {
+    color: var(--hover-color)!important;
+}
+
+/*плеер*/
+
+div#beon-fnplayer {
+    background: transparent;
+}
+
+#fnplayer-slider > span { 
+    font-size:0px!important;  
+} 
+
+#fnplayer-slider {
+    height: 6px;
+    background-color: var(--text)!important;
+    border: none!important;
+}
+
+#fnplayer-slider-inner {
+    height: 6px;
+    width: 0%;
+    background-color: var(--hover-color);
+}
+
+#fnplayer-volume {
+    height: 6px;
+    background-color: var(--hover-color);
+    border: none!important;
+}
+
+#fnplayer-volume-inner {
+    height: 6px;
+    width: 100%;
+    background-color: var(--text)!important;
+    border: none;
+} 
+
+#fnplayer-volume-mask {
+    border:none!important;
+}
+
+#fnplayer-stop {
+    border: 0;
+    background: var(--text)!important;
+    border: none!important;
+    border-radius: 0;
+    margin-top: 0;
+    border-radius: 0 !important;
+}
+
+#fnplayer-play {
+    background: #0000 !important;
+    box-sizing: border-box;
+    width: 0;
+    height: 10px;
+    border-color: transparent transparent transparent var(--text)!important;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid !important;
+    border-width: 5px 0 5px 10px !important;
+    margin-left: 0 !important;
+    margin-top: 0;
+    border-radius: 0 !important;
+}
+
+#fnplayer-play.paused {
+    border-style: double!important;
+    border-width: 0px 0 0px 10px!important;
+    margin-top: 0;
+    border-radius: 0 !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    color: var(--text);
+    text-shadow: none!important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover {
+    color: var(--hover-color);
+    text-shadow: none!important;
+}
+
+.emj-dropdown-content {
+    width: 48%;
+    height: 15%;
+    max-height: 400px;
+    background: var(--backdrop);
+    border: 1px dashed var(--border);
+    border-radius: 5px;
+}
+
+.emj-dropdown-content a {
+    border-radius: 5px;
+}
+
+.emj-dropdown-content a:hover {
+    background: var(--border-light) !important;
+}
+
+.div_user_img {
+    border-top: 1px dashed var(--border);
+    border-right: 1px dashed var(--border);
+    border-left: 1px dashed var(--border);
+}
+
+.user_footer {
+    border: 1px dashed var(--border);
+}
+
+@media (max-width: 1366px) {
+
+.bg-white {
+    background: var(--post)!important;
+    border-radius: 0 0 5px 5px;
+    padding: 15px 7% !important;
+}
+
+.left-menu {
+    flex: 0 0 30%;
+    width: 30%;
+    border: 1px dashed var(--border) !important;
+    margin-left: 10px !important;
+    background: url(https://i1.beon.fun/53/92/9253/94/1982394/menyu2.png) no-repeat right fixed;
+}
+
+.post-title, h1 {
+    font-size: 18px !important;
+}
+}
+
+@media (max-width: 768px) {
+
+.py-4 {
+    width: 95%;
+    margin: auto;
+    flex-direction: column!important;
+}
+
+.crumbs {
+    width: 100%;
+    padding-right: 15px;
+}
+
+.crumbs:after {
+    content: '';
+    display: block;
+    height: 240px;
+    background: url(https://i1.beon.fun/53/92/9253/37/1982337/shapka.png) no-repeat top !important;
+    background-size: cover !important;
+    margin-top: 7px;
+    margin-left: -5px !important;
+    margin-right: -13px !important;
+    border-top: 1px dashed var(--border);
+    border-bottom: 1px dashed var(--border);
+}
+
+.left-menu {
+    width: 100%;
+    margin-bottom: 10px !important;
+    margin-left: 0 !important;
+    background: url(https://i1.beon.fun/53/92/9253/45/1984045/menyu4.png) no-repeat fixed;
+    background-size: cover;
+} 
+
+.left-menu > div.mobile_open_menu > h3 {
+    background: var(--post) !important;
+    border: none !important;
+    color: var(--text);
+    font-weight: 400;
+    padding-top: 3px;
+}
+
+.blog__iread,
+.blog__last-comments,
+.blog__refferers {
+    background: var(--post);
+    border: 1px dashed var(--border);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.post-content, .comment-content, .textareabg {
+    margin-right: 0!important;
+}
+
+.emj-dropdown {
+    padding: 0;
+}
+
+.emj-dropdown-content {
+    width: 80%;
+    height: 30%;
+    max-height: 400px;
+    background: linear-gradient(0deg, #09041a, #1a1430);
+    border: 1px dashed #271c4e;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background-color: var(--text)!important;
+}
+
+.menu__box {
+    background: var(--backdrop);
+    border: 1px dashed var(--border);
+    border-radius: 5px 0 0 5px;
+    padding-top: 50px;
+    height: 90%;
+}
+
+.menu__item {
+    color: var(--text);
+}
+
+.menu__item:hover {
+    color: var(--hover-color);
+    background: none!important;
+}
+
+.fa-lock-open:before {
+    font-size: 10px;
+}
+
+.fa-external-link-alt:before,
+.fas.fa-align-justify:before,
+.fas.fa-align-center:before,
+.fas.fa-align-right:before,
+.fas.fa-image:before,
+.fa-cloud-upload-alt:before,
+.fa-clipboard:before,
+.fa-music:before,
+.fa-video:before,
+.fa-user:before,
+.fa-book:before,
+.fa-link:before,
+.fa-paragraph:before,
+.fa-remove-format:before,
+.fa-tags:before,
+.fa-chevron-down:before,
+.fa-step-backward:before,
+.fa-step-forward:before,
+.tag_bar > span,
+span.comments_count a,
+span.comments_count span::before {
+    font-size: 13px;
+}
+
+.tag_bar {
+    padding-bottom: 15px;
+}
+
+.tag_bar > * {
+    padding: 0 !important;
+    margin-right: 0 !important;
+}
+
+.fa-heart, .fa-retweet, .fa-bookmark, .fa-exclamation-triangle, .fa-quote-left, .fa-trash-alt, .fa-pen {
+    color: var(--text);
+    font-size: 12px;
+}
+
+.fa-smile-wink:before {
+    font-size: 16px;
+}
+
+.avatar-select-wrapper {
+    border: none !important;
+    overflow: unset;
+}
+
+.avatars-fullscreen-link-wrapper {
+    position: unset;
+    width: 100%;
+    margin-left: -5px;
+    text-align: center;
+    background: var(--backdrop);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding-bottom: 5px;
+}
+
+/*кнопки вверх-вниз*/
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '';
+    display: flex;
+    position: sticky;
+    margin-top: 7px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/25/1983925/vverh.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    content: '';
+    display: flex;
+    position: sticky;
+    margin-top: 7px;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/1/1984001/vverh2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 0.3s;
+}
+
+[href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '';
+    display: flex;
+    position: absolute;
+    left: 65%;
+    top: 23px;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/26/1983926/vniz.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+[href="#footer"]:hover:before { 
+    content: '';
+    display: flex;
+    position: absolute;
+    left: 65%;
+    top: 23px;
+    width: 30px;
+    height: 30px;
+    background: url(https://i1.beon.fun/53/92/9253/2/1984002/vniz2.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 0.3s;
+}
+}
