@@ -695,9 +695,6 @@ div#beon-fnplayer {
 .blog__iread,
 .blog__last-comments,
 .blog__refferers {
-    background: var(--post);
-    border: 1px dashed var(--border);
-    border-radius: 5px;
     margin-bottom: 10px;
     padding: 7px;
 }
