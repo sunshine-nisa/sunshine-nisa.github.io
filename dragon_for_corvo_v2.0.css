@@ -49,7 +49,7 @@ div#app {
 
 
 body.bodybg {
-    background: url(https://i1.beon.fun/53/92/9253/66/1937566/fon-sleva3-2.png) no-repeat left bottom fixed, url(https://i1.beon.fun/53/92/9253/61/1937561/fon-sprava3.png) no-repeat right bottom fixed, #14120f;
+    background: url(https://i1.beon.fun/53/92/9253/49/1990249/fon-sleva3-2.png) no-repeat left bottom fixed, url(https://i1.beon.fun/53/92/9253/50/1990250/fon-sprava3.png) no-repeat right bottom fixed, #14120f;
     background-size: contain;
 }
 
@@ -390,7 +390,7 @@ div.blog__tags {
 .blog__about:before {
     content: '';
     display: block;
-    background: url(https://i1.beon.fun/53/92/9253/1/1937501/gif.gif) no-repeat center;
+    background: url(https://i1.beon.fun/53/92/9253/48/1990248/gif.gif) no-repeat center;
     height: 250px;
     width: 250px;
     margin: auto;
@@ -425,7 +425,7 @@ margin-bottom: 0!important;
     content: '';
     width: 30px;
     height: 30px;
-    background: url(https://i1.beon.fun/53/92/9253/31/1937631/logo.png) no-repeat;
+    background: url(https://i1.beon.fun/53/92/9253/53/1990253/logo.png) no-repeat;
     background-size: 100%;
     margin-top: 4px;
     display: block;
@@ -1242,7 +1242,7 @@ body.bodybg {
 .left-menu:before {
     content: ''!important;
     display: block!important;
-    background: url(https://i1.beon.fun/53/92/9253/1/1937501/gif.gif) no-repeat center;
+    background: url(https://i1.beon.fun/53/92/9253/48/1990248/gif.gif) no-repeat center;
     height: 250px;
     width: 250px;
     margin: auto;
