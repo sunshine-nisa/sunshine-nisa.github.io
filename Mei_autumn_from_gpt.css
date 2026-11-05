@@ -1,0 +1,1085 @@
+a.user[href$='solara']:before {
+    content: "" !important;
+    display: inline-block;
+    background: url(https://i1.beon.fun/53/92/9253/57/1963457/nik.png) no-repeat;
+    background-size: contain;
+    width: 23px;
+    height: 18px; 
+    margin-bottom: -2px !important;
+} 
+
+.user:before,
+.blog:before, 
+.post-content .fa-link:before,
+.pagination-goto,
+[src="/i/access.png"],
+[src="/i/topic_options.png"],
+[src="/i/podcast.png"],
+[src="//beon.fun/i/offline.png"],
+[src="//beon.fun/i/design-off.png"],
+.post-content.blog_total_counter,
+.footer__infolinks.p-1,
+div#page__admincontact.text-center,
+div#footer.p-1,
+div#page__rendertime.p-1 {
+    display: none;
+} 
+
+/*-----*/
+
+::selection {
+    color: #93633d;
+    background: #93633d38;
+}
+
+a, div {
+    color: #93633d!important;
+    text-decoration: unset;
+}
+
+a:hover,
+.text-primary:hover {
+    color: #b3591e!important;
+    text-decoration: unset;
+}
+
+
+input {
+    border: 1px solid #46220c !important;
+    background: #f1ddc8;
+    color: #46220c;
+    border-radius: 7px;
+}
+
+[action="/search"] > input {
+    margin-right: 5px !important;
+    margin-bottom: 7px !important;
+    padding-left: 5px;
+    padding-top: 0 !important;
+}
+
+div#app {
+    width: 70%;
+    margin: auto;
+}
+
+body {
+    background: url(https://i1.beon.fun/53/92/9253/29/1959929/fon2.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+/*верх*/
+
+.shadow-sm {
+    box-shadow: none !important;
+}
+
+/*.navbar-expand-md>.container-fluid {
+    border-top: 2px dashed #46220c;
+    border-bottom: 2px dashed #46220c;
+    padding: 15px 0;
+}*/
+
+.bg-white {
+    background: url(https://i1.beon.fun/53/92/9253/47/1959947/shapka.png) no-repeat bottom, 
+        url(https://i1.beon.fun/53/92/9253/28/1959928/v-posty.png) no-repeat top;
+    background-size: cover, cover;
+    padding: 15px;
+    border-radius: 20px !important;
+    border: 1px solid #46220c !important;
+    height: 120px;
+}
+
+a.navbar-brand,
+.m2 {
+    font-size: 0;
+}
+
+a.navbar-brand:hover {
+    color: #b3591e!important;
+}
+
+.navbar-brand:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 80px;
+    height: 100px;
+    margin-top: -5px;
+    background: url(https://i1.beon.fun/53/92/9253/31/1959931/logo.png) no-repeat;
+    background-size: contain;
+}
+
+.bg-white:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/55/1963355/shapka-pravo-niz3.png) no-repeat right;
+    background-size: contain;
+}
+
+.pc-menu a  {
+    color: #93633d!important;
+}
+
+.pc-menu a:hover {
+    color: #b3591e!important;
+}
+
+.pc-menu ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+.pc-menu ul li {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+.pc-menu ul li::before {
+    content: '❦ ' !important;
+    color: #93633d !important;
+    font-size: 13px !important;
+    margin-left: 7px;
+}
+
+[style="color: red; font-weight: bold;"] {
+    color: #93633d!important;
+}
+
+.navbar-expand-md .navbar-collapse {
+    margin-right: 240px;
+}
+
+/*меню*/
+
+/*.notifications__comments.left-menu__user-notification,
+.left-menu__user-notificationюleft-menu__unread-notifications {
+    margin-top: 60px !important;
+}*/
+
+.left-menu__user-notification.left-menu__unread-notifications,
+.left-menu__user-notification,
+.blog__about,
+.blog__read-me,
+.community__moders,
+.community__members,
+.blog__tags {
+    background: url(https://i1.beon.fun/53/92/9253/63/1959963/menyu-fon-niz.png) no-repeat bottom, 
+        url(https://i1.beon.fun/53/92/9253/54/1959954/menyu-fon.png) no-repeat top;
+    background-size: cover, cover;
+    border: 1px solid #46220c;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 31px!important;
+    margin-bottom: 60px !important;
+    position: relative;
+}
+
+
+.blog__about:before,
+.blog__read-me:before,
+.community__moders:before,
+.community__members:before,
+.blog__tags:before  {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background: url(https://i1.beon.fun/53/92/9253/32/1959932/menyu.png) no-repeat right !important;
+    background-size: contain !important;
+    margin-top: -49px;
+    right: 10px !important;
+}
+
+/*h3.left-menu-text:before  {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background: url(https://i1.beon.fun/53/92/9253/32/1959932/menyu.png) no-repeat right !important;
+    background-size: contain !important;
+    margin-top: -55px;
+    right: 10px !important;
+}*/
+
+.blog__about:after,
+.blog__read-me:after,
+.community__moders:after,
+.community__members:after,
+.blog__tags:after  {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/65/1963365/menyu-sprava-niz.png) no-repeat right bottom !important;
+    background-size: 83px 100px !important;
+    bottom: -7px !important;
+}
+
+[href="/design/disable"] {
+    font-weight: bold;
+    color: #b3591e!important;
+}
+
+[href="/design/disable"]:hover {
+    font-weight: bold;
+    color: #93633d!important;
+}
+
+.left-menu__friends.left-menu__friends_offline,
+.left-menu__user-notification.left-menu__friends,
+.blog__iread,
+.blog__gifts,
+.community__moders,
+.community__members,
+.blog__last-comments,
+.blog__refferers {
+    display: none;
+}
+
+.left-menu__user-notification.left-menu__unread-notifications > div {
+    padding-left: 5px!important;
+}
+
+.py-4 {
+    flex-direction: row-reverse;
+}
+
+.py-4 + .crumbs  {
+    display:none;
+}
+
+.crumbs {
+    margin-top: 25px !important;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    border-radius: 20px;
+    color: #f1ddc8 !important;
+}
+
+.crumbs a {
+    color: #f1ddc8 !important;
+}
+
+.crumbs a:hover {
+    color: #b3591e !important;
+}
+
+.crumb-item {
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    float: none;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #dd9260!important;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.pagination a {
+    color: #f1ddc8!important;
+}
+
+.pagination a:hover {
+    color: #b3591e!important;
+}
+
+.left-menu {
+    width: 338px;
+    border: none!important;
+    background: #fff0;
+    margin-right: 0 !important;
+    margin-top: -31px;
+    overflow-x: unset !important;
+}
+
+h3.left-menu-text {
+    background: none !important;
+    border-bottom: 1px solid #46220c5c;
+    font-size: 18px;
+    color: #684325 !important;
+    border-radius: 15px 15px 0 0;
+    padding: 5px;
+}
+
+
+/*посты*/
+
+.container-fluid.post-content.p-3 {
+    margin: auto!important;
+}
+
+.post-content {
+    margin: 0 10px 20px 0 !important;
+    border: 1px solid #46220c!important;
+    background: url(https://i1.beon.fun/53/92/9253/74/1959974/posty-verh.png) no-repeat top,
+        url(https://i1.beon.fun/53/92/9253/74/1963474/posty-niz.png) no-repeat bottom, 
+        url(https://i1.beon.fun/53/92/9253/69/1963469/v-posty2.png) repeat left top;
+    background-size: cover, cover, contain;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.post-content:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/25/1963325/levyy-verh4.png) no-repeat,
+        url(https://i1.beon.fun/53/92/9253/26/1963326/levyy-niz4.png) no-repeat,
+        url(https://i1.beon.fun/53/92/9253/27/1963327/pravyy-verh4.png) no-repeat,
+        url(https://i1.beon.fun/53/92/9253/28/1963328/pravyy-niz4.png) no-repeat;
+    background-size: 63px 80px, 51px 80px, 80px 73px, 56px 80px;
+    background-position: left top, left bottom, right top, right bottom;
+}
+
+.post-content, .comment-content {
+    min-height: 0;
+}
+
+.post-content.post-page {
+    padding-top: 15px;
+    padding-left: 35px;
+    padding-right: 45px;
+    padding-bottom: 20px;
+}
+
+.post-text a,
+.comment-text a,
+.text-primary {
+    color: #b3591e!important;
+    text-decoration: unset;
+    
+    &:hover {
+        color: #93633d!important;
+        text-decoration: unset;
+}
+}
+
+.comment-content {
+    min-height: 0!important;
+    margin: 0 10px 20px 0!important;
+    border: 1px solid #46220c!important;
+    background: url(https://i1.beon.fun/53/92/9253/74/1959974/posty-verh.png) no-repeat top,
+        url(https://i1.beon.fun/53/92/9253/74/1963474/posty-niz.png) no-repeat bottom, 
+        url(https://i1.beon.fun/53/92/9253/69/1963469/v-posty2.png) repeat left top;
+    background-size: cover, cover, contain;
+    padding: 13px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 20px;
+}
+
+span.comments_count {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+span.comments_count span:before {
+    content: "\f075";
+    font-size: 14px;
+    font-family: 'Font Awesome 5 Free';
+    padding-left: 3px;
+}
+
+.comment-box h2 {
+    margin-left: 10px;
+}
+
+.post-title, h1 {
+    text-decoration: unset;
+    font-size: 22px;
+    color: #684325 !important;
+    padding-left: 30px;
+}
+
+.post-title-user {
+    font-size: 15px;
+}
+
+.post-header {
+    margin-left: -7px !important;
+    margin-right: -10px;
+    margin-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid #46220c5c;
+    border-radius: 20px 20px 0 0;
+}
+
+.post-content.post-page .post-header {
+    background: none!important;
+    border-bottom: none;
+}
+
+.post-content.post-page h1 {
+    border-bottom: 1px solid #46220c5c;
+    border-radius: 20px 20px 0 0;
+    margin: -7px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-top: 7px;
+    padding-left: 35px;
+}
+
+.post-avatar {
+    margin-left: 0 !important;
+    padding: 3px;
+    margin-right: 7px!important;
+}
+
+.fa-chevron-down:before {
+    font-size: 12px;
+}
+
+.datebg {
+    display: block;
+    width: 28%;
+    content: '';
+    border-radius: 15px;
+    border: 1px solid #46220c !important;
+    background: url(https://i1.beon.fun/53/92/9253/90/1959990/data-fon.png) no-repeat;
+    background-size: cover;
+    font-size: 12px;
+    text-align: right;
+    margin-top: 75px;
+    margin-bottom: 10px;
+    margin-left: 0 !important;
+    padding: 10px;
+    position: relative;
+}
+
+.datebg:before {
+    content: '';
+    width: 90px;
+    height: 100px;
+    background: url(https://i1.beon.fun/53/92/9253/30/1959930/data.png) no-repeat center bottom;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: -63px;
+}
+
+.post-title-date,
+.sign,
+.post__tags-list,
+.small-text,
+.fa-lock-open:before {
+    color: #93633d!important;
+}
+
+.tag:before {
+    content: '#';
+    font-size: 12px;
+    margin-right: 2px;
+    color: #93633d;
+}
+
+.blog__tags a:before {
+    content: '#';
+    font-size: 12px;
+    color: #93633d;
+}
+
+span.post-title-date+span {
+    font-size: 10px;
+}
+
+.col-md-6.text-right {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+span.comments_count span {
+    font-size: 0;
+}
+
+span.comments_count {
+    font-size: 12px;
+}
+
+span.comments_count a{
+    width: 50px;
+}
+
+/*форма*/
+
+.textareabg {
+    border: 1px solid #46220c !important;
+    background: url(https://i1.beon.fun/53/92/9253/47/1959947/shapka.png) no-repeat bottom, 
+        url(https://i1.beon.fun/53/92/9253/28/1959928/v-posty.png) no-repeat top;
+    background-size: cover, cover;
+    margin-right: 10px;
+    margin-left: 0!important;
+    padding: 15px !important;
+    border-radius: 20px;
+}
+
+.textarea-wrapper > textarea {
+    border: 1px solid #46220c!important;
+    background: #fff;
+    color: #93633d;
+    border-radius: 7px;
+}
+
+form.messageform .w-100 {
+    border-radius: 7px;
+}
+
+input.w-100.input-mood,
+input.w-100.input-music,
+input.w-100.input-want,
+input.w-100.input-tags,
+select,
+select.w-100 {
+    border: 1px solid #46220c!important;
+    background: #fff;
+    color: #93633d;
+}
+
+.alert {
+    border: 1px solid #46220c!important;
+    background: #fff!important;
+    color: #93633d!important;
+    border-radius: 10px!important;
+}
+
+.quotation {
+    border-left: 6px double #93633d;
+    background: linear-gradient(45deg, #fbe5cb, transparent);
+    padding-top: 0!important;
+}
+
+/*кнопки*/
+
+input[type=submit]:nth-child(1),
+input[type=submit]:nth-child(2),
+input[type=submit]:nth-child(3),
+input[type=submit]:nth-child(7),
+input[type=submit]:nth-child(20),
+input[type=button]:nth-child(21),
+input[type=submit]:nth-child(22),
+input[type=submit]:nth-child(25),
+input[type=submit]:nth-child(26),
+input[type=submit]:nth-child(27),
+input[type=submit]:nth-child(23),
+input[type=submit]:nth-child(24),
+#submitpreview {
+    border-radius: 7px;
+}
+
+
+span[data-target="#deleteconfirmmodal"],
+[onclick="deleteComment(this)"] { /*кнопка удалить в постах и коммах*/
+    color: #93633d!important;
+    border-radius: 10px;
+}
+
+span[data-target="#deleteconfirmmodal"]:hover,
+[onclick="deleteComment(this)"]:hover {
+    color: #b3591e!important;
+    text-decoration: unset;
+}
+
+.comment-content span[data-target="#deleteconfirmmodal"],
+[onclick="deleteComment(this)"],
+span.repostbutton,
+span.bookmarkbutton,
+span.complaintbutton,
+span.fast-quote {
+    color: #93633d!important;
+}
+
+.comment-content span[data-target="#deleteconfirmmodal"]:hover,
+[onclick="deleteComment(this)"]:hover,
+span.repostbutton:hover,
+span.bookmarkbutton:hover,
+span.complaintbutton:hover,
+span.fast-quote:hover {
+    color: #b3591e!important;
+}
+
+.liked .fas, .reposted .fas, .bookmarked .fas {
+    color: #cd7b46!important;
+}
+
+a.btn.btn-primary,
+a.btn.btn-secondary,
+a.btn.btn-outline-primary.mb-2.w-100,
+a.btn.btn-outline-primary.mb-3,
+button.btn.btn-secondary,
+button.btn.btn-primary {
+    border: 1px solid #46220c !important;
+    background: #f1ddc8;
+    color: #46220c;
+    border-radius: 10px!important;
+}
+
+a.btn.btn-primary:hover,
+a.btn.btn-secondary:hover,
+a.btn.btn-outline-primary.mb-2.w-100:hover,
+a.btn.btn-outline-primary.mb-3:hover,
+button.btn.btn-secondary:hover,
+button.btn.btn-primary:hover {
+    border: 1px solid #46220c!important;
+    background: #c5a27e!important;
+    color: #93633d!important;
+    border-radius: 10px!important;
+}
+
+input[type=submit]:nth-child(1):hover,
+input[type=submit]:nth-child(2):hover,
+input[type=submit]:nth-child(3):hover,
+#submitpreview:hover,
+input[type=submit]:nth-child(7):hover,
+input[type=submit]:nth-child(20):hover,
+input[type=button]:nth-child(21):hover,
+input[type=submit]:nth-child(22):hover,
+input[type=submit]:nth-child(23):hover,
+input[type=submit]:nth-child(24):hover,
+ input[type=submit]:nth-child(25):hover,
+input[type=submit]:nth-child(26):hover,
+input[type=submit]:nth-child(27):hover {
+    border: 1px solid #46220c!important;
+    background: #c5a27e!important;
+    color: #46220c!important;
+}
+
+/*кнопки вверх-вниз*/
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"] {
+    font-size: 0px;
+    text-shadow: unset !important;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\25B2';
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    border: 1px solid #46220c !important;
+    background: #f1ddc8;
+    color: #46220c;
+    padding-left: 6px;
+    padding-bottom: 2px;
+    border-radius:7px;
+    left: 20px;
+    bottom: 52.5%;
+    z-index: 8;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before { 
+    border: 1px solid #46220c!important;
+    background: #c5a27e!important;
+    color: #46220c!important;
+    transition: 0.3s;
+}
+
+[href="#footer"] { 
+    font-size: 0px;
+}
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    left: 20px;
+    bottom: 48.5%;
+    border: 1px solid #46220c !important;
+    background: #f1ddc8;
+    color: #46220c;
+    padding-left: 6px;
+    padding-top: 2px;
+    border-radius:7px;
+    z-index: 7;
+    transition: 0.3s;
+}
+
+[href="#footer"]:hover:before { 
+    border: 1px solid #46220c!important;
+    background: #c5a27e!important;
+    color: #46220c!important;
+    transition: 0.3s;
+}
+
+/*авы*/
+
+.avatars-fullscreen-link-wrapper {
+    background: #ffffff;
+    border-right: 1px solid #46220c;
+    border-top: 1px solid #46220c;
+    border-bottom: 1px solid #46220c;
+}
+
+ #avatars-fullscreen-modal .modal-content {
+    max-height: 90vh;
+    width: 60%;
+    margin: auto;
+}
+
+.avatar-select-list {
+    background: transparent;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+.avatar-select-label {
+    width: 90px;
+    margin: 2px;
+    border: 1px solid #46220c;
+    transition: 0.3s;
+}
+
+ 
+.avatar-select-label-selected {
+    width: 100px;
+    border: 1px solid #46220c;
+    transition: 0.3s;
+}
+
+/* скролл */
+
+::-webkit-scrollbar {
+    width: 17px;
+    height: 17px;
+    background-color: #f1ddc8;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 6px solid #906748;
+    background-color: #f1ddc8;
+    min-height: 24px;
+    min-width: 24px;
+}
+
+::-webkit-scrollbar-track {
+    border: 8px solid #906748;
+    background-color: #f1ddc8;
+}
+
+/*смайлики*/
+
+.emj-dropdown {
+    padding: 0px;
+}
+
+.emj-dropdown-content {
+    width: 30%;
+    height: 45%;
+    max-height: 400px;
+    background: #f8f3ec;
+    border: 1px solid #46220c!important;
+}
+
+@media (max-width: 1366px) {
+
+div#app {
+    width: 85%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.left-menu {
+    width: 30.1%;
+}
+}
+
+
+@media (max-width: 700px) {
+
+div#app {
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.py-4 {
+    flex-direction: column!important;
+    width: 100%!important;
+}
+
+.datebg {
+    width: 94.8%;
+    margin-left: 10px !important;
+}
+
+.left-menu {
+    width: 95%;
+    margin-left: 10px !important;
+    margin-bottom: 10px !important;
+    overflow-x: unset!important;
+}
+
+.left-menu__user-notification.left-menu__friends,
+.blog__iread,
+.blog__last-comments,
+.community__moders,
+.community__members,
+.blog__gifts,
+.blog__refferers {
+    display: none!important;
+}
+
+.post-header {
+    font-size: 12px;
+}
+
+.post-title-user {
+    font-size: 14px;
+}
+
+.post-content,
+.comment-content,
+.textareabg {
+    margin-left: 10px !important;
+}
+
+.post-content, .comment-content, .textareabg {
+    background: url(https://i1.beon.fun/53/92/9253/63/1959963/menyu-fon-niz.png) no-repeat bottom, url(https://i1.beon.fun/53/92/9253/54/1959954/menyu-fon.png) no-repeat top !important;
+    background-size: cover, cover !important;
+}
+
+.avatar-select-label {
+    width: 73px!important;
+    margin-top: 2px;
+    border: 1px solid #46220c;
+    transition: 0.3s;
+}
+
+.avatar-select-label-selected {
+    width: 78px!important;
+    border: 1px solid #46220c;
+    transition: 0.3s;
+}
+
+#avatars-fullscreen-modal .modal-body img {
+    max-width: unset;
+}
+
+.avatars-fullscreen-link-wrapper {
+    width: 98% !important;
+    margin: auto;
+    border: 1px solid #46220c;
+}
+
+#avatars-fullscreen-modal .modal-content {
+    max-height: 80vh!important;
+    width: 100%;
+    margin: auto;
+}
+
+.post-avatar img {
+    width: 75px !important;
+}
+
+/*кнопки вверх-вниз*/
+
+[href="#footer"]:before { /*вниз*/
+    content: '\25BC';
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    color: #93633d;
+    top: 29px;
+    left: 40%;
+    border: none!important;
+    background: #ffffff00!important;
+    border-radius:0px;
+    z-index: 7;
+    transition: 0.3s;
+}
+
+[onclick="window.scroll({top: 0,behavior: 'smooth'})"]:before { /*вверх*/
+    content: '\25B2';
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    position: sticky;
+    color: #f1ddc8;
+    right: 20px;
+    bottom: 15px;
+    border: none!important;
+    background: #ffffff00!important;
+    border-radius:0px;
+    right: 20px;
+    bottom: 67px;
+    z-index: 8;
+    transition: 0.3s;
+}
+
+[href="#footer"]:hover:before, [onclick="window.scroll({top: 0,behavior: 'smooth'})"]:hover:before {
+    background: none!important;
+    border: none!important;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+    background: #93633d;
+}
+
+.menu__btn {
+    margin-right: 10px;
+    left: -70px !important;
+}
+
+.menu__box {
+    border: 1px solid #46220c!important;
+    background: #f8f3ec;
+    height: 90%;
+    margin-top: 35px;
+    border-radius: 20px 0 0 20px;
+}
+
+.fa-heart:before,
+.fa-retweet:before,
+.fa-bookmark:before,
+.fa-trash-alt:before,
+.fa-exclamation-triangle:before,
+.fa-quote-left:before,
+.fa-lock-open:before,
+.fa-step-backward:before,
+.fa-step-forward:before,
+.fa-smile-wink:before,
+.fa-tags:before,
+.fa-align-justify:before,
+.fa-align-center:before,
+.fa-align-right:before,
+.fa-image:before,
+.fa-cloud-upload-alt:before,
+.fa-clipboard:before,
+.fa-music:before,
+.fa-video:before,
+.fa-user:before,
+.fa-book:before,
+.fa-link:before,
+.fa-paragraph:before,
+.fa-remove-format:before,
+.tag_bar > span,
+.fa-external-link-alt:before {
+    font-size: 13px;
+}
+
+.fa-angle-down:before {
+    font-size: 15px;
+}
+
+span.comments_count a {
+    font-size: 14px;
+}
+
+.fas, .far, .tag_bar > * {
+    padding: 0!important;
+}
+
+.left-menu > div.mobile_open_menu > h3 {
+    color: #93633d;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid #46220c !important;
+    border-radius: 15px;
+    background: url(https://i1.beon.fun/53/92/9253/90/1959990/data-fon.png) no-repeat!important;
+    background-size: cover!important;
+}
+
+.crumbs {
+    padding: 0 10px!important;
+}
+
+.bg-white,
+.crumbs {
+    width: 95%;
+    border-radius: 10px;
+}
+
+.navbar-brand:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 80px;
+    height: 100px;
+    margin-top: -5px;
+    background: url(https://i1.beon.fun/53/92/9253/31/1959931/logo.png) no-repeat;
+    background-size: contain;
+}
+
+.bg-white:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: url(https://i1.beon.fun/53/92/9253/55/1963355/shapka-pravo-niz3.png) no-repeat right;
+    background-size: contain;
+}
+
+.blog__last-comments,
+.blog__iread,
+.left-menu__user-notification.left-menu__friends {
+    margin-bottom: 10px;
+    border-left: 1px solid #46220c!important;
+    border-right: 1px solid #46220c!important;
+    border-bottom: 1px solid #46220c!important;
+    background: #fff;
+    border-radius: 15px;
+    margin-top: 60px;
+}
+
+
+.left-menu__friends.left-menu__friends_offline {
+    border-left: 1px solid #46220c !important;
+    border-right: 1px solid #46220c !important;
+    border-bottom: 1px solid #46220c !important;
+    background: url(https://i1.beon.fun/53/92/9253/63/1959963/menyu-fon-niz.png) no-repeat bottom, 
+        url(https://i1.beon.fun/53/92/9253/54/1959954/menyu-fon.png) no-repeat top;
+    background-size: cover, cover;
+    border-radius: 15px;
+    margin-bottom: 75px !important;
+}
+
+.blog__gifts {
+    margin-bottom: 10px;
+    border-left: 1px solid #46220c!important;
+    border-right: 1px solid #46220c!important;
+    border-bottom: 1px solid #46220c!important;
+    background: #fff;
+    border-radius: 15px;
+    margin-top: 60px;
+}
+
+.left-menu:before {
+    display: none;
+}
+
+.navbar-expand-md>.container-fluid {
+    width: 74%;
+}
+
+.emj-dropdown-content {
+    width: 90%;
+}
+}
