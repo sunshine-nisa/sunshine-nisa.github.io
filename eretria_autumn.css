@@ -48,7 +48,7 @@ input {
 }
 
 body {
-    background: url(https://i1.beon.fun/53/92/9253/92/1877192/8.png) no-repeat fixed;
+    background: url(https://i1.beon.fun/53/92/9253/35/1996735/8.png) no-repeat fixed;
     background-size: cover;
 }
 
@@ -92,7 +92,7 @@ a.navbar-brand:hover,
 
 a.navbar-brand {
     font-size: 0px;
-    background: url(https://i1.beon.fun/53/92/9253/79/1878279/9-2.png) no-repeat left;
+    background: url(https://i1.beon.fun/53/92/9253/36/1996736/9-2.png) no-repeat left;
     background-size: contain;
     width: 55px;
     height: 45px;
@@ -100,7 +100,7 @@ a.navbar-brand {
 }
 
 .navbar-brand:hover {
-    background: url(https://i1.beon.fun/53/92/9253/79/1878279/9-2.png) no-repeat left;
+    background: url(https://i1.beon.fun/53/92/9253/36/1996736/9-2.png) no-repeat left;
     background-size: contain;
     transform: rotate(15deg);
     transition: 2s; 
@@ -163,7 +163,7 @@ ul.navbar-nav.ml-auto {
 }
 
 .left-menu {
-    background: url(https://i1.beon.fun/53/92/9253/11/1878311/10-2.png) no-repeat fixed #241a14f2;
+    background: url(https://i1.beon.fun/53/92/9253/37/1996737/10-2.png) no-repeat fixed #241a14f2;
     background-size: contain;
     border: 1px solid #4c3a2d!important;
     border-radius: 5px;
@@ -536,7 +536,7 @@ div#app {
 
 a.navbar-brand {
     font-size: 0px;
-    background: url(https://i1.beon.fun/53/92/9253/79/1878279/9-2.png) no-repeat left;
+    background: url(https://i1.beon.fun/53/92/9253/36/1996736/9-2.png) no-repeat left;
     background-size: contain;
     width: 55px;
     height: 45px;
@@ -546,7 +546,7 @@ a.navbar-brand {
 }
 
 a.navbar-brand:hover {
-    background: url(https://i1.beon.fun/53/92/9253/79/1878279/9-2.png) no-repeat left;
+    background: url(https://i1.beon.fun/53/92/9253/36/1996736/9-2.png) no-repeat left;
     background-size: contain;
     transform: rotate(15deg);
     transition: 2s; 
