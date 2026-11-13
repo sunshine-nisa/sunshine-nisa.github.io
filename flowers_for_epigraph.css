@@ -94,7 +94,8 @@ div#app {
     padding: 0;
 }
 
-input {
+input,
+select[name="posts-bymonth"] {
     background: #968f7d;
     color: #2c3930;
     border: 1px solid #c9c4af;
@@ -103,7 +104,7 @@ input {
 }
 
 body {
-    background: url(https://i1.beon.fun/53/92/9253/54/1910454/6-2.png) no-repeat fixed;
+    background: url(https://i1.beon.fun/53/92/9253/97/2006097/6-2.png) no-repeat fixed;
     background-size: cover;
 }
 
@@ -833,7 +834,7 @@ input[type=submit]:nth-child(27):hover {
 @media (max-width: 700px) {
 
 body {
-    background: url(https://i1.beon.fun/53/92/9253/5/1911605/fon2.png) no-repeat top center fixed;
+    background: url(https://i1.beon.fun/53/92/9253/98/2006098/fon2.png) no-repeat top center fixed;
     background-size: cover;
 }
 
